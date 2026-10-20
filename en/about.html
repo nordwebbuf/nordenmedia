@@ -3,23 +3,30 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About us | Norden Media UF</title>
-  <meta name="description" content="The people behind NordenMedia, our partners and clients.">
+  <title>About us, a student company from Boden | Norden Media UF</title>
+  <meta name="description" content="Norden Media UF is run by students at Björknäsgymnasiet in Boden. We build websites and live stream events, with one contact person all the way.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#F5F6F9" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#070B16" media="(prefers-color-scheme: dark)">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_GB">
   <meta property="og:site_name" content="Norden Media UF">
-  <meta property="og:title" content="About us | Norden Media UF">
-  <meta property="og:description" content="The people behind NordenMedia, our partners and clients.">
-  <meta property="og:image" content="https://nordenmedia.se/assets/og-image.jpg">
+  <meta property="og:title" content="About us, a student company from Boden | Norden Media UF">
+  <meta property="og:description" content="Norden Media UF is run by students at Björknäsgymnasiet in Boden. We build websites and live stream events, with one contact person all the way.">
   <meta property="og:url" content="https://nordenmedia.se/en/about.html">
+  <meta property="og:image" content="https://nordenmedia.se/assets/og-image-en.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Norden Media UF: websites for businesses and organisations">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About us, a student company from Boden | Norden Media UF">
+  <meta name="twitter:description" content="Norden Media UF is run by students at Björknäsgymnasiet in Boden. We build websites and live stream events, with one contact person all the way.">
+  <meta name="twitter:image" content="https://nordenmedia.se/assets/og-image-en.jpg">
   <link rel="canonical" href="https://nordenmedia.se/en/about.html">
   <link rel="alternate" hreflang="sv" href="https://nordenmedia.se/om-oss.html">
   <link rel="alternate" hreflang="en" href="https://nordenmedia.se/en/about.html">
   <link rel="alternate" hreflang="x-default" href="https://nordenmedia.se/om-oss.html">
-  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="icon" type="image/png" sizes="256x256" href="../assets/favicon.png">
   <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
   <link rel="manifest" href="../site.webmanifest">
   <link rel="preload" href="../assets/fonts/outfit-latin-3.woff2" as="font" type="font/woff2" crossorigin>
@@ -37,15 +44,38 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Norden Media UF",
-    "url": "https://nordenmedia.se/",
-    "logo": "https://nordenmedia.se/assets/nordenmedia.svg",
-    "image": "https://nordenmedia.se/assets/og-image.jpg",
-    "email": "hej@nordenmedia.se",
-    "description": "Hemsidor, webbsystem, domän, DNS, företagsmejl, SEO, optimering för AI-svar, Google-företagsprofiler, automatisering, hosting, drift och livesändningar för små och medelstora företag.",
-    "areaServed": "SE",
-    "knowsLanguage": ["sv", "en"]
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://nordenmedia.se/#business",
+        "name": "Norden Media UF",
+        "url": "https://nordenmedia.se/",
+        "logo": "https://nordenmedia.se/assets/apple-touch-icon.png",
+        "image": "https://nordenmedia.se/assets/og-image-en.jpg",
+        "email": "hej@nordenmedia.se",
+        "description": "Websites, business email, visibility on Google, booking systems, hosting and live streaming for businesses and organisations.",
+        "priceRange": "From SEK 495/month",
+        "address": {"@type": "PostalAddress", "addressLocality": "Boden", "addressRegion": "Norrbottens län", "addressCountry": "SE"},
+        "areaServed": [{"@type": "AdministrativeArea", "name": "Norrbottens län"}, {"@type": "Country", "name": "Sverige"}],
+        "knowsLanguage": ["sv", "en"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://nordenmedia.se/#website",
+        "name": "Norden Media UF",
+        "alternateName": "Norden Media",
+        "url": "https://nordenmedia.se/",
+        "inLanguage": ["sv-SE", "en-GB"],
+        "publisher": {"@id": "https://nordenmedia.se/#business"}
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://nordenmedia.se/en/"},
+          {"@type": "ListItem", "position": 2, "name": "About us", "item": "https://nordenmedia.se/en/about.html"}
+        ]
+      }
+    ]
   }
   </script>
 </head>

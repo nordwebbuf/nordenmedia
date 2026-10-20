@@ -27,40 +27,40 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # key: (sv file, en file, sv title, en title, sv description, en description)
 PAGES = {
     "index": ("index.html", "index.html",
-              "Norden Media UF | Hemsidor som ger fler kunder",
-              "Norden Media UF | Websites that win more customers",
-              "Norden Media UF bygger hemsidor som visar vilka ni är, syns på Google och ger fler kunder. Vi sköter domän, mejl, SEO och drift, och ni betalar först när ni är nöjda.",
-              "Norden Media UF builds websites that show who you are, get found on Google and win more customers. We handle domain, email, SEO and hosting, and you only pay when you are happy."),
+              "Hemsidor för företag i Boden | Norden Media UF",
+              "Websites for businesses in Boden | Norden Media UF",
+              "Vi bygger hemsidor som syns på Google och ger fler kunder, och sköter domän, mejl och drift. Fast pris, och ni betalar först när ni är nöjda.",
+              "We build websites that get found on Google and win more customers, and handle domain, email and hosting. Fixed price, and you only pay when you are happy."),
     "webbtjanster": ("webbtjanster.html", "web-services.html",
-                     "Hemsidor | Norden Media UF",
-                     "Websites | Norden Media UF",
-                     "Hemsidor, domän, företagsmejl, SEO, AI-svar, Google-företagsprofil, automatisering och drift. Vi sköter allt, ni slipper tekniken.",
-                     "Websites, domains, business email, SEO, AI answers, Google Business Profile, automation and hosting. We handle it all, you skip the tech."),
+                     "Hemsidor, Google-synlighet och mejl | Norden Media UF",
+                     "Websites, Google visibility and email | Norden Media UF",
+                     "Hemsida, egen webbadress, företagsmejl, synlighet på Google och bokningar som sköter sig själva. Vi bygger och sköter allt, ni slipper tekniken.",
+                     "Website, your own web address, business email, visibility on Google and bookings that run themselves. We build and run it all, you skip the tech."),
     "livesandning": ("livesandning.html", "live-streaming.html",
-                     "Livesändning | Norden Media UF",
-                     "Live streaming | Norden Media UF",
-                     "Livesändning av event och sammanträden, från teknik på plats till färdig sändning. Flera kameror, grafik, sändning och inspelning.",
-                     "Live streaming of events and meetings, from on-site equipment to finished broadcast. Multiple cameras, graphics, streaming and recording."),
+                     "Livesändning av evenemang och möten | Norden Media UF",
+                     "Live streaming of events and meetings | Norden Media UF",
+                     "Vi livesänder konferenser, föreläsningar, årsmöten och evenemang med flera kameror, grafik och inspelning, till er hemsida eller sociala medier.",
+                     "We live stream conferences, lectures, AGMs and events with multiple cameras, graphics and recording, to your website or social media."),
     "priser": ("priser.html", "pricing.html",
-               "Priser | Norden Media UF",
-               "Pricing | Norden Media UF",
-               "Tre paket med fast startkostnad och fast månadspris för hemsida, domän, mejl, synlighet och drift.",
-               "Three packages with a fixed start-up cost and a fixed monthly price for website, domain, email, visibility and hosting."),
+               "Priser för hemsida, från 495 kr/mån | Norden Media UF",
+               "Website pricing, from SEK 495/month | Norden Media UF",
+               "Tre paket med fast startkostnad och fast månadsavgift för hemsida, mejl, synlighet och drift. Ni betalar först när hemsidan är klar och ni är nöjda.",
+               "Three packages with a fixed start-up cost and a fixed monthly fee for website, email, visibility and hosting. You only pay once you are happy."),
     "om-oss": ("om-oss.html", "about.html",
-               "Om oss | Norden Media UF",
-               "About us | Norden Media UF",
-               "Människorna bakom NordenMedia, våra samarbetspartners och kunder.",
-               "The people behind NordenMedia, our partners and clients."),
+               "Om oss, UF-företag från Boden | Norden Media UF",
+               "About us, a student company from Boden | Norden Media UF",
+               "Norden Media UF drivs av elever på Björknäsgymnasiet i Boden. Vi bygger hemsidor och livesänder evenemang, med en kontaktperson hela vägen.",
+               "Norden Media UF is run by students at Björknäsgymnasiet in Boden. We build websites and live stream events, with one contact person all the way."),
     "kontakt": ("kontakt.html", "contact.html",
-                "Kontakt | Norden Media UF",
-                "Contact | Norden Media UF",
-                "Boka ett samtal med NordenMedia. Berätta om ert företag så hör vi av oss.",
-                "Book a call with NordenMedia. Tell us about your business and we will be in touch."),
+                "Kontakta oss och boka ett samtal | Norden Media UF",
+                "Contact us and book a call | Norden Media UF",
+                "Berätta om ert företag så hör vi av oss och bokar ett kort samtal. Det kostar ingenting att fråga. Mejla hej@nordenmedia.se eller fyll i formuläret.",
+                "Tell us about your business and we will get in touch to book a short call. It costs nothing to ask. Email hej@nordenmedia.se or fill in the form."),
     "integritetspolicy": ("integritetspolicy.html", "privacy.html",
                           "Integritetspolicy | Norden Media UF",
                           "Privacy policy | Norden Media UF",
-                          "Så hanterar NordenMedia dina personuppgifter.",
-                          "How NordenMedia handles your personal data."),
+                          "Så hanterar Norden Media UF de personuppgifter som du lämnar via vår hemsida, och vilka rättigheter du har.",
+                          "How Norden Media UF handles the personal data you provide through our website, and what rights you have."),
     "404": ("404.html", None, "Sidan hittades inte | Norden Media UF", None, "Sidan finns inte.", None),
 }
 
@@ -109,14 +109,39 @@ def head(key, lang, p):
   <link rel="alternate" hreflang="sv" href="{url("sv")}">
   <link rel="alternate" hreflang="en" href="{url("en")}">
   <link rel="alternate" hreflang="x-default" href="{url("sv")}">'''
-    robots = '\n  <meta name="robots" content="noindex">' if key == "404" else ""
+    robots = "noindex" if key == "404" else "index, follow, max-image-preview:large"
+    og_image = f"{SITE}/assets/og-image{'' if lang == 'sv' else '-en'}.jpg"
+    og_alt = ("Norden Media UF: hemsidor för företag och organisationer" if lang == "sv"
+              else "Norden Media UF: websites for businesses and organisations")
+    hero_preload = "" if key != "index" else (
+        f'\n  <link rel="preload" as="image" href="{p}assets/hero/lapporten-1920.jpg" '
+        f'imagesrcset="{p}assets/hero/lapporten-1280.jpg 1280w, {p}assets/hero/lapporten-1920.jpg 1920w, '
+        f'{p}assets/hero/lapporten.jpg 2400w" imagesizes="100vw" fetchpriority="high">')
+    labels = {"sv": {"webbtjanster": "Hemsidor", "livesandning": "Livesändning", "priser": "Priser", "om-oss": "Om oss",
+                     "kontakt": "Kontakt", "integritetspolicy": "Integritetspolicy"},
+              "en": {"webbtjanster": "Websites", "livesandning": "Live streaming", "priser": "Pricing", "om-oss": "About us",
+                     "kontakt": "Contact", "integritetspolicy": "Privacy policy"}}[lang]
+    home_url = f"{SITE}/" if lang == "sv" else f"{SITE}/en/"
+    crumbs = "" if key in ("index", "404") else f''',
+      {{
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {{"@type": "ListItem", "position": 1, "name": "{"Startsida" if lang == "sv" else "Home"}", "item": "{home_url}"}},
+          {{"@type": "ListItem", "position": 2, "name": "{labels[key]}", "item": "{url(lang)}"}}
+        ]
+      }}'''
+    org_desc = ("Hemsidor, företagsmejl, synlighet på Google, bokningssystem, drift och livesändningar för företag och organisationer."
+                if lang == "sv" else
+                "Websites, business email, visibility on Google, booking systems, hosting and live streaming for businesses and organisations.")
+    price = "Från 495 kr/mån" if lang == "sv" else "From SEK 495/month"
     return f'''<!doctype html>
 <html lang="{lang}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{title}</title>
-  <meta name="description" content="{desc}">{robots}
+  <meta name="description" content="{desc}">
+  <meta name="robots" content="{robots}">
   <meta name="theme-color" content="#F5F6F9" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#070B16" media="(prefers-color-scheme: dark)">
   <meta property="og:type" content="website">
@@ -124,13 +149,19 @@ def head(key, lang, p):
   <meta property="og:site_name" content="Norden Media UF">
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{desc}">
-  <meta property="og:image" content="{SITE}/assets/og-image.jpg">
   <meta property="og:url" content="{url(lang)}">
+  <meta property="og:image" content="{og_image}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{og_alt}">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{title}">
+  <meta name="twitter:description" content="{desc}">
+  <meta name="twitter:image" content="{og_image}">
   <link rel="canonical" href="{url(lang)}">{alt}
-  <link rel="icon" type="image/png" href="{p}assets/favicon.png">
+  <link rel="icon" type="image/png" sizes="256x256" href="{p}assets/favicon.png">
   <link rel="apple-touch-icon" href="{p}assets/apple-touch-icon.png">
-  <link rel="manifest" href="{p}site.webmanifest">
+  <link rel="manifest" href="{p}site.webmanifest">{hero_preload}
   <link rel="preload" href="{p}assets/fonts/outfit-latin-3.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="{p}assets/fonts/geist-latin-1.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="{p}css/fonts.css">
@@ -146,15 +177,31 @@ def head(key, lang, p):
   <script type="application/ld+json">
   {{
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Norden Media UF",
-    "url": "{SITE}/",
-    "logo": "{SITE}/assets/nordenmedia.svg",
-    "image": "{SITE}/assets/og-image.jpg",
-    "email": "hej@nordenmedia.se",
-    "description": "Hemsidor, webbsystem, domän, DNS, företagsmejl, SEO, optimering för AI-svar, Google-företagsprofiler, automatisering, hosting, drift och livesändningar för små och medelstora företag.",
-    "areaServed": "SE",
-    "knowsLanguage": ["sv", "en"]
+    "@graph": [
+      {{
+        "@type": "ProfessionalService",
+        "@id": "{SITE}/#business",
+        "name": "Norden Media UF",
+        "url": "{SITE}/",
+        "logo": "{SITE}/assets/apple-touch-icon.png",
+        "image": "{og_image}",
+        "email": "hej@nordenmedia.se",
+        "description": "{org_desc}",
+        "priceRange": "{price}",
+        "address": {{"@type": "PostalAddress", "addressLocality": "Boden", "addressRegion": "Norrbottens län", "addressCountry": "SE"}},
+        "areaServed": [{{"@type": "AdministrativeArea", "name": "Norrbottens län"}}, {{"@type": "Country", "name": "Sverige"}}],
+        "knowsLanguage": ["sv", "en"]
+      }},
+      {{
+        "@type": "WebSite",
+        "@id": "{SITE}/#website",
+        "name": "Norden Media UF",
+        "alternateName": "Norden Media",
+        "url": "{SITE}/",
+        "inLanguage": ["sv-SE", "en-GB"],
+        "publisher": {{"@id": "{SITE}/#business"}}
+      }}{crumbs}
+    ]
   }}
   </script>
 {{{{HEAD_EXTRA}}}}</head>'''
@@ -358,6 +405,9 @@ def leftovers(html):
     return [ln.strip() for ln in text.splitlines() if re.search(r"[åäöÅÄÖ]", ln)]
 
 
+TODAY = __import__('datetime').date.today().isoformat()
+
+
 def sitemap():
     rows = []
     for key, (sv_file, en_file, *_rest) in PAGES.items():
@@ -368,6 +418,7 @@ def sitemap():
         for loc in (sv, en):
             rows.append(f"""  <url>
     <loc>{loc}</loc>
+    <lastmod>{TODAY}</lastmod>
     <xhtml:link rel="alternate" hreflang="sv" href="{sv}"/>
     <xhtml:link rel="alternate" hreflang="en" href="{en}"/>
   </url>""")

@@ -4,22 +4,29 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Integritetspolicy | Norden Media UF</title>
-  <meta name="description" content="Så hanterar NordenMedia dina personuppgifter.">
+  <meta name="description" content="Så hanterar Norden Media UF de personuppgifter som du lämnar via vår hemsida, och vilka rättigheter du har.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#F5F6F9" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#070B16" media="(prefers-color-scheme: dark)">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="sv_SE">
   <meta property="og:site_name" content="Norden Media UF">
   <meta property="og:title" content="Integritetspolicy | Norden Media UF">
-  <meta property="og:description" content="Så hanterar NordenMedia dina personuppgifter.">
-  <meta property="og:image" content="https://nordenmedia.se/assets/og-image.jpg">
+  <meta property="og:description" content="Så hanterar Norden Media UF de personuppgifter som du lämnar via vår hemsida, och vilka rättigheter du har.">
   <meta property="og:url" content="https://nordenmedia.se/integritetspolicy.html">
+  <meta property="og:image" content="https://nordenmedia.se/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Norden Media UF: hemsidor för företag och organisationer">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Integritetspolicy | Norden Media UF">
+  <meta name="twitter:description" content="Så hanterar Norden Media UF de personuppgifter som du lämnar via vår hemsida, och vilka rättigheter du har.">
+  <meta name="twitter:image" content="https://nordenmedia.se/assets/og-image.jpg">
   <link rel="canonical" href="https://nordenmedia.se/integritetspolicy.html">
   <link rel="alternate" hreflang="sv" href="https://nordenmedia.se/integritetspolicy.html">
   <link rel="alternate" hreflang="en" href="https://nordenmedia.se/en/privacy.html">
   <link rel="alternate" hreflang="x-default" href="https://nordenmedia.se/integritetspolicy.html">
-  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="icon" type="image/png" sizes="256x256" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
   <link rel="preload" href="assets/fonts/outfit-latin-3.woff2" as="font" type="font/woff2" crossorigin>
@@ -37,15 +44,38 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Norden Media UF",
-    "url": "https://nordenmedia.se/",
-    "logo": "https://nordenmedia.se/assets/nordenmedia.svg",
-    "image": "https://nordenmedia.se/assets/og-image.jpg",
-    "email": "hej@nordenmedia.se",
-    "description": "Hemsidor, webbsystem, domän, DNS, företagsmejl, SEO, optimering för AI-svar, Google-företagsprofiler, automatisering, hosting, drift och livesändningar för små och medelstora företag.",
-    "areaServed": "SE",
-    "knowsLanguage": ["sv", "en"]
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://nordenmedia.se/#business",
+        "name": "Norden Media UF",
+        "url": "https://nordenmedia.se/",
+        "logo": "https://nordenmedia.se/assets/apple-touch-icon.png",
+        "image": "https://nordenmedia.se/assets/og-image.jpg",
+        "email": "hej@nordenmedia.se",
+        "description": "Hemsidor, företagsmejl, synlighet på Google, bokningssystem, drift och livesändningar för företag och organisationer.",
+        "priceRange": "Från 495 kr/mån",
+        "address": {"@type": "PostalAddress", "addressLocality": "Boden", "addressRegion": "Norrbottens län", "addressCountry": "SE"},
+        "areaServed": [{"@type": "AdministrativeArea", "name": "Norrbottens län"}, {"@type": "Country", "name": "Sverige"}],
+        "knowsLanguage": ["sv", "en"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://nordenmedia.se/#website",
+        "name": "Norden Media UF",
+        "alternateName": "Norden Media",
+        "url": "https://nordenmedia.se/",
+        "inLanguage": ["sv-SE", "en-GB"],
+        "publisher": {"@id": "https://nordenmedia.se/#business"}
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Startsida", "item": "https://nordenmedia.se/"},
+          {"@type": "ListItem", "position": 2, "name": "Integritetspolicy", "item": "https://nordenmedia.se/integritetspolicy.html"}
+        ]
+      }
+    ]
   }
   </script>
 </head>
