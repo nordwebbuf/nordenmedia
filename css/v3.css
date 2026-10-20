@@ -612,22 +612,3 @@
 .cell-ops { padding: clamp(24px, 2.6vw, 36px); }
 .cell-ops .cell-body { padding: 0; }
 .cell-ops .cell-body .cell-title { margin-top: 20px; }
-/* Hero background switcher */
-.bg-switch { position: absolute; right: var(--gutter); bottom: calc(56px + 18px); z-index: 3; display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
-.bg-switch-toggle { order: 2; display: inline-flex; align-items: center; gap: 8px; height: 40px; padding: 0 16px; border-radius: 999px; border: 1px solid rgb(255 255 255 / .28); background: rgb(5 11 28 / .45); color: #fff; font-size: .875rem; font-weight: 500; cursor: pointer; -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
-.bg-switch-toggle:hover, .bg-switch-toggle[aria-expanded="true"] { background: rgb(5 11 28 / .75); }
-.bg-switch-toggle i { font-size: 1.15rem; }
-.bg-switch-list { order: 1; display: flex; gap: 8px; padding: 8px; border-radius: 14px; background: rgb(8 14 32 / .8); border: 1px solid rgb(255 255 255 / .14); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); }
-.bg-switch-list[hidden] { display: none; }
-.bg-switch-list button { display: block; width: 64px; height: 42px; border-radius: 8px; border: 2px solid transparent; background: #0D1D45 center / cover; cursor: pointer; transition: transform .2s var(--ease), border-color .2s var(--ease); }
-.bg-switch-list button:hover { transform: translateY(-2px); }
-.bg-switch-list button[aria-pressed="true"] { border-color: #9DB6FF; box-shadow: 0 0 0 3px rgb(157 182 255 / .3); }
-@media (max-width: 960px) { .bg-switch { bottom: calc(32px + 12px); } }
-@media (max-width: 640px) {
-  .bg-switch { right: auto; left: var(--gutter); align-items: flex-start; }
-  .bg-switch-toggle span { display: none; }
-  .bg-switch-toggle { width: 40px; padding: 0; justify-content: center; }
-  .bg-switch-list { flex-wrap: wrap; max-width: calc(100vw - 2 * var(--gutter)); }
-  .bg-switch-list button { width: 56px; height: 38px; }
-}
-@media (max-width: 640px) { .bg-switch-list { display: grid; grid-template-columns: repeat(3, 56px); } .bg-switch-list[hidden] { display: none; } }

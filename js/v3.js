@@ -54,48 +54,6 @@
     update();
   }
 
-  // ---------- Hero background switcher (lets you try the background options) ----------
-  const bgSwitch = document.querySelector('[data-bg-switch]');
-  const heroImg = document.querySelector('.hero-photo .hero-bg img');
-  if (bgSwitch && heroImg) {
-    const toggle = bgSwitch.querySelector('.bg-switch-toggle');
-    const list = bgSwitch.querySelector('.bg-switch-list');
-    const dir = heroImg.getAttribute('src').replace(/[^/]+$/, '');
-    const BGS = [
-      { key: 'fjallsjo', sv: 'Fjällsjö', en: 'Mountain lake', pos: '50% 55%' },
-      { key: 'norrsken', sv: 'Norrsken', en: 'Northern lights', pos: '50% 50%' },
-      { key: 'spegling', sv: 'Spegling i skymning', en: 'Reflection at dusk', pos: '50% 60%' },
-      { key: 'bla-timmen', sv: 'Blå timmen', en: 'Blue hour', pos: '50% 50%' },
-      { key: 'solnedgang', sv: 'Solnedgång', en: 'Sunset', pos: '50% 50%' },
-      { key: 'snovidd', sv: 'Snövidd', en: 'Snowfield', pos: '50% 60%' },
-    ];
-    const apply = (bg) => {
-      heroImg.src = `${dir}${bg.key}.jpg`;
-      heroImg.style.objectPosition = bg.pos;
-      list.querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.key === bg.key)));
-      try { localStorage.setItem('nm-hero', bg.key); } catch (e) { /* storage unavailable */ }
-    };
-    BGS.forEach((bg) => {
-      const li = document.createElement('li');
-      const b = document.createElement('button');
-      b.type = 'button';
-      b.dataset.key = bg.key;
-      b.style.backgroundImage = `url("${dir}${bg.key}-thumb.jpg")`;
-      b.setAttribute('aria-label', en ? bg.en : bg.sv);
-      b.title = en ? bg.en : bg.sv;
-      b.addEventListener('click', () => apply(bg));
-      li.appendChild(b);
-      list.appendChild(li);
-    });
-    toggle.addEventListener('click', () => {
-      list.hidden = !list.hidden;
-      toggle.setAttribute('aria-expanded', String(!list.hidden));
-    });
-    let saved = null;
-    try { saved = localStorage.getItem('nm-hero'); } catch (e) { /* storage unavailable */ }
-    apply(BGS.find((b) => b.key === saved) || BGS[0]);
-  }
-
   // ---------- 2. Calculator ----------
   const calc = document.querySelector('[data-calc]');
   if (calc) {
