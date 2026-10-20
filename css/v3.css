@@ -612,3 +612,12 @@
 .cell-ops { padding: clamp(24px, 2.6vw, 36px); }
 .cell-ops .cell-body { padding: 0; }
 .cell-ops .cell-body .cell-title { margin-top: 20px; }
+
+/* After the UF year: heading on the left, two short paragraphs on the right */
+.after-uf { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 6vw, 112px); align-items: start; }
+.after-uf-head .eyebrow { margin-bottom: 22px; }
+.after-uf-text { padding-top: clamp(0px, 4.5vw, 64px); }
+.after-uf-text p { color: var(--ink-2); font-size: clamp(1rem, .95rem + .3vw, 1.1875rem); line-height: 1.7; max-width: 52ch; }
+.after-uf-text p + p { margin-top: 1.4em; }
+.after-uf-text b { color: var(--ink); font-weight: 500; }
+@media (max-width: 860px) { .after-uf { grid-template-columns: 1fr; } .after-uf-text { padding-top: 0; } }
