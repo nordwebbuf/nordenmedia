@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Norrsund Hem | Inredning, belysning och textilier</title>
+  <meta name="description" content="Möbler, belysning och textilier från nordiska formgivare. Handla online eller boka gratis inredningshjälp i butiken. Exempelsajt av Norden Media UF.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#F2F3EF" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0F1612" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/svg+xml" href="img/mark.svg">
+  <link rel="preload" href="fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/manrope.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="img/hero.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="../../assets/icons/phosphor-light.css">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FurnitureStore",
+    "name": "Norrsund Hem (exempelbutik)",
+    "description": "Påhittad inredningsbutik byggd som exempel av Norden Media UF.",
+    "openingHoursSpecification": [
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "18:00"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "15:00"}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="demo-bar" role="note">
+    <p><i class="ph-light ph-info" aria-hidden="true"></i><span>Exempelsajt byggd av Norden Media UF. Butiken, produkterna och omdömena är påhittade.</span></p>
+    <a href="../../exempel.html">Se genomgången <i class="ph-light ph-arrow-right" aria-hidden="true"></i></a>
+  </div>
+
+  <header class="nav" data-nav>
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="Norrsund Hem, till startsidan">
+        <img src="img/mark.svg" width="30" height="30" alt="">
+        <span>Norrsund <b>Hem</b></span>
+      </a>
+      <nav aria-label="Huvudmeny">
+        <ul class="nav-links" data-nav-links>
+          <li><a href="#kategorier">Butik</a></li>
+          <li><a href="#rum">Rum för rum</a></li>
+          <li><a href="#inredningshjalp">Inredningshjälp</a></li>
+          <li><a href="#besok">Besök oss</a></li>
+        </ul>
+      </nav>
+      <div class="nav-tools">
+        <button class="icon-btn" type="button" aria-label="Sök"><i class="ph-light ph-magnifying-glass" aria-hidden="true"></i></button>
+        <button class="icon-btn cart-btn" type="button" aria-label="Varukorg, 0 varor" data-cart-btn>
+          <i class="ph-light ph-handbag" aria-hidden="true"></i><span class="cart-count" data-cart-count hidden>0</span>
+        </button>
+        <button class="icon-btn menu-btn" type="button" aria-expanded="false" aria-controls="mobilmeny" data-menu-btn aria-label="Öppna menyn"><i class="ph-light ph-list" aria-hidden="true"></i></button>
+      </div>
+    </div>
+    <div class="mobile-nav" id="mobilmeny" data-mobile-nav hidden>
+      <a href="#kategorier">Butik</a><a href="#rum">Rum för rum</a><a href="#inredningshjalp">Inredningshjälp</a><a href="#besok">Besök oss</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero: one message, two paths (shop now or get help) -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow in" style="--i:0">Butik och webbshop</p>
+          <h1 class="in" style="--i:1">Ett hem som känns <em>som ditt.</em></h1>
+          <p class="hero-lead in" style="--i:2">Möbler, belysning och textilier från nordiska formgivare. Handla online eller få personlig inredningshjälp i butiken.</p>
+          <div class="hero-actions in" style="--i:3">
+            <a class="btn btn-primary" href="#bastsaljare">Handla nu <i class="ph-light ph-arrow-right" aria-hidden="true"></i></a>
+            <a class="btn btn-ghost" href="#inredningshjalp">Boka inredningshjälp</a>
+          </div>
+        </div>
+        <figure class="hero-media in" style="--i:1">
+          <img src="img/hero.jpg" width="2000" height="1125" alt="Grå fåtölj med fotpall och pläd i ett mörkgrönt vardagsrum">
+        </figure>
+      </div>
+    </section>
+
+    <!-- Reassurance directly under the hero -->
+    <section class="usps" aria-label="Därför handlar man hos oss">
+      <ul class="wrap usp-list">
+        <li><i class="ph-light ph-truck" aria-hidden="true"></i><span><b>Fri frakt</b> över 1 500 kr</span></li>
+        <li><i class="ph-light ph-arrow-counter-clockwise" aria-hidden="true"></i><span><b>30 dagars</b> öppet köp</span></li>
+        <li><i class="ph-light ph-storefront" aria-hidden="true"></i><span><b>Hämta i butik</b> samma dag</span></li>
+        <li><i class="ph-light ph-chats-circle" aria-hidden="true"></i><span><b>Gratis</b> inredningsrådgivning</span></li>
+      </ul>
+    </section>
+
+    <!-- Shop by room -->
+    <section class="section" id="kategorier" aria-labelledby="kat-title">
+      <div class="wrap">
+        <h2 class="h2 reveal" id="kat-title">Handla efter rum</h2>
+        <div class="cats">
+          <a class="cat cat-tall reveal" href="#bastsaljare">
+            <span class="cat-img"><img src="img/vardagsrum.jpg" width="1200" height="1800" loading="lazy" alt="Ljust vardagsrum med soffa, runda sidobord och sittpuff"></span>
+            <span class="cat-name">Vardagsrum <i class="ph-light ph-arrow-up-right" aria-hidden="true"></i></span>
+          </a>
+          <a class="cat reveal" style="--d:60ms" href="#bastsaljare">
+            <span class="cat-img"><img src="img/sovrum.jpg" width="1000" height="800" loading="lazy" alt="Bäddad säng med vita sängkläder i ett stilrent sovrum"></span>
+            <span class="cat-name">Sovrum <i class="ph-light ph-arrow-up-right" aria-hidden="true"></i></span>
+          </a>
+          <a class="cat reveal" style="--d:120ms" href="#bastsaljare">
+            <span class="cat-img"><img src="img/belysning.jpg" width="1000" height="1325" loading="lazy" alt="Golvlampa med tygskärm som lyser varmt bredvid vaser"></span>
+            <span class="cat-name">Belysning <i class="ph-light ph-arrow-up-right" aria-hidden="true"></i></span>
+          </a>
+          <a class="cat reveal" style="--d:60ms" href="#bastsaljare">
+            <span class="cat-img"><img src="img/textil.jpg" width="1000" height="1333" loading="lazy" alt="Vit och brun prydnadskudde på en pläd"></span>
+            <span class="cat-name">Textilier <i class="ph-light ph-arrow-up-right" aria-hidden="true"></i></span>
+          </a>
+          <a class="cat reveal" style="--d:120ms" href="#bastsaljare">
+            <span class="cat-img"><img src="img/kok.jpg" width="1000" height="1494" loading="lazy" alt="Vit keramikskål på ett träbord"></span>
+            <span class="cat-name">Kök och servering <i class="ph-light ph-arrow-up-right" aria-hidden="true"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Best sellers with visible prices and a buy button -->
+    <section class="section section-tight" id="bastsaljare" aria-labelledby="best-title">
+      <div class="wrap">
+        <div class="row-head reveal">
+          <h2 class="h2" id="best-title">Mest älskade just nu</h2>
+          <a class="link" href="#kategorier">Se alla produkter <i class="ph-light ph-arrow-right" aria-hidden="true"></i></a>
+        </div>
+        <ul class="products" data-products>
+          <li class="product reveal">
+            <div class="product-img"><img src="img/p-lampa.jpg" width="900" height="506" loading="lazy" style="object-position: 62% 50%" alt="Vit bordslampa med svampformad skärm på en sidobord"></div>
+            <div class="product-body">
+              <p class="product-meta">Belysning, opalglas</p>
+              <h3 class="product-name">Bordslampa Moln</h3>
+              <p class="product-price">1 495 kr</p>
+              <button class="btn btn-add" type="button" data-add="Bordslampa Moln">Lägg i varukorgen</button>
+            </div>
+          </li>
+          <li class="product reveal" style="--d:60ms">
+            <div class="product-img"><img src="img/p-vas.jpg" width="900" height="1349" loading="lazy" alt="Två vaser i grå och beige keramik på ett linnetyg"></div>
+            <div class="product-body">
+              <p class="product-meta">Nyhet, handgjord keramik</p>
+              <h3 class="product-name">Vas Strand, 2-pack</h3>
+              <p class="product-price">649 kr</p>
+              <button class="btn btn-add" type="button" data-add="Vas Strand, 2-pack">Lägg i varukorgen</button>
+            </div>
+          </li>
+          <li class="product reveal" style="--d:120ms">
+            <div class="product-img"><img src="img/p-pled.jpg" width="900" height="1125" loading="lazy" alt="Vikta ullplädar med fransar i varma jordtoner"></div>
+            <div class="product-body">
+              <p class="product-meta">Textil, 100 % ull</p>
+              <h3 class="product-name">Pläd Fjällull</h3>
+              <p class="product-price">1 195 kr</p>
+              <button class="btn btn-add" type="button" data-add="Pläd Fjällull">Lägg i varukorgen</button>
+            </div>
+          </li>
+          <li class="product reveal" style="--d:180ms">
+            <div class="product-img"><img src="img/p-fatolj.jpg" width="900" height="1125" loading="lazy" alt="Fåtölj i trä och rotting med fårskinn och ett litet sidobord"></div>
+            <div class="product-body">
+              <p class="product-meta">Möbler, ek och rotting</p>
+              <h3 class="product-name">Fåtölj Vila</h3>
+              <p class="product-price">6 995 kr</p>
+              <button class="btn btn-add" type="button" data-add="Fåtölj Vila">Lägg i varukorgen</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Shoppable room: inspiration that leads straight to products -->
+    <section class="section room-section" id="rum" aria-labelledby="rum-title">
+      <div class="wrap">
+        <div class="room-head reveal">
+          <h2 class="h2" id="rum-title">Rum för rum: vardagsrummet vid brasan</h2>
+          <p class="body">Klicka på en punkt i bilden för att se vad som finns i rummet och lägga det i varukorgen.</p>
+        </div>
+        <div class="room reveal" data-room>
+          <img src="img/rum.jpg" width="2000" height="1333" loading="lazy" alt="Ljust vardagsrum med kamin, två soffor, runt soffbord och stora fönster">
+          <button class="spot" type="button" style="--x:14%; --y:71%" aria-expanded="false" data-spot="0"><span class="sr">Visa soffan</span></button>
+          <button class="spot" type="button" style="--x:56%; --y:86%" aria-expanded="false" data-spot="1"><span class="sr">Visa soffbordet</span></button>
+          <button class="spot" type="button" style="--x:73%; --y:69%" aria-expanded="false" data-spot="2"><span class="sr">Visa kuddarna</span></button>
+          <div class="spot-card" data-spot-card hidden>
+            <p class="spot-name" data-spot-name></p>
+            <p class="spot-price" data-spot-price></p>
+            <button class="btn btn-add btn-sm" type="button" data-spot-add>Lägg i varukorgen</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personal service: what sets a local store apart from the online giants -->
+    <section class="section service" id="inredningshjalp" aria-labelledby="hjalp-title">
+      <div class="wrap service-grid">
+        <figure class="service-media reveal">
+          <img src="img/radgivning.jpg" width="1400" height="1400" loading="lazy" alt="Tygprover, skisser och en vas på ett arbetsbord">
+        </figure>
+        <div class="service-copy reveal" style="--d:80ms">
+          <p class="eyebrow">Inredningshjälp</p>
+          <h2 class="h2">Få hjälp av en inredare. Helt gratis.</h2>
+          <p class="body">Ta med en bild eller ett mått, så hjälper vi dig att välja färger, material och möbler som passar ditt hem. Ett möte tar ungefär 45 minuter.</p>
+          <form class="booking" data-booking novalidate>
+            <fieldset>
+              <legend>Var vill du ses?</legend>
+              <div class="seg">
+                <label><input type="radio" name="plats" value="I butiken" checked><span>I butiken</span></label>
+                <label><input type="radio" name="plats" value="Hemma hos dig"><span>Hemma hos dig</span></label>
+                <label><input type="radio" name="plats" value="Via video"><span>Via video</span></label>
+              </div>
+            </fieldset>
+            <div class="field-row">
+              <div class="field">
+                <label for="b-namn">Namn</label>
+                <input id="b-namn" name="namn" type="text" autocomplete="name" required>
+                <p class="err" hidden>Skriv ditt namn.</p>
+              </div>
+              <div class="field">
+                <label for="b-epost">E-post</label>
+                <input id="b-epost" name="epost" type="email" autocomplete="email" required>
+                <p class="err" hidden>Skriv en giltig e-postadress.</p>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Boka inredningshjälp</button>
+            <p class="form-note">Det här är en demo. Inget skickas.</p>
+          </form>
+          <div class="booking-done" data-booking-done hidden tabindex="-1">
+            <i class="ph-light ph-check-circle" aria-hidden="true"></i>
+            <p><b>Tack, din förfrågan är mottagen.</b> Vi hör av oss inom en arbetsdag för att bestämma tid.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews: one strong quote and two short ones -->
+    <section class="section section-tight reviews" aria-labelledby="omd-title">
+      <div class="wrap">
+        <h2 class="h2 reveal" id="omd-title">Det här säger våra kunder</h2>
+        <div class="review-grid">
+          <figure class="review review-big reveal">
+            <blockquote>”Inredaren tog sig tid att förstå hur vi bor. Vardagsrummet känns äntligen färdigt, och allt kom hem till oss på en vecka.”</blockquote>
+            <figcaption><b>Johanna Lindqvist</b><span>Köpte soffa och belysning</span></figcaption>
+          </figure>
+          <figure class="review reveal" style="--d:80ms">
+            <blockquote>”Smidigt att beställa online och hämta i butiken samma eftermiddag.”</blockquote>
+            <figcaption><b>Erik Nyström</b><span>Hämtade i butik</span></figcaption>
+          </figure>
+          <figure class="review reveal" style="--d:140ms">
+            <blockquote>”Plädarna är ännu finare i verkligheten. Bytte färg utan krångel.”</blockquote>
+            <figcaption><b>Sara Öhman</b><span>Handlade i webbshopen</span></figcaption>
+          </figure>
+        </div>
+        <p class="rating reveal"><i class="ph-light ph-star" aria-hidden="true"></i><b>4,8 av 5</b> i snitt från 214 omdömen</p>
+      </div>
+    </section>
+
+    <!-- Visit the store: opening hours, address and directions -->
+    <section class="section visit" id="besok" aria-labelledby="besok-title">
+      <div class="wrap visit-grid">
+        <div class="visit-copy reveal">
+          <p class="eyebrow">Besök oss</p>
+          <h2 class="h2" id="besok-title">Välkommen in i butiken</h2>
+          <p class="body">Känn på tygerna, sitt i fåtöljerna och få råd av oss som jobbar här. Parkering finns precis utanför.</p>
+          <dl class="hours">
+            <div><dt>Måndag till fredag</dt><dd>10 till 18</dd></div>
+            <div><dt>Lördag</dt><dd>10 till 15</dd></div>
+            <div><dt>Söndag</dt><dd>Stängt</dd></div>
+          </dl>
+          <p class="address"><i class="ph-light ph-map-pin" aria-hidden="true"></i>Sundsgatan 8, Norrsund</p>
+          <a class="btn btn-ghost" href="#besok">Hitta hit <i class="ph-light ph-arrow-up-right" aria-hidden="true"></i></a>
+        </div>
+        <figure class="visit-media reveal" style="--d:80ms">
+          <img src="img/butik.jpg" width="1600" height="1067" loading="lazy" alt="Butiksinteriör med hyllor fulla av keramik och inredningsdetaljer">
+        </figure>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="news" aria-labelledby="news-title">
+      <div class="wrap">
+        <div class="news-inner reveal">
+        <div>
+          <h2 class="h2" id="news-title">10 % rabatt på ditt första köp</h2>
+          <p class="body">Få nyheter, inspiration och erbjudanden en gång i månaden.</p>
+        </div>
+        <form class="news-form" data-news novalidate>
+          <label class="sr" for="n-epost">E-post</label>
+          <input id="n-epost" type="email" placeholder="din@epost.se" autocomplete="email" required>
+          <button class="btn btn-accent" type="submit">Prenumerera</button>
+          <p class="news-msg" data-news-msg aria-live="polite"></p>
+        </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div>
+        <a class="brand" href="#top"><img src="img/mark.svg" width="30" height="30" alt=""><span>Norrsund <b>Hem</b></span></a>
+        <p class="footer-tag">Nordisk inredning i butik och online.</p>
+      </div>
+      <div><p class="footer-head">Handla</p><ul><li><a href="#kategorier">Vardagsrum</a></li><li><a href="#kategorier">Sovrum</a></li><li><a href="#kategorier">Belysning</a></li><li><a href="#kategorier">Textilier</a></li></ul></div>
+      <div><p class="footer-head">Kundservice</p><ul><li><a href="#top">Frakt och leverans</a></li><li><a href="#top">Öppet köp och retur</a></li><li><a href="#inredningshjalp">Inredningshjälp</a></li></ul></div>
+      <div><p class="footer-head">Butiken</p><ul><li>Sundsgatan 8, Norrsund</li><li>Mån till fre 10 till 18</li><li>Lör 10 till 15</li></ul></div>
+    </div>
+    <div class="wrap">
+      <p class="footer-bottom">Påhittad butik. Exempelsajt av <a href="../../index.html">Norden Media UF</a>.</p>
+    </div>
+  </footer>
+
+  <div class="toast" data-toast role="status" aria-live="polite" hidden></div>
+  <script src="app.js" defer></script>
+</body>
+</html>

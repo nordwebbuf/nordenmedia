@@ -621,3 +621,79 @@
 .after-uf-text p + p { margin-top: 1.4em; }
 .after-uf-text b { color: var(--ink); font-weight: 500; }
 @media (max-width: 860px) { .after-uf { grid-template-columns: 1fr; } .after-uf-text { padding-top: 0; } }
+
+/* =====================================================================
+   Example store: showcase frames, walkthrough and design notes
+   ===================================================================== */
+.showcase { position: relative; display: block; padding-right: clamp(36px, 8%, 110px); padding-bottom: clamp(28px, 6%, 72px); text-decoration: none; }
+.showcase-browser { border-radius: 14px; overflow: hidden; background: var(--surface); border: 1px solid var(--line); box-shadow: 0 40px 80px -40px rgb(11 23 54 / .45); }
+.showcase-bar { display: block; padding: 10px 16px; border-bottom: 1px solid var(--line); background: var(--bg-band); color: var(--muted); font-size: .8125rem; }
+.showcase-browser img { width: 100%; height: auto; }
+.showcase-phone { position: absolute; right: 0; bottom: 0; width: clamp(110px, 21%, 240px); border-radius: 26px; overflow: hidden; border: 7px solid #0B1736; background: #0B1736; box-shadow: 0 30px 60px -24px rgb(11 23 54 / .55); }
+.showcase-phone img { width: 100%; height: auto; border-radius: 19px; }
+a.showcase .showcase-browser, a.showcase .showcase-phone { transition: transform .6s var(--ease); }
+a.showcase:hover .showcase-browser { transform: translateY(-4px); }
+a.showcase:hover .showcase-phone { transform: translateY(-8px); }
+
+.case-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px 32px; margin-top: clamp(28px, 4vw, 48px); padding-top: 24px; border-top: 1px solid var(--line); }
+.case-facts dt { font-size: .8125rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.case-facts dd { margin: 6px 0 0; font-family: var(--font-display); font-size: 1.1875rem; line-height: 1.3; color: var(--ink); }
+
+.goals { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.goals li { padding: clamp(22px, 2.6vw, 30px); border-radius: var(--r); background: var(--surface); border: 1px solid var(--line); }
+.goals i { font-size: 1.75rem; color: var(--accent); }
+.goals h3 { margin-top: 16px; font-size: 1.25rem; }
+.goals p { margin-top: 8px; color: var(--ink-2); }
+
+.walk { display: grid; gap: clamp(56px, 8vw, 112px); counter-reset: none; }
+.walk-step { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: clamp(24px, 4vw, 64px); align-items: center; }
+.walk-shot { border-radius: 14px; overflow: hidden; border: 1px solid var(--line); background: var(--surface); box-shadow: 0 30px 60px -36px rgb(11 23 54 / .4); }
+.walk-shot img { width: 100%; height: auto; }
+.walk-copy h3 { display: flex; align-items: flex-start; gap: 14px; font-size: clamp(1.375rem, 1.15rem + .7vw, 1.75rem); line-height: 1.2; letter-spacing: -0.015em; }
+.walk-num { flex-shrink: 0; width: 38px; height: 38px; margin-top: -2px; border-radius: 999px; display: inline-flex; align-items: center; justify-content: center; background: var(--accent); color: var(--on-accent); font-size: 1rem; font-weight: 600; letter-spacing: 0; }
+.walk-points { display: grid; gap: 14px; margin-top: 20px; padding-left: 52px; }
+.walk-points dt { font-size: .8125rem; font-weight: 600; color: var(--accent); }
+.walk-points dd { margin: 3px 0 0; color: var(--ink-2); }
+.walk-points div:last-child dd { color: var(--ink); font-weight: 500; }
+
+.under { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: auto auto; gap: 16px; }
+.under li { padding: clamp(22px, 2.6vw, 30px); border-radius: var(--r); background: var(--surface); border: 1px solid var(--line); }
+.under li > i { font-size: 1.75rem; color: var(--accent); }
+.under li > h3 { margin-top: 16px; font-size: 1.1875rem; }
+.under li > p, .under-mobile p { margin-top: 8px; color: var(--ink-2); font-size: .9688rem; }
+.under-mobile { grid-row: span 2; display: flex; flex-direction: column; gap: 22px; background: var(--accent-block) !important; color: var(--accent-block-ink); border-color: transparent !important; overflow: hidden; }
+.under-mobile img { width: 62%; align-self: center; border-radius: 20px; border: 6px solid #050B1C; margin-bottom: -60px; order: 2; }
+.under-mobile h3 { font-size: 1.375rem; color: var(--accent-block-ink); }
+.under-mobile p { color: color-mix(in srgb, var(--accent-block-ink) 80%, transparent) !important; }
+
+.ds { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: clamp(32px, 6vw, 96px); align-items: center; }
+.ds-copy .lead { margin-top: 16px; }
+.ds-copy, .walk-copy, .ex-home-copy { overflow-wrap: break-word; }
+.ds-notes { display: grid; gap: 14px; margin-top: 24px; color: var(--ink-2); }
+.ds-notes b { color: var(--ink); font-weight: 600; }
+.ds-swatches { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.sw { display: flex; flex-direction: column; justify-content: flex-end; gap: 2px; aspect-ratio: 4 / 3; padding: 18px; border-radius: var(--r); font-size: .9375rem; font-weight: 500; }
+.sw code { font-family: var(--font-body); font-size: .8125rem; opacity: .8; }
+.sw-forest { background: #1F3B2D; color: #F2F3EF; }
+.sw-paper { background: #F2F3EF; color: #16211B; border: 1px solid var(--line); }
+.sw-amber { background: #D49A3A; color: #1B1A12; }
+.sw-ink { background: #16211B; color: #F2F3EF; }
+
+.ex-home { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(32px, 6vw, 88px); align-items: center; }
+.ex-home-copy .eyebrow { margin-bottom: 20px; }
+.ex-home-copy .lead { margin-top: 16px; }
+.ex-home-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+
+@media (max-width: 960px) {
+  .walk-step, .ds, .ex-home { grid-template-columns: minmax(0, 1fr); }
+  .under { grid-template-columns: 1fr 1fr; }
+  .under-mobile { grid-row: auto; grid-column: 1 / -1; }
+  .under-mobile img { width: 46%; }
+  .goals, .case-facts { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .under { grid-template-columns: 1fr; }
+  .under-mobile img { width: 70%; }
+  .walk-points { padding-left: 0; }
+  .showcase { padding-right: 56px; padding-bottom: 36px; }
+}
