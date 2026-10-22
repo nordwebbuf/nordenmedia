@@ -229,6 +229,9 @@
   const pkg = params.get('paket') || params.get('package');
   const msgField = document.getElementById('f-msg');
   if (pkg && msgField && !msgField.value) msgField.value = t.plan(pkg);
+  // ?behov= / ?needs= (or a chosen package) preselects the matching choice
+  const need = params.get('behov') || params.get('needs') || (pkg ? (lang === 'en' ? 'Websites' : 'Hemsidor') : null);
+  if (need) document.querySelectorAll('.choice input').forEach((i) => { if (i.value === need) i.checked = true; });
 
   const year = document.querySelector('[data-year]');
   if (year) year.textContent = new Date().getFullYear();

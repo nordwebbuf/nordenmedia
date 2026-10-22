@@ -74,9 +74,16 @@
             <a class="btn btn-ghost" href="#inredningshjalp">Boka inredningshjälp</a>
           </div>
         </div>
-        <figure class="hero-media in" style="--i:1">
-          <img src="img/hero.jpg" width="2000" height="1125" alt="Grå fåtölj med fotpall och pläd i ett mörkgrönt vardagsrum">
-        </figure>
+        <div class="hero-visual in" style="--i:1">
+          <figure class="hero-media">
+            <img src="img/hero.jpg" width="2000" height="1125" alt="Grå fåtölj med fotpall och pläd i ett mörkgrönt vardagsrum">
+          </figure>
+          <a class="hero-pick" href="#bastsaljare">
+            <img src="img/p-pled.jpg" width="900" height="1125" alt="">
+            <span><small>Höstens favorit</small><b>Pläd Fjällull</b><em>1 195 kr</em></span>
+            <i class="ph-light ph-arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -128,42 +135,56 @@
         </div>
         <ul class="products" data-products>
           <li class="product reveal">
-            <div class="product-img"><img src="img/p-lampa.jpg" width="900" height="506" loading="lazy" style="object-position: 62% 50%" alt="Vit bordslampa med svampformad skärm på en sidobord"></div>
+            <div class="product-img"><button class="wish" type="button" aria-pressed="false" aria-label="Spara som favorit"><i class="ph-light ph-heart" aria-hidden="true"></i></button><img src="img/p-lampa.jpg" width="900" height="506" loading="lazy" style="object-position: 62% 50%" alt="Vit bordslampa med svampformad skärm på en sidobord"></div>
             <div class="product-body">
               <p class="product-meta">Belysning, opalglas</p>
-              <h3 class="product-name">Bordslampa Moln</h3>
+              <div class="product-title"><h3 class="product-name">Bordslampa Moln</h3><span class="swatches" aria-label="2 färger"><span class="swatch" style="--c:#F2EFE6" title="Opal"></span><span class="swatch" style="--c:#2E3A33" title="Grafit"></span></span></div>
               <p class="product-price">1 495 kr</p>
-              <button class="btn btn-add" type="button" data-add="Bordslampa Moln">Lägg i varukorgen</button>
+              <button class="btn btn-add" type="button" data-add="Bordslampa Moln" data-price="1495">Lägg i varukorgen</button>
             </div>
           </li>
           <li class="product reveal" style="--d:60ms">
-            <div class="product-img"><img src="img/p-vas.jpg" width="900" height="1349" loading="lazy" alt="Två vaser i grå och beige keramik på ett linnetyg"></div>
+            <div class="product-img"><button class="wish" type="button" aria-pressed="false" aria-label="Spara som favorit"><i class="ph-light ph-heart" aria-hidden="true"></i></button><img src="img/p-vas.jpg" width="900" height="1349" loading="lazy" alt="Två vaser i grå och beige keramik på ett linnetyg"></div>
             <div class="product-body">
               <p class="product-meta">Nyhet, handgjord keramik</p>
-              <h3 class="product-name">Vas Strand, 2-pack</h3>
+              <div class="product-title"><h3 class="product-name">Vas Strand, 2-pack</h3><span class="swatches" aria-label="2 färger"><span class="swatch" style="--c:#CFC6B6" title="Sand"></span><span class="swatch" style="--c:#8E958F" title="Grå"></span></span></div>
               <p class="product-price">649 kr</p>
-              <button class="btn btn-add" type="button" data-add="Vas Strand, 2-pack">Lägg i varukorgen</button>
+              <button class="btn btn-add" type="button" data-add="Vas Strand, 2-pack" data-price="649">Lägg i varukorgen</button>
             </div>
           </li>
           <li class="product reveal" style="--d:120ms">
-            <div class="product-img"><img src="img/p-pled.jpg" width="900" height="1125" loading="lazy" alt="Vikta ullplädar med fransar i varma jordtoner"></div>
+            <div class="product-img"><button class="wish" type="button" aria-pressed="false" aria-label="Spara som favorit"><i class="ph-light ph-heart" aria-hidden="true"></i></button><img src="img/p-pled.jpg" width="900" height="1125" loading="lazy" alt="Vikta ullplädar med fransar i varma jordtoner"></div>
             <div class="product-body">
               <p class="product-meta">Textil, 100 % ull</p>
-              <h3 class="product-name">Pläd Fjällull</h3>
+              <div class="product-title"><h3 class="product-name">Pläd Fjällull</h3><span class="swatches" aria-label="3 färger"><span class="swatch" style="--c:#B9733F" title="Rost"></span><span class="swatch" style="--c:#C9B79C" title="Havre"></span><span class="swatch" style="--c:#4E5A4F" title="Mossa"></span></span></div>
               <p class="product-price">1 195 kr</p>
-              <button class="btn btn-add" type="button" data-add="Pläd Fjällull">Lägg i varukorgen</button>
+              <button class="btn btn-add" type="button" data-add="Pläd Fjällull" data-price="1195">Lägg i varukorgen</button>
             </div>
           </li>
           <li class="product reveal" style="--d:180ms">
-            <div class="product-img"><img src="img/p-fatolj.jpg" width="900" height="1125" loading="lazy" alt="Fåtölj i trä och rotting med fårskinn och ett litet sidobord"></div>
+            <div class="product-img"><button class="wish" type="button" aria-pressed="false" aria-label="Spara som favorit"><i class="ph-light ph-heart" aria-hidden="true"></i></button><img src="img/p-fatolj.jpg" width="900" height="1125" loading="lazy" alt="Fåtölj i trä och rotting med fårskinn och ett litet sidobord"></div>
             <div class="product-body">
               <p class="product-meta">Möbler, ek och rotting</p>
-              <h3 class="product-name">Fåtölj Vila</h3>
+              <div class="product-title"><h3 class="product-name">Fåtölj Vila</h3><span class="swatches" aria-label="2 färger"><span class="swatch" style="--c:#9A6B43" title="Ek"></span><span class="swatch" style="--c:#3A2E26" title="Rökt ek"></span></span></div>
               <p class="product-price">6 995 kr</p>
-              <button class="btn btn-add" type="button" data-add="Fåtölj Vila">Lägg i varukorgen</button>
+              <button class="btn btn-add" type="button" data-add="Fåtölj Vila" data-price="6995">Lägg i varukorgen</button>
             </div>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <!-- New arrivals: one large editorial moment -->
+    <section class="section section-tight news-arrivals" aria-labelledby="nyh-title">
+      <div class="wrap arrivals">
+        <figure class="arrivals-media reveal">
+          <img src="img/nyheter.jpg" width="1400" height="933" loading="lazy" alt="Samling av handgjorda vaser i ljusa jordtoner">
+        </figure>
+        <div class="arrivals-card reveal" style="--d:100ms">
+          <h2 class="h2" id="nyh-title">Höstens nyheter är här</h2>
+          <p class="body">Handgjord keramik från små verkstäder i Norden, i toner av lera, sand och sten. Varje vas är unik.</p>
+          <a class="btn btn-primary" href="#bastsaljare">Se nyheterna <i class="ph-light ph-arrow-right" aria-hidden="true"></i></a>
+        </div>
       </div>
     </section>
 
@@ -308,6 +329,28 @@
   </footer>
 
   <div class="toast" data-toast role="status" aria-live="polite" hidden></div>
+  <div class="drawer-backdrop" data-drawer-backdrop hidden></div>
+  <aside class="drawer" data-drawer aria-labelledby="drawer-title" aria-hidden="true">
+    <div class="drawer-head">
+      <h2 id="drawer-title">Varukorg</h2>
+      <button class="icon-btn" type="button" data-drawer-close aria-label="Stäng varukorgen"><i class="ph-light ph-x" aria-hidden="true"></i></button>
+    </div>
+    <div class="ship" data-ship>
+      <p data-ship-text>Handla för 1 500 kr till så bjuder vi på frakten.</p>
+      <span class="ship-bar"><span data-ship-fill></span></span>
+    </div>
+    <ul class="drawer-items" data-drawer-items></ul>
+    <div class="drawer-empty" data-drawer-empty>
+      <i class="ph-light ph-handbag" aria-hidden="true"></i>
+      <p>Varukorgen är tom.</p>
+      <a class="link" href="#bastsaljare" data-drawer-close>Se våra bästsäljare <i class="ph-light ph-arrow-right" aria-hidden="true"></i></a>
+    </div>
+    <div class="drawer-foot" data-drawer-foot hidden>
+      <p class="drawer-total"><span>Summa</span><b data-drawer-total>0 kr</b></p>
+      <button class="btn btn-primary" type="button" data-checkout>Till kassan</button>
+      <p class="form-note">Det här är en demo. Ingen beställning görs.</p>
+    </div>
+  </aside>
   <script src="app.js" defer></script>
 </body>
 </html>

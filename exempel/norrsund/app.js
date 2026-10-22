@@ -23,25 +23,50 @@
   menuBtn.addEventListener('click', () => setMenu(mobileNav.hidden));
   $$('a', mobileNav).forEach((a) => a.addEventListener('click', () => setMenu(false)));
 
-  // ---------- Cart (demo: counts items and confirms with a toast) ----------
-  let count = 0;
+  // ---------- Cart (demo): items, total, free-shipping progress and a drawer ----------
+  const FREE = 1500;
+  const kr = (n) => `${n.toLocaleString('sv-SE')} kr`;
+  const cart = [];
   const countEl = $('[data-cart-count]');
   const cartBtn = $('[data-cart-btn]');
   const toast = $('[data-toast]');
+  const drawer = $('[data-drawer]');
+  const backdrop = $('[data-drawer-backdrop]');
   let toastTimer;
   const showToast = (html) => {
     toast.innerHTML = html;
     toast.hidden = false;
     clearTimeout(toastTimer);
-    toastTimer = setTimeout(() => { toast.hidden = true; }, 2600);
+    toastTimer = setTimeout(() => { toast.hidden = true; }, 2800);
   };
-  const addToCart = (name, btn) => {
-    count += 1;
-    countEl.textContent = count;
-    countEl.hidden = false;
+  const total = () => cart.reduce((sum, i) => sum + i.price * i.qty, 0);
+  const shipText = (t) => (t >= FREE ? 'Du har fri frakt.' : `${kr(FREE - t)} kvar till fri frakt.`);
+  const render = () => {
+    const qty = cart.reduce((n, i) => n + i.qty, 0);
+    countEl.textContent = qty;
+    countEl.hidden = qty === 0;
+    cartBtn.setAttribute('aria-label', `Varukorg, ${qty} ${qty === 1 ? 'vara' : 'varor'}`);
+    const t = total();
+    $('[data-ship-text]').textContent = qty ? shipText(t) : `Handla för ${kr(FREE)} så bjuder vi på frakten.`;
+    $('[data-ship-fill]').style.transform = `scaleX(${Math.min(t / FREE, 1)})`;
+    $('[data-drawer-items]').innerHTML = cart.map((i, k) => `
+      <li class="item">
+        <img src="${i.img}" alt="" width="64" height="80">
+        <div><p class="item-name">${i.name}</p><p class="item-price">${kr(i.price)}</p></div>
+        <div class="qty" role="group" aria-label="Antal ${i.name}">
+          <button type="button" data-qty="${k}" data-step="-1" aria-label="Minska">−</button><span>${i.qty}</span><button type="button" data-qty="${k}" data-step="1" aria-label="Öka">+</button>
+        </div>
+      </li>`).join('');
+    $('[data-drawer-empty]').hidden = qty > 0;
+    $('[data-drawer-foot]').hidden = qty === 0;
+    $('[data-drawer-total]').textContent = kr(t);
+  };
+  const addToCart = (name, price, img, btn) => {
+    const found = cart.find((i) => i.name === name);
+    if (found) found.qty += 1; else cart.push({ name, price, img, qty: 1 });
+    render();
     countEl.classList.remove('is-bump'); void countEl.offsetWidth; countEl.classList.add('is-bump');
-    cartBtn.setAttribute('aria-label', `Varukorg, ${count} ${count === 1 ? 'vara' : 'varor'}`);
-    showToast(`<i class="ph-light ph-check-circle" aria-hidden="true"></i><span>${name} ligger i varukorgen</span>`);
+    showToast(`<i class="ph-light ph-check-circle" aria-hidden="true"></i><span>${name} ligger i varukorgen. ${shipText(total())}</span>`);
     if (btn) {
       const label = btn.textContent;
       btn.classList.add('is-added');
@@ -49,13 +74,44 @@
       setTimeout(() => { btn.classList.remove('is-added'); btn.textContent = label; }, 1800);
     }
   };
-  $$('[data-add]').forEach((b) => b.addEventListener('click', () => addToCart(b.dataset.add, b)));
+  $$('[data-add]').forEach((b) => b.addEventListener('click', () => {
+    const img = b.closest('.product').querySelector('.product-img img').getAttribute('src');
+    addToCart(b.dataset.add, +b.dataset.price, img, b);
+  }));
+  $('[data-drawer-items]').addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-qty]');
+    if (!btn) return;
+    const item = cart[+btn.dataset.qty];
+    item.qty += +btn.dataset.step;
+    if (item.qty <= 0) cart.splice(+btn.dataset.qty, 1);
+    render();
+  });
+  const setDrawer = (open) => {
+    drawer.classList.toggle('is-open', open);
+    drawer.setAttribute('aria-hidden', String(!open));
+    backdrop.hidden = !open;
+    document.body.classList.toggle('no-scroll', open);
+    if (open) $('[data-drawer-close]', drawer).focus(); else cartBtn.focus();
+  };
+  cartBtn.addEventListener('click', () => setDrawer(true));
+  backdrop.addEventListener('click', () => setDrawer(false));
+  $$('[data-drawer-close]').forEach((b) => b.addEventListener('click', () => setDrawer(false)));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && drawer.classList.contains('is-open')) setDrawer(false); });
+  $('[data-checkout]').addEventListener('click', () => showToast('<i class="ph-light ph-info" aria-hidden="true"></i><span>Det här är en demo, så kassan är inte kopplad.</span>'));
+  render();
+
+  // ---------- Wishlist hearts ----------
+  $$('.wish').forEach((w) => w.addEventListener('click', () => {
+    const on = w.getAttribute('aria-pressed') !== 'true';
+    w.setAttribute('aria-pressed', String(on));
+    w.setAttribute('aria-label', on ? 'Ta bort från favoriter' : 'Spara som favorit');
+  }));
 
   // ---------- Shoppable room ----------
   const ITEMS = [
-    { name: 'Soffa Brasa, tresits', price: '14 995 kr' },
-    { name: 'Soffbord Stubbe, ek', price: '3 495 kr' },
-    { name: 'Kuddfodral Linne, 2-pack', price: '449 kr' },
+    { name: 'Soffa Brasa, tresits', price: 14995 },
+    { name: 'Soffbord Stubbe, ek', price: 3495 },
+    { name: 'Kuddfodral Linne, 2-pack', price: 449 },
   ];
   const room = $('[data-room]');
   const card = $('[data-spot-card]');
@@ -69,7 +125,7 @@
     active = i;
     spots.forEach((s) => s.setAttribute('aria-expanded', String(s === spot)));
     $('[data-spot-name]', card).textContent = ITEMS[i].name;
-    $('[data-spot-price]', card).textContent = ITEMS[i].price;
+    $('[data-spot-price]', card).textContent = kr(ITEMS[i].price);
     card.hidden = false;
     // place the card next to the spot, inside the image
     const r = room.getBoundingClientRect();
@@ -80,7 +136,7 @@
     card.style.left = `${left}px`;
     card.style.top = `${top}px`;
   }));
-  $('[data-spot-add]', card).addEventListener('click', (e) => { e.stopPropagation(); addToCart(ITEMS[active].name); closeCard(); });
+  $('[data-spot-add]', card).addEventListener('click', (e) => { e.stopPropagation(); addToCart(ITEMS[active].name, ITEMS[active].price, 'img/rum.jpg'); closeCard(); });
   card.addEventListener('click', (e) => e.stopPropagation());
   document.addEventListener('click', closeCard);
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !card.hidden) closeCard(); });
