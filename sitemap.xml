@@ -25,18 +25,6 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://nordenmedia.se/en/web-services.html"/>
   </url>
   <url>
-    <loc>https://nordenmedia.se/exempel.html</loc>
-    <lastmod>2026-10-22</lastmod>
-    <xhtml:link rel="alternate" hreflang="sv" href="https://nordenmedia.se/exempel.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nordenmedia.se/en/examples.html"/>
-  </url>
-  <url>
-    <loc>https://nordenmedia.se/en/examples.html</loc>
-    <lastmod>2026-10-22</lastmod>
-    <xhtml:link rel="alternate" hreflang="sv" href="https://nordenmedia.se/exempel.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nordenmedia.se/en/examples.html"/>
-  </url>
-  <url>
     <loc>https://nordenmedia.se/livesandning.html</loc>
     <lastmod>2026-10-22</lastmod>
     <xhtml:link rel="alternate" hreflang="sv" href="https://nordenmedia.se/livesandning.html"/>

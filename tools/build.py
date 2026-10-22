@@ -36,11 +36,6 @@ PAGES = {
                      "Websites, Google visibility and email | Norden Media UF",
                      "Hemsida, egen webbadress, företagsmejl, synlighet på Google och bokningar som sköter sig själva. Vi bygger och sköter allt, ni slipper tekniken.",
                      "Website, your own web address, business email, visibility on Google and bookings that run themselves. We build and run it all, you skip the tech."),
-    "exempel": ("exempel.html", "examples.html",
-                "Exempel: hemsida för en inredningsbutik | Norden Media UF",
-                "Example: website for an interior design store | Norden Media UF",
-                "Se en hemsida vi har byggt för en påhittad inredningsbutik, och läs varför varje del ser ut som den gör och hur den ger fler kunder.",
-                "See a website we built for a made-up interior design store, and read why every part looks the way it does and how it wins more customers."),
     "livesandning": ("livesandning.html", "live-streaming.html",
                      "Livesändning av evenemang och möten | Norden Media UF",
                      "Live streaming of events and meetings | Norden Media UF",
@@ -69,8 +64,8 @@ PAGES = {
     "404": ("404.html", None, "Sidan hittades inte | Norden Media UF", None, "Sidan finns inte.", None),
 }
 
-NAV = ["webbtjanster", "exempel", "livesandning", "priser", "om-oss"]
-NAV_LABEL = {"webbtjanster": "Hemsidor", "exempel": "Exempel", "livesandning": "Livesändning", "priser": "Priser", "om-oss": "Om oss"}
+NAV = ["webbtjanster", "livesandning", "priser", "om-oss"]
+NAV_LABEL = {"webbtjanster": "Hemsidor", "livesandning": "Livesändning", "priser": "Priser", "om-oss": "Om oss"}
 
 
 def cta(title, text, primary, secondary_href, secondary_label, label="Kontakta oss"):
@@ -119,9 +114,9 @@ def head(key, lang, p):
     og_alt = ("Norden Media UF: hemsidor för företag och organisationer" if lang == "sv"
               else "Norden Media UF: websites for businesses and organisations")
     hero_preload = ""
-    labels = {"sv": {"webbtjanster": "Hemsidor", "exempel": "Exempel", "livesandning": "Livesändning", "priser": "Priser", "om-oss": "Om oss",
+    labels = {"sv": {"webbtjanster": "Hemsidor", "livesandning": "Livesändning", "priser": "Priser", "om-oss": "Om oss",
                      "kontakt": "Kontakt", "integritetspolicy": "Integritetspolicy"},
-              "en": {"webbtjanster": "Websites", "exempel": "Examples", "livesandning": "Live streaming", "priser": "Pricing", "om-oss": "About us",
+              "en": {"webbtjanster": "Websites", "livesandning": "Live streaming", "priser": "Pricing", "om-oss": "About us",
                      "kontakt": "Contact", "integritetspolicy": "Privacy policy"}}[lang]
     home_url = f"{SITE}/" if lang == "sv" else f"{SITE}/en/"
     crumbs = "" if key in ("index", "404") else f''',
@@ -290,7 +285,6 @@ def chrome(key, lang, p, body):
             <p class="footer-head">Tjänster</p>
             <ul>
               <li><a href="{p}webbtjanster.html">Hemsidor</a></li>
-              <li><a href="{p}exempel.html">Exempel</a></li>
               <li><a href="{p}livesandning.html">Livesändning</a></li>
               <li><a href="{p}priser.html">Priser</a></li>
             </ul>

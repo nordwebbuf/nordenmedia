@@ -1,0 +1,5 @@
+    "exempel": ("exempel.html", "examples.html",
+                "Exempel: hemsida för en inredningsbutik | Norden Media UF",
+                "Example: website for an interior design store | Norden Media UF",
+                "Se en hemsida vi har byggt för en påhittad inredningsbutik, och läs varför varje del ser ut som den gör och hur den ger fler kunder.",
+                "See a website we built for a made-up interior design store, and read why every part looks the way it does and how it wins more customers."),

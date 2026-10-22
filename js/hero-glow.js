@@ -1,4 +1,4 @@
-// Animated hero background: a dark horizon with a glowing atmosphere (WebGL).
+// Animated hero background: soft, slowly moving fields of blue light, like northern lights (WebGL).
 // Renders at a reduced resolution, pauses when off screen or in a background tab,
 // and draws a single still frame when the visitor prefers reduced motion.
 (() => {
@@ -30,47 +30,41 @@
     void main() {
       vec2 uv = gl_FragCoord.xy / uRes;
       float ar = uRes.x / uRes.y;
-      vec2 p = vec2((uv.x - 0.5) * ar, uv.y);
-      float t = uTime * 0.04;
+      vec2 p = vec2(uv.x * ar, uv.y);
+      float t = uTime * 0.05;
 
-      // A large "planet" sits below the fold; its rim forms the horizon.
-      float R = 2.2;
-      vec2 c = vec2(0.0, 0.085 - R);
-      float d = length(p - c) - R;
+      // Domain-warped noise gives large, soft, slowly folding fields of light.
+      vec2 q = vec2(fbm(p * 0.55 + vec2(0.0, t)), fbm(p * 0.55 + vec2(5.2, 1.3) - t * 0.8));
+      vec2 r = vec2(fbm(p * 0.7 + 1.6 * q + vec2(1.7, 9.2) + t * 0.6),
+                    fbm(p * 0.7 + 1.6 * q + vec2(8.3, 2.8) - t * 0.5));
+      float f = fbm(p * 0.6 + 2.0 * r);
 
-      // Slow noise makes the light breathe and the rim waver slightly.
-      float w = fbm(vec2(p.x * 1.2 + t, uv.y * 1.6 - t * 0.7));
-      float rim = exp(-abs(d - 0.018 * (w - 0.5)) * 34.0);
-      float halo = exp(-max(d, 0.0) * 4.2) * smoothstep(-0.01, 0.02, d);
-      float haze = exp(-max(d, 0.0) * 1.6) * smoothstep(-0.01, 0.02, d);
-      float inner = exp(d * 9.0) * (1.0 - smoothstep(-0.01, 0.0, d));
+      // Aurora curtains: noise stretched vertically, swaying sideways over time.
+      float sway = 0.35 * sin(t * 1.7 + p.y * 2.0) + 1.2 * r.x;
+      float curtain = fbm(vec2(p.x * 1.6 + sway + t * 0.9, p.y * 0.35 - t * 0.35));
+      curtain = smoothstep(0.48, 0.9, curtain);
+      // The curtains live in a soft band that drifts up and down.
+      float band = exp(-pow((uv.y - 0.58 - 0.18 * (q.y - 0.5)) * 2.1, 2.0));
 
-      // Colour across the horizon: deep blue, violet, then a warm edge, drifting slowly.
-      float k = p.x / ar + 0.5 + 0.16 * sin(t * 2.0 + p.x * 1.1) + 0.22 * (w - 0.5);
-      // The logo's blues: deep navy blue, brighter blue and a pale ice blue.
-      vec3 deep = vec3(0.11, 0.24, 0.62);
-      vec3 blue = vec3(0.25, 0.44, 0.91);
-      vec3 ice = vec3(0.62, 0.71, 1.00);
-      vec3 col = mix(deep, blue, smoothstep(0.15, 0.55, k));
-      col = mix(col, ice, smoothstep(0.55, 0.95, k) * 0.85);
+      // The site's blues: deep navy blue, logo blue, a cooler cyan-blue and pale ice.
+      vec3 deep = vec3(0.05, 0.11, 0.32);
+      vec3 blue = vec3(0.20, 0.38, 0.86);
+      vec3 cyan = vec3(0.13, 0.60, 0.82);
+      vec3 ice = vec3(0.70, 0.79, 1.00);
+      vec3 col = mix(deep, blue, smoothstep(0.25, 0.75, f));
+      col = mix(col, cyan, smoothstep(0.45, 0.80, r.y) * 0.85);
+      col = mix(col, ice, smoothstep(0.62, 0.95, r.x) * 0.55);
 
-      // Ribbons of light flowing through the atmosphere.
-      float rib = fbm(vec2(p.x * 1.8 - t * 1.4, d * 7.0 + t * 0.8));
-      rib = smoothstep(0.25, 0.85, rib);
+      vec3 o = vec3(0.016, 0.035, 0.095);
+      o += col * pow(smoothstep(0.28, 0.92, f), 1.15) * 0.95;  // the large soft glow
+      o += mix(col, ice, 0.25) * curtain * band * 0.75;      // the moving curtains
 
-      vec3 o = vec3(0.020, 0.043, 0.110);
-      o += col * halo * (0.35 + 0.9 * rib) * 1.0;
-      o += col * haze * 0.07;
-      o += mix(col, vec3(1.0), 0.5) * rim * 1.3;
-      o += col * inner * 0.28;
-
-      // Faint aura in the upper corners so the top is not flat black.
-      o += vec3(0.11, 0.24, 0.62) * 0.16 * exp(-length(p - vec2(-0.55 * ar, 1.05)) * 2.0);
-      o += vec3(0.25, 0.44, 0.91) * 0.08 * exp(-length(p - vec2(0.60 * ar, 1.10)) * 2.4);
-
-      // Vignette and a touch of film grain.
-      o *= mix(0.6, 1.0, smoothstep(1.35, 0.25, length(vec2(p.x / ar * 1.2, uv.y - 0.35))));
-      o += (hash(gl_FragCoord.xy + fract(uTime) * 91.0) - 0.5) * 0.03;
+      // Keep the edges calm and dark so the centred text stays readable.
+      float vig = smoothstep(1.3, 0.15, length(vec2((uv.x - 0.5) * 1.2, (uv.y - 0.6) * 1.1)));
+      o *= mix(0.4, 1.0, vig);
+      // A calmer zone right behind the headline keeps the text crisp.
+      o *= 1.0 - 0.2 * exp(-pow(length(vec2((uv.x - 0.5) * 1.6, (uv.y - 0.6) * 2.4)), 2.0) * 2.5);
+      o += (hash(gl_FragCoord.xy + fract(uTime) * 91.0) - 0.5) * 0.025;
       gl_FragColor = vec4(o, 1.0);
     }`;
 
@@ -101,7 +95,7 @@
 
   // Soft light needs no high resolution: render small and let CSS scale it up.
   const resize = () => {
-    const scale = Math.min(window.devicePixelRatio || 1, 1.5) * 0.55;
+    const scale = Math.min(window.devicePixelRatio || 1, 1.5) * 0.4;
     const w = Math.max(1, Math.round(canvas.clientWidth * scale));
     const h = Math.max(1, Math.round(canvas.clientHeight * scale));
     if (canvas.width !== w || canvas.height !== h) {

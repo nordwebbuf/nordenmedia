@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /arkiv/
 
 Sitemap: https://nordenmedia.se/sitemap.xml
