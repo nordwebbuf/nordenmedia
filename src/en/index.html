@@ -19,14 +19,7 @@
     <!-- Hero -->
     <section class="hero hero-photo" id="top" data-hero-dark>
       <div class="hero-bg" aria-hidden="true">
-        <img
-          src="{{p}}assets/hero/lapporten-1920.jpg"
-          srcset="{{p}}assets/hero/lapporten-1280.jpg 1280w, {{p}}assets/hero/lapporten-1920.jpg 1920w, {{p}}assets/hero/lapporten.jpg 2400w"
-          sizes="100vw"
-          width="2400" height="1595"
-          style="object-position: 50% 60%"
-          alt=""
-          fetchpriority="high">
+        <canvas class="hero-glow" data-hero-glow></canvas>
       </div>
       <div class="container hero-center">
         <p class="eyebrow hero-in" style="--i:0">Websites for businesses and organisations</p>
@@ -38,10 +31,10 @@
         </div>
       </div>
       <div class="container hero-foot hero-in" style="--i:4">
-        <p class="partners-label">In partnership with</p>
+        <p class="partners-label">Previous clients</p>
         <ul class="partner-logos">
-          <li><img class="org-logo" src="{{p}}assets/logos/ung-foretagsamhet.svg" width="816" height="283" alt="Ung Företagsamhet"></li>
-          <li><img class="org-logo org-logo-tall" src="{{p}}assets/logos/bjorknasgymnasiet.png" width="390" height="444" alt="Björknäsgymnasiet"></li>
+          <li><img class="org-logo" src="{{p}}assets/logos/bodens-kommun.svg" width="125" height="44" alt="Bodens kommun"></li>
+          <li><img class="org-logo org-logo-bbp" src="{{p}}assets/logos/boden-business-park.png" width="1024" height="390" alt="Boden Business Park"></li>
         </ul>
       </div>
     </section>
@@ -106,10 +99,10 @@
           <a class="text-link" href="{{p}}om-oss.html">More about us <i class="ph-light ph-arrow-right" aria-hidden="true"></i></a>
         </div>
         <div class="about-short-proof reveal" style="--d:100ms">
-          <p class="about-short-label">We have worked with</p>
+          <p class="about-short-label">In partnership with</p>
           <ul class="about-short-logos">
-            <li><img class="org-logo" src="{{p}}assets/logos/boden-business-park.png" width="1024" height="390" alt="Boden Business Park"></li>
-            <li><img class="org-logo" src="{{p}}assets/logos/bodens-kommun.svg" width="125" height="44" alt="Bodens kommun"></li>
+            <li><img class="org-logo" src="{{p}}assets/logos/ung-foretagsamhet.svg" width="816" height="283" alt="Ung Företagsamhet"></li>
+            <li><img class="org-logo org-logo-tall" src="{{p}}assets/logos/bjorknasgymnasiet.png" width="390" height="444" alt="Björknäsgymnasiet"></li>
           </ul>
         </div>
       </div>
@@ -306,3 +299,4 @@
     </section>
 
 {{CTA}}
+<script src="{{p}}js/hero-glow.js" defer></script>

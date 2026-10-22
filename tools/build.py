@@ -118,10 +118,7 @@ def head(key, lang, p):
     og_image = f"{SITE}/assets/og-image{'' if lang == 'sv' else '-en'}.jpg"
     og_alt = ("Norden Media UF: hemsidor för företag och organisationer" if lang == "sv"
               else "Norden Media UF: websites for businesses and organisations")
-    hero_preload = "" if key != "index" else (
-        f'\n  <link rel="preload" as="image" href="{p}assets/hero/lapporten-1920.jpg" '
-        f'imagesrcset="{p}assets/hero/lapporten-1280.jpg 1280w, {p}assets/hero/lapporten-1920.jpg 1920w, '
-        f'{p}assets/hero/lapporten.jpg 2400w" imagesizes="100vw" fetchpriority="high">')
+    hero_preload = ""
     labels = {"sv": {"webbtjanster": "Hemsidor", "exempel": "Exempel", "livesandning": "Livesändning", "priser": "Priser", "om-oss": "Om oss",
                      "kontakt": "Kontakt", "integritetspolicy": "Integritetspolicy"},
               "en": {"webbtjanster": "Websites", "exempel": "Examples", "livesandning": "Live streaming", "priser": "Pricing", "om-oss": "About us",
@@ -147,8 +144,7 @@ def head(key, lang, p):
   <title>{title}</title>
   <meta name="description" content="{desc}">
   <meta name="robots" content="{robots}">
-  <meta name="theme-color" content="#F5F6F9" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#070B16" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#05070D">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="{"sv_SE" if lang == "sv" else "en_GB"}">
   <meta property="og:site_name" content="Norden Media UF">
@@ -176,7 +172,8 @@ def head(key, lang, p):
   <script>
     (function () {{
       var d = document.documentElement; d.classList.add('js');
-      try {{ var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') d.setAttribute('data-theme', t); }} catch (e) {{}}
+      var t = null; try {{ t = localStorage.getItem('theme'); }} catch (e) {{}}
+      d.setAttribute('data-theme', t === 'light' ? 'light' : 'dark');
     }})();
   </script>
   <script type="application/ld+json">

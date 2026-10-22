@@ -6,8 +6,7 @@
   <title>Websites, Google visibility and email | Norden Media UF</title>
   <meta name="description" content="Website, your own web address, business email, visibility on Google and bookings that run themselves. We build and run it all, you skip the tech.">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="theme-color" content="#F5F6F9" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#070B16" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#05070D">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_GB">
   <meta property="og:site_name" content="Norden Media UF">
@@ -34,11 +33,12 @@
   <link rel="stylesheet" href="../css/fonts.css?v=898962c2">
   <link rel="stylesheet" href="../assets/icons/phosphor-light.css?v=2733eeeb">
   <link rel="stylesheet" href="../css/styles.css?v=2c95d0a6">
-  <link rel="stylesheet" href="../css/v3.css?v=d563d7b9">
+  <link rel="stylesheet" href="../css/v3.css?v=a2a5177c">
   <script>
     (function () {
       var d = document.documentElement; d.classList.add('js');
-      try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') d.setAttribute('data-theme', t); } catch (e) {}
+      var t = null; try { t = localStorage.getItem('theme'); } catch (e) {}
+      d.setAttribute('data-theme', t === 'light' ? 'light' : 'dark');
     })();
   </script>
   <script type="application/ld+json">
