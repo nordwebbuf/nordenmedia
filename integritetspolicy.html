@@ -6,7 +6,8 @@
   <title>Integritetspolicy | Norden Media UF</title>
   <meta name="description" content="Så hanterar Norden Media UF de personuppgifter som du lämnar via vår hemsida, och vilka rättigheter du har.">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="theme-color" content="#05070D">
+  <meta name="theme-color" content="#F5F6F9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#070B16" media="(prefers-color-scheme: dark)">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="sv_SE">
   <meta property="og:site_name" content="Norden Media UF">
@@ -33,12 +34,11 @@
   <link rel="stylesheet" href="css/fonts.css?v=898962c2">
   <link rel="stylesheet" href="assets/icons/phosphor-light.css?v=2733eeeb">
   <link rel="stylesheet" href="css/styles.css?v=2c95d0a6">
-  <link rel="stylesheet" href="css/v3.css?v=a2a5177c">
+  <link rel="stylesheet" href="css/v3.css?v=2d9a1501">
   <script>
     (function () {
       var d = document.documentElement; d.classList.add('js');
-      var t = null; try { t = localStorage.getItem('theme'); } catch (e) {}
-      d.setAttribute('data-theme', t === 'light' ? 'light' : 'dark');
+      try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') d.setAttribute('data-theme', t); } catch (e) {}
     })();
   </script>
   <script type="application/ld+json">

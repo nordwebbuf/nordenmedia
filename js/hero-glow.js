@@ -47,27 +47,26 @@
 
       // Colour across the horizon: deep blue, violet, then a warm edge, drifting slowly.
       float k = p.x / ar + 0.5 + 0.16 * sin(t * 2.0 + p.x * 1.1) + 0.22 * (w - 0.5);
-      vec3 blue = vec3(0.13, 0.30, 1.00);
-      vec3 violet = vec3(0.46, 0.30, 1.00);
-      vec3 rose = vec3(0.92, 0.34, 0.70);
-      vec3 warm = vec3(1.00, 0.52, 0.30);
-      vec3 col = mix(blue, violet, smoothstep(0.20, 0.55, k));
-      col = mix(col, rose, smoothstep(0.58, 0.86, k));
-      col = mix(col, warm, smoothstep(0.84, 1.10, k) * 0.65);
+      // The logo's blues: deep navy blue, brighter blue and a pale ice blue.
+      vec3 deep = vec3(0.11, 0.24, 0.62);
+      vec3 blue = vec3(0.25, 0.44, 0.91);
+      vec3 ice = vec3(0.62, 0.71, 1.00);
+      vec3 col = mix(deep, blue, smoothstep(0.15, 0.55, k));
+      col = mix(col, ice, smoothstep(0.55, 0.95, k) * 0.85);
 
       // Ribbons of light flowing through the atmosphere.
       float rib = fbm(vec2(p.x * 1.8 - t * 1.4, d * 7.0 + t * 0.8));
       rib = smoothstep(0.25, 0.85, rib);
 
-      vec3 o = vec3(0.010, 0.013, 0.030);
-      o += col * halo * (0.30 + 0.85 * rib) * 0.80;
+      vec3 o = vec3(0.020, 0.043, 0.110);
+      o += col * halo * (0.35 + 0.9 * rib) * 1.0;
       o += col * haze * 0.07;
-      o += mix(col, vec3(1.0), 0.45) * rim * 1.05;
+      o += mix(col, vec3(1.0), 0.5) * rim * 1.3;
       o += col * inner * 0.28;
 
       // Faint aura in the upper corners so the top is not flat black.
-      o += vec3(0.10, 0.16, 0.48) * 0.14 * exp(-length(p - vec2(-0.55 * ar, 1.05)) * 2.0);
-      o += vec3(0.30, 0.16, 0.50) * 0.08 * exp(-length(p - vec2(0.60 * ar, 1.10)) * 2.4);
+      o += vec3(0.11, 0.24, 0.62) * 0.16 * exp(-length(p - vec2(-0.55 * ar, 1.05)) * 2.0);
+      o += vec3(0.25, 0.44, 0.91) * 0.08 * exp(-length(p - vec2(0.60 * ar, 1.10)) * 2.4);
 
       // Vignette and a touch of film grain.
       o *= mix(0.6, 1.0, smoothstep(1.35, 0.25, length(vec2(p.x / ar * 1.2, uv.y - 0.35))));

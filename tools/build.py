@@ -144,7 +144,8 @@ def head(key, lang, p):
   <title>{title}</title>
   <meta name="description" content="{desc}">
   <meta name="robots" content="{robots}">
-  <meta name="theme-color" content="#05070D">
+  <meta name="theme-color" content="#F5F6F9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#070B16" media="(prefers-color-scheme: dark)">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="{"sv_SE" if lang == "sv" else "en_GB"}">
   <meta property="og:site_name" content="Norden Media UF">
@@ -172,8 +173,7 @@ def head(key, lang, p):
   <script>
     (function () {{
       var d = document.documentElement; d.classList.add('js');
-      var t = null; try {{ t = localStorage.getItem('theme'); }} catch (e) {{}}
-      d.setAttribute('data-theme', t === 'light' ? 'light' : 'dark');
+      try {{ var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') d.setAttribute('data-theme', t); }} catch (e) {{}}
     }})();
   </script>
   <script type="application/ld+json">
