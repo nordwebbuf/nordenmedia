@@ -44,11 +44,6 @@ collections:
               - { name: "t4", label: "Ingress (texten under rubriken)", widget: text, required: false }
               - { name: "t5", label: "Knapp 1 (huvudknapp)", widget: string, required: false }
               - { name: "t6", label: "Knapp 2", widget: string, required: false }
-              - { name: "t7", label: "Rubrik över kundlogotyper", widget: string, required: false }
-              - { name: "t8_src", label: "Kundlogotyp 1: bild", widget: image, required: false }
-              - { name: "t8_alt", label: "Kundlogotyp 1: bildbeskrivning", widget: string, required: false }
-              - { name: "t9_src", label: "Kundlogotyp 2: bild", widget: image, required: false }
-              - { name: "t9_alt", label: "Kundlogotyp 2: bildbeskrivning", widget: string, required: false }
           - name: "betala_nar_ni_ar_nojda"
             label: "Betala när ni är nöjda"
             widget: object
@@ -929,11 +924,6 @@ collections:
               - { name: "t4", label: "Ingress (texten under rubriken)", widget: text, required: false }
               - { name: "t5", label: "Knapp 1 (huvudknapp)", widget: string, required: false }
               - { name: "t6", label: "Knapp 2", widget: string, required: false }
-              - { name: "t7", label: "Rubrik över kundlogotyper", widget: string, required: false }
-              - { name: "t8_src", label: "Kundlogotyp 1: bild", widget: image, required: false }
-              - { name: "t8_alt", label: "Kundlogotyp 1: bildbeskrivning", widget: string, required: false }
-              - { name: "t9_src", label: "Kundlogotyp 2: bild", widget: image, required: false }
-              - { name: "t9_alt", label: "Kundlogotyp 2: bildbeskrivning", widget: string, required: false }
           - name: "pay_when_you_are_happy"
             label: "Pay when you are happy"
             widget: object

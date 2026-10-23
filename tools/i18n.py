@@ -278,6 +278,6 @@ T = [
 ]
 
 # Swedish proper nouns allowed to remain
-ALLOWED = ["NordenMedia", "Ung Företagsamhet", "Björknäsgymnasiet", "Företagarna", "Bodens kommun",
+ALLOWED = ["Linus Brännholm", "Vide Rörland", "NordenMedia", "Ung Företagsamhet", "Björknäsgymnasiet", "Företagarna", "Bodens kommun",
            "ung-foretagsamhet", "bjorknasgymnasiet", "foretagarna", "Byt till svenska", "Svenska",
            "nordenmedia", "lang=\"sv\"", "hreflang=\"sv\""]
