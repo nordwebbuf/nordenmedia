@@ -22,7 +22,7 @@ import cms  # noqa: E402
 
 ROOT = build.ROOT
 REPO = "nordwebbuf/nordenmedia"
-BRANCH = "v4"
+BRANCH = "master"
 LANGS = {"sv": "Svenska", "en": "Engelska (English)"}
 PAGE_LABEL = {"index": "Startsidan", "webbtjanster": "Hemsidor", "livesandning": "Livesändning", "priser": "Priser",
               "om-oss": "Om oss", "kontakt": "Kontakt", "integritetspolicy": "Integritetspolicy", "404": "Sidan finns inte (404)"}

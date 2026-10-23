@@ -2,7 +2,7 @@
 backend:
   name: github
   repo: nordwebbuf/nordenmedia
-  branch: v4
+  branch: master
   commit_messages:
     update: 'Innehåll: {{collection}} "{{slug}}" uppdaterat'
     uploadMedia: 'Bild uppladdad: {{path}}'
