@@ -30,7 +30,16 @@ T = T6 + T5 + T4 + T1 + T3 + T2
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SOCIAL = {"instagram": "https://www.instagram.com/nordenmediauf/", "facebook": "https://www.facebook.com/nordenmediauf"}
+SOCIAL = {"instagram": "https://www.instagram.com/nordenmediauf/", "facebook": ""}
+
+
+def social_items(link_class=""):
+    """Instagram and Facebook links. Their addresses come from the CMS; an empty address hides the link."""
+    cls = f' class="social-link {link_class}"'.replace(" \"", "\"")
+    return (f'<li><a href="{SOCIAL["instagram"]}"{cls} target="_blank" rel="noopener" aria-label="Norden Media UF på Instagram" '
+            f'data-cms="social_instagram" data-cms-attrs="href,aria-label"><i class="ph-light ph-instagram-logo" aria-hidden="true"></i></a></li>'
+            f'<li><a href="{SOCIAL["facebook"]}"{cls} target="_blank" rel="noopener" aria-label="Norden Media UF på Facebook" '
+            f'data-cms="social_facebook" data-cms-attrs="href,aria-label"><i class="ph-light ph-facebook-logo" aria-hidden="true"></i></a></li>')
 
 
 def content(lang, name):
@@ -118,8 +127,8 @@ def head(key, lang, p):
     title = html_attr(seo.get("seo_title") or title)
     desc = html_attr(seo.get("seo_description") or desc)
     shared = cms.flatten(content("sv", "shared"))
-    same_as = json.dumps([shared.get("social_instagram_href", SOCIAL["instagram"]),
-                          shared.get("social_facebook_href", SOCIAL["facebook"])])
+    same_as = json.dumps([u for u in (shared.get("social_instagram_href", SOCIAL["instagram"]),
+                                      shared.get("social_facebook_href", SOCIAL["facebook"])) if u])
     def url(l):
         f = sv_file if l == "sv" else en_file
         f = "" if f == "index.html" else f
@@ -268,6 +277,7 @@ def chrome(key, lang, p, body):
       </nav>
 
       <div class="header-tools">
+        <ul class="header-social" aria-label="Sociala medier">{social_items("tool-btn")}</ul>
         {switch}
         <button class="tool-btn" type="button" data-theme-toggle aria-label="Byt till mörkt läge">
           <i class="ph-light ph-moon" data-theme-icon aria-hidden="true"></i>
@@ -289,6 +299,7 @@ def chrome(key, lang, p, body):
           {nav_items("mobile")}
       </ul>
       <a href="{p}kontakt.html" class="btn btn-primary btn-block"{contact_cur} data-cms="contact">Kontakt <i class="ph-light ph-arrow-right" aria-hidden="true"></i></a>
+      <ul class="mobile-social" aria-label="Sociala medier">{social_items()}</ul>
     </nav>
   </div>
 
@@ -302,8 +313,7 @@ def chrome(key, lang, p, body):
         <div class="footer-intro">
           <p class="footer-tag" data-cms="footer_tag">Vi bygger och sköter hemsidor för företag och organisationer, och livesänder evenemang och sammanträden.</p>
           <ul class="footer-social" aria-label="Sociala medier">
-            <li><a href="{SOCIAL["instagram"]}" target="_blank" rel="noopener" aria-label="Norden Media UF på Instagram" data-cms="social_instagram" data-cms-attrs="href,aria-label"><i class="ph-light ph-instagram-logo" aria-hidden="true"></i></a></li>
-            <li><a href="{SOCIAL["facebook"]}" target="_blank" rel="noopener" aria-label="Norden Media UF på Facebook" data-cms="social_facebook" data-cms-attrs="href,aria-label"><i class="ph-light ph-facebook-logo" aria-hidden="true"></i></a></li>
+            {social_items()}
           </ul>
         </div>
         <nav class="footer-cols" aria-label="Sidfot">
@@ -398,7 +408,9 @@ def finalize(html, key, lang):
         start = html.index('<main id="main">') + len('<main id="main">')
         end = html.index("</main>")
         html = html[:start] + cms.hide_sections(html[start:end], hidden) + html[end:]
-    return cms.faq_jsonld(cms.apply(html, values, p))
+    html = cms.apply(html, values, p)
+    html = re.sub(r'<li><a href=""[^>]*class="social-link[^"]*"[^>]*>.*?</a></li>', "", html)
+    return cms.faq_jsonld(html)
 
 
 def bust_cache(html):

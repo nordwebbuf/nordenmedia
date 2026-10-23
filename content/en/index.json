@@ -10,7 +10,12 @@
     "t3": "We handle the web.",
     "t4": "We build websites that show who you are, get found on Google and bring in more customers. Then we take care of everything, from hosting to updates.",
     "t5": "Book a call",
-    "t6": "See what we do"
+    "t6": "See what we do",
+    "t7": "Previous clients",
+    "t8_src": "/assets/logos/bodens-kommun.svg",
+    "t8_alt": "Bodens kommun",
+    "t9_src": "/assets/logos/boden-business-park.png",
+    "t9_alt": "Boden Business Park"
   },
   "pay_when_you_are_happy": {
     "visa": true,

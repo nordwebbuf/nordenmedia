@@ -10,7 +10,12 @@
     "t3": "Vi sköter webben.",
     "t4": "Vi bygger hemsidor som visar vilka ni är, syns på Google och ger fler kunder. Sedan sköter vi allt, från drift till uppdateringar.",
     "t5": "Boka ett samtal",
-    "t6": "Se vad vi gör"
+    "t6": "Se vad vi gör",
+    "t7": "Tidigare kunder",
+    "t8_src": "/assets/logos/bodens-kommun.svg",
+    "t8_alt": "Bodens kommun",
+    "t9_src": "/assets/logos/boden-business-park.png",
+    "t9_alt": "Boden Business Park"
   },
   "betala_nar_ni_ar_nojda": {
     "visa": true,

@@ -801,3 +801,36 @@ a.showcase:hover .showcase-phone { transform: translateY(-8px); }
 .plan-list .plan-plus { font-weight: 600; }
 .plan-list .plan-plus i { color: var(--accent-2); }
 .plan-featured .plan-list .plan-plus i { color: var(--accent-block-ink); }
+
+/* ---------- Instagram and Facebook in the header and the mobile menu ---------- */
+.header-social { display: flex; align-items: center; gap: 2px; margin-right: 4px; padding-right: 8px; border-right: 1px solid var(--line); }
+.header-social .tool-btn { font-size: 1.2rem; }
+.mobile-social { display: flex; gap: 10px; margin-top: 20px; }
+.mobile-social a { display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 999px; border: 1px solid var(--line-strong, var(--line)); color: var(--ink-2); font-size: 1.4rem; }
+.mobile-social a:hover { color: var(--accent); border-color: var(--accent); }
+@media (max-width: 960px) { .header-social { display: none; } }
+
+/* ---------- Mobile hero: full screen, centred, more room between the parts ---------- */
+@media (max-width: 640px) {
+  .hero-photo { min-height: 100svh; padding-top: calc(var(--header-h) + 24px); padding-bottom: calc(28px + 32px); }
+  .hero-photo .hero-center { justify-content: center; padding-block: 12px 28px; }
+  .hero-photo .eyebrow { font-size: .6875rem; letter-spacing: .05em; padding: 7px 14px; white-space: nowrap; max-width: 100%; overflow: hidden; text-overflow: ellipsis; margin-bottom: 24px; }
+  .hero-photo .display { font-size: clamp(2.125rem, 9.2vw, 2.625rem); line-height: 1.06; letter-spacing: -.025em; }
+  .hero-photo .lead { font-size: 1rem; line-height: 1.6; margin-top: 20px; max-width: 32ch; }
+  .hero-photo .hero-actions { flex-direction: column; gap: 10px; margin-top: 32px; }
+  .hero-photo .hero-actions .btn { width: 100%; min-height: 52px; }
+  .hero-photo .hero-foot { margin-top: 0; padding-top: 18px; gap: 10px 28px; }
+  .hero-foot .partners-label { font-size: .6875rem; letter-spacing: .1em; text-transform: uppercase; }
+  .live-feature-actions { flex-direction: column; align-items: stretch; }
+  .live-feature-actions .btn { width: 100%; justify-content: center; }
+}
+
+/* ---------- Team on mobile: one compact row per person (photo left, name and role right) ---------- */
+@media (max-width: 640px) {
+  .team { grid-template-columns: 1fr; max-width: none; gap: 12px; }
+  .person { display: grid; grid-template-columns: 104px 1fr; grid-template-rows: auto auto; column-gap: 18px; align-items: center; align-content: center; }
+  .person-photo { grid-row: 1 / span 2; aspect-ratio: 1; margin: 0; }
+  .person-photo .photo-placeholder { font-size: .75rem; gap: 4px; }
+  .person-name { margin-top: 0; align-self: end; font-size: 1.125rem; }
+  .person-role { align-self: start; }
+}
