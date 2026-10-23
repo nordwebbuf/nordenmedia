@@ -27,24 +27,7 @@
     "t17": "Ni godkänner",
     "t18": "Först då kommer fakturan"
   },
-  "innan_och_efter": {
-    "t19": "Vanliga problem.",
-    "t20": "Konkreta resultat.",
-    "t21": "Ingen hemsida, eller en som ingen hittar",
-    "t22": "Ni syns där kunderna letar",
-    "t23": "Vi ser till att ni hittas på Google, i Google Maps och i AI-tjänster som ChatGPT när någon söker efter det ni erbjuder.",
-    "t24": "En hemsida som inte längre speglar er",
-    "t25": "En hemsida som visar vilka ni är",
-    "t26": "Vi lär känna er verksamhet och bygger en hemsida med er ton, era bilder och det som gör er unika. Kunderna förstår direkt varför de ska välja er.",
-    "t27": "Besökare som lämnar utan att höra av sig",
-    "t28": "Fler förfrågningar och ökad försäljning",
-    "t29": "Tydliga erbjudanden, snabb laddning och enkla vägar till kontakt, bokning eller köp gör fler besökare till kunder.",
-    "t30": "Bokningar och påminnelser för hand",
-    "t31": "Bokningar som sköter sig själva",
-    "t32": "Kunderna bokar direkt på hemsidan och får bekräftelse och påminnelse automatiskt. Varje bokning sparas i ert kundregister.",
-    "t33": "Och ni ser resultatet.",
-    "t34": "Varje månad får ni en kort rapport över besök och förfrågningar, med förslag på vad vi förbättrar härnäst. Ingår i Sarek och Kebne."
-  },
+  "innan_och_efter": null,
   "vilka_vi_ar": {
     "t35": "Lokala, personliga",
     "t36": "och lätta att nå.",
