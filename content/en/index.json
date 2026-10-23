@@ -30,7 +30,7 @@
     "t18": "Only then do we invoice"
   },
   "before_and_after": {
-    "visa": true,
+    "visa": false,
     "t19": "Common problems.",
     "t20": "Concrete results.",
     "t21": "No website, or one that nobody finds",
