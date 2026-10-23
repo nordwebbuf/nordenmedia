@@ -4,6 +4,7 @@
     "seo_description": "We build websites that get found on Google and win more customers, and handle domain, email and hosting. Fixed price, and you only pay when you are happy."
   },
   "hero": {
+    "visa": true,
     "t1": "Websites for businesses and organisations",
     "t2": "You run the business.",
     "t3": "We handle the web.",
@@ -17,6 +18,7 @@
     "t9_alt": "Boden Business Park"
   },
   "pay_when_you_are_happy": {
+    "visa": true,
     "t10": "Satisfaction guarantee",
     "t11": "You only pay when you are happy.",
     "t12": "We finish the work and show you the result. We only send the invoice once you have approved it. No upfront payment, no risk.",
@@ -27,8 +29,27 @@
     "t17": "You approve",
     "t18": "Only then do we invoice"
   },
-  "before_and_after": null,
+  "before_and_after": {
+    "visa": true,
+    "t19": "Common problems.",
+    "t20": "Concrete results.",
+    "t21": "No website, or one that nobody finds",
+    "t22": "You show up where customers look",
+    "t23": "We make sure you can be found on Google, Google Maps and AI services such as ChatGPT when someone searches for what you offer.",
+    "t24": "A website that no longer reflects you",
+    "t25": "A website that shows who you are",
+    "t26": "We get to know your business and build a website with your tone, your images and what makes you unique. Customers understand right away why they should choose you.",
+    "t27": "Visitors who leave without getting in touch",
+    "t28": "More enquiries and higher sales",
+    "t29": "Clear offers, fast pages and simple paths to contact, booking or purchase turn more visitors into customers.",
+    "t30": "Bookings and reminders handled by hand",
+    "t31": "Bookings that run themselves",
+    "t32": "Customers book directly on your website and receive confirmations and reminders automatically. Every booking is saved in your customer register.",
+    "t33": "And you see the results.",
+    "t34": "Every month you get a short report on visits and enquiries, with suggestions for what we will improve next. Included in Sarek and Kebne."
+  },
   "who_we_are": {
+    "visa": true,
     "t35": "Local, personal",
     "t36": "and easy to reach.",
     "t37": "Norden Media UF is run by students at Björknäsgymnasiet in Boden, as a student company in partnership with Ung Företagsamhet (Junior Achievement Sweden). We reply quickly and explain everything in plain language.",
@@ -37,6 +58,7 @@
     "t39_alt": "The team behind Norden Media UF"
   },
   "what_we_do": {
+    "visa": true,
     "t40": "Everything for a website",
     "t41": "that delivers results.",
     "t42": "We take full responsibility, from the first sketch to day-to-day operations. You get a finished solution, not more things to keep track of.",
@@ -53,6 +75,7 @@
     "t53": "See everything included"
   },
   "how_it_works": {
+    "visa": true,
     "t54": "From the first call",
     "t55": "to ongoing operations.",
     "t56": "You tell us what you need, and we take care of the rest. It usually takes three to six weeks from the first call to launch. How fast it goes depends on the size of your website and how quickly we receive material from you. After launch we stay on and look after everything.",
@@ -69,6 +92,7 @@
     "t67": "We keep the website running, secure and up to date, and help you whenever something needs changing. With the Sarek and Kebne packages you also get a monthly report with suggested improvements."
   },
   "after_the_uf_year": {
+    "visa": true,
     "t68": "Long-term",
     "t69": "Your website stays",
     "t70": "after the UF year.",
@@ -77,6 +101,7 @@
     "t73": "If you would rather move on, we hand over all the material and help you move to another provider, so the switch is smooth."
   },
   "we_also_stream_live": {
+    "visa": true,
     "t74": "Live streaming",
     "t75": "We also stream live.",
     "t76": "So more people can take part.",
@@ -94,6 +119,7 @@
     "t86_alt": "Video camera with a monitor filming a conversation on stage"
   },
   "faq": {
+    "visa": true,
     "t87": "Frequently asked questions",
     "t88": "Search the questions",
     "t89": "What does it cost?",

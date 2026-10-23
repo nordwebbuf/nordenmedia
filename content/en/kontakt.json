@@ -4,6 +4,7 @@
     "seo_description": "Tell us about your business and we will get in touch to book a short call. It costs nothing to ask. Email hej@nordenmedia.se or fill in the form."
   },
   "kontakt": {
+    "visa": true,
     "t1": "Contact",
     "t2": "Tell us about your business.",
     "t3": "We will take it from there.",

@@ -4,6 +4,7 @@
     "seo_description": "Sidan finns inte."
   },
   "innehall": {
+    "visa": true,
     "t1": "404",
     "t2": "Sidan finns inte.",
     "t3": "Men vi finns kvar.",

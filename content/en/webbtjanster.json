@@ -4,6 +4,7 @@
     "seo_description": "Website, your own web address, business email, visibility on Google and bookings that run themselves. We build and run it all, you skip the tech."
   },
   "sidhuvud": {
+    "visa": true,
     "t1": "Websites",
     "t2": "Your website.",
     "t3": "Without the hassle.",
@@ -12,6 +13,7 @@
     "t6": "See pricing"
   },
   "tjanster": {
+    "visa": true,
     "t7": "Websites and web systems",
     "t8": "Fast, clear websites that work just as well on mobile. When needed, with booking, contact forms and customer login.",
     "t9": "Booking",
@@ -33,6 +35,7 @@
     "t25": "We make sure everything is running, secure and up to date. You never have to think about web hosting, backups or updates."
   },
   "what_is_included": {
+    "visa": true,
     "t26": "Included",
     "t27": "in every website.",
     "t28": "Whichever package you choose, you get a website built to be found, to be secure and to work on every screen.",
@@ -54,6 +57,7 @@
     "t44": "Clear contrast, readable text and a structure that works with screen readers."
   },
   "automatisering": {
+    "visa": true,
     "t45": "Less manual work.",
     "t46": "Nothing forgotten.",
     "t47": "When a customer books through the website, the system takes care of the rest. Everything is saved in the customer register and the right message goes out at the right time.",
@@ -83,6 +87,7 @@
     "t71": "News, offers and follow-ups reach the right customers at the right moment."
   },
   "manadsrapport": {
+    "visa": true,
     "t72": "July",
     "t73": "August",
     "t74": "September",
@@ -122,6 +127,7 @@
     "t108": "Our comments and next steps"
   },
   "calculator": {
+    "visa": true,
     "t109": "How much time does tech take",
     "t110": "from you today?",
     "t111": "Move the sliders for an estimate of how much time digital admin takes from your business each year.",
@@ -139,6 +145,7 @@
     "t122": "Book a call"
   },
   "sa_arbetar_vi": {
+    "visa": true,
     "t123": "From the first call",
     "t124": "to ongoing operations.",
     "t125": "You tell us what you need, and we take care of the rest. It usually takes three to six weeks from the first call to launch. How fast it goes depends on the size of your website and how often we can meet. After launch we stay on and look after everything.",

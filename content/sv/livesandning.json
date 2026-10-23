@@ -4,6 +4,7 @@
     "seo_description": "Vi livesänder konferenser, föreläsningar, årsmöten och evenemang med flera kameror, grafik och inspelning, till er hemsida eller sociala medier."
   },
   "sidhuvud": {
+    "visa": true,
     "t1": "Livesändning",
     "t2": "Livesänd era evenemang.",
     "t3": "Vi sköter tekniken.",
@@ -15,6 +16,7 @@
     "t8": "Live"
   },
   "vad_ingar": {
+    "visa": true,
     "t9": "Allt som behövs.",
     "t10": "Inget ni behöver fixa.",
     "t11": "Ni fokuserar på innehållet och publiken. Vi tar med tekniken, riggar, testar och sänder.",
@@ -28,6 +30,7 @@
     "t19": "Hela sändningen sparas, och vi klipper korta filmer för sociala medier efteråt."
   },
   "passar_for": {
+    "visa": true,
     "t20": "Passar när fler",
     "t21": "ska kunna vara med.",
     "t22": "Konferenser",
@@ -38,6 +41,7 @@
     "t27": "Paneldebatter och intervjuer"
   },
   "var_ska_ni_sanda": {
+    "visa": true,
     "t28": "En sändning.",
     "t29": "Många platser.",
     "t30": "Välj var era tittare finns. Vi sänder till alla samtidigt.",
@@ -51,6 +55,7 @@
     "t37_2": "samtidigt."
   },
   "sa_gar_det_till": {
+    "visa": true,
     "t38": "Så går en",
     "t39": "sändning till.",
     "t40": "Livesändningar offereras per tillfälle. Ni får ett fast pris innan vi börjar.",

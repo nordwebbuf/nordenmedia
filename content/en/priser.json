@@ -4,12 +4,14 @@
     "seo_description": "Three packages with a fixed start-up cost and a fixed monthly fee for website, email, visibility and hosting. You only pay once you are happy."
   },
   "page_header": {
+    "visa": true,
     "t1": "Pricing",
     "t2": "A fixed start-up cost.",
     "t3": "Then a fixed monthly fee.",
     "t4": "You pay the start-up cost only once the website is finished and you are happy. After that, a monthly fee for hosting, updates and support."
   },
   "paket": {
+    "visa": true,
     "t5": "Abisko",
     "t6": "A clean, simple website, up and running quickly.",
     "t7": "Start-up cost",
@@ -73,6 +75,7 @@
     "t54": "All prices exclude VAT. The start-up cost is paid once and is only invoiced after you have approved the finished website. The monthly fee starts when the website goes live. Changes beyond what is included cost SEK 450 per hour."
   },
   "jamforelse": {
+    "visa": true,
     "t55": "Compare the packages",
     "t64": "Feature",
     "t65": "Abisko",
@@ -131,6 +134,7 @@
     "t127": "795 SEK"
   },
   "after_the_uf_year": {
+    "visa": true,
     "t89": "Long-term",
     "t90": "Your website stays",
     "t91": "after the UF year.",
@@ -139,6 +143,7 @@
     "t94": "If you would rather move on, we hand over all the material and help you move to another provider, so the switch is smooth."
   },
   "live_streaming": {
+    "visa": true,
     "t95": "Live streaming",
     "t96": "Quoted per event. You get a fixed price before we start.",
     "t97": "Read more"

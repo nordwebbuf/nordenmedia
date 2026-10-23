@@ -4,6 +4,7 @@
     "seo_description": "We live stream conferences, lectures, AGMs and events with multiple cameras, graphics and recording, to your website or social media."
   },
   "page_header": {
+    "visa": true,
     "t1": "Live streaming",
     "t2": "Stream your events live.",
     "t3": "We handle the tech.",
@@ -15,6 +16,7 @@
     "t8": "Live"
   },
   "vad_ingar": {
+    "visa": true,
     "t9": "Everything you need.",
     "t10": "Nothing to sort out yourself.",
     "t11": "You focus on the content and the audience. We bring the equipment, set up, test and stream.",
@@ -28,6 +30,7 @@
     "t19": "The whole stream is recorded, and we cut short clips for social media afterwards."
   },
   "passar_for": {
+    "visa": true,
     "t20": "Ideal when more people",
     "t21": "need to take part.",
     "t22": "Conferences",
@@ -38,6 +41,7 @@
     "t27": "Panel debates and interviews"
   },
   "var_ska_ni_sanda": {
+    "visa": true,
     "t28": "One stream.",
     "t29": "Many places.",
     "t30": "Choose where your viewers are. We stream to all of them at once.",
@@ -51,6 +55,7 @@
     "t37_2": "at once."
   },
   "sa_gar_det_till": {
+    "visa": true,
     "t38": "How a live stream",
     "t39": "comes together.",
     "t40": "Live streaming is quoted per event. You get a fixed price before we start.",

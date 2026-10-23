@@ -70,12 +70,14 @@ def main_part(html):
     return html[html.index('<main id="main">') + len('<main id="main">'):html.index("</main>")]
 
 
-def merge(old, sections):
-    """New nested dict with the fields of `sections`; values from `old` win."""
+def merge(old, sections, switch=False):
+    """New nested dict with the fields of `sections`; values from `old` win.
+    With `switch`, page sections also get "visa" (shown on the page or not)."""
     flat_old = cms.flatten(old)
     out = {}
     for s in sections:
-        out[s["name"]] = {f["name"]: flat_old.get(f["name"], f["value"]) for f in s["fields"]}
+        out[s["name"]] = {"visa": (old.get(s["name"]) or {}).get("visa", True)} if switch and s["name"] != "seo" else {}
+        out[s["name"]].update({f["name"]: flat_old.get(f["name"], f["value"]) for f in s["fields"]})
     return out
 
 
@@ -90,7 +92,7 @@ def yaml_str(s):
     return json.dumps(s, ensure_ascii=False)
 
 
-def yaml_fields(sections, indent):
+def yaml_fields(sections, indent, switch=False):
     pad = " " * indent
     out = []
     for s in sections:
@@ -98,8 +100,11 @@ def yaml_fields(sections, indent):
         out.append(f"{pad}  label: {yaml_str(s['label'])}")
         out.append(f"{pad}  widget: object")
         out.append(f"{pad}  collapsed: true")
-        out.append(f"{pad}  required: false")
+        # required, so a section cannot be removed in the CMS (that would only empty the file, not the page)
+        out.append(f"{pad}  required: true")
         out.append(f"{pad}  fields:")
+        if switch and s["name"] != "seo":
+            out.append(f"{pad}    - {{ name: \"visa\", label: {yaml_str('Visa avsnittet på sidan (texterna sparas även när det är dolt)')}, widget: boolean, default: true, required: false }}")
         for f in s["fields"]:
             out.append(f"{pad}    - {{ name: {yaml_str(f['name'])}, label: {yaml_str(f['label'])}, widget: {f['widget']}, required: false }}")
     return out
@@ -137,7 +142,7 @@ def main():
                  "value": sv_desc if lang == "sv" else en_desc}]}
             sections = [seo] + sections
             path = os.path.join(ROOT, "content", lang, f"{key}.json")
-            write_json(path, merge(cms.load(path), sections))
+            write_json(path, merge(cms.load(path), sections, switch=True))
             files[lang].append((key, sections))
             for s in cms.extract(html):
                 shared[lang].extend(relabel([f for f in s["fields"] if is_shared(f["name"])], "shared", lang))
@@ -190,7 +195,7 @@ def main():
         for key, sections in files[lang]:
             y += [f"      - name: {yaml_str(key.replace('-', '_'))}", f"        label: {yaml_str(PAGE_LABEL[key])}",
                   f"        file: content/{lang}/{key}.json", "        fields:"]
-            y += yaml_fields(sections, 10)
+            y += yaml_fields(sections, 10, switch=True)
     y += ["  - name: gemensamt", f"    label: {yaml_str('Meny, sidfot och sociala medier')}",
           "    editor: { preview: false }", "    files:"]
     for lang, lang_label in LANGS.items():

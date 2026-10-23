@@ -4,12 +4,14 @@
     "seo_description": "Norden Media UF drivs av elever på Björknäsgymnasiet i Boden. Vi bygger hemsidor och livesänder evenemang, med en kontaktperson hela vägen."
   },
   "sidhuvud": {
+    "visa": true,
     "t1": "Om oss",
     "t2": "Tekniken är vårt jobb.",
     "t3": "Ert företag är vårt fokus.",
     "t4": "Norden Media UF bygger hemsidor och livesänder evenemang. Vi är elever på Björknäsgymnasiet i Boden och driver företaget som UF-företag i samarbete med Ung Företagsamhet. Vi tar hand om tekniken, så att våra kunder kan lägga tiden på sin verksamhet."
   },
   "team": {
+    "visa": true,
     "t5": "Vi som jobbar här",
     "t6_photo": "/assets/team/person-1.jpg",
     "t7": "Foto kommer",
@@ -25,6 +27,7 @@
     "t17": "Ekonomiansvarig"
   },
   "hur_vi_tanker": {
+    "visa": true,
     "t18": "Det här",
     "t19": "står vi för.",
     "t20": "Inget krångel",
@@ -37,6 +40,7 @@
     "t27": "Vi stannar kvar efter lanseringen och fortsätter att förbättra det som fungerar."
   },
   "efter_uf_aret": {
+    "visa": true,
     "t28": "Långsiktigt",
     "t29": "Er hemsida finns kvar",
     "t30": "även efter UF-året.",
@@ -45,6 +49,7 @@
     "t33": "Vill ni hellre gå vidare på egen hand lämnar vi över allt material och hjälper er att flytta till en annan leverantör, så att bytet blir smidigt."
   },
   "samarbeten_och_kunder": {
+    "visa": true,
     "t34": "I samarbete med",
     "t35_src": "/assets/logos/ung-foretagsamhet.svg",
     "t35_alt": "Ung Företagsamhet",

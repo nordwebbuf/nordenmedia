@@ -4,6 +4,7 @@
     "seo_description": "Berätta om ert företag så hör vi av oss och bokar ett kort samtal. Det kostar ingenting att fråga. Mejla hej@nordenmedia.se eller fyll i formuläret."
   },
   "kontakt": {
+    "visa": true,
     "t1": "Kontakt",
     "t2": "Berätta om ert företag.",
     "t3": "Vi tar det därifrån.",

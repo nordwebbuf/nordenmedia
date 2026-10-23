@@ -4,12 +4,14 @@
     "seo_description": "Tre paket med fast startkostnad och fast månadsavgift för hemsida, mejl, synlighet och drift. Ni betalar först när hemsidan är klar och ni är nöjda."
   },
   "sidhuvud": {
+    "visa": true,
     "t1": "Priser",
     "t2": "En fast startkostnad.",
     "t3": "Sedan en fast månadsavgift.",
     "t4": "Ni betalar startkostnaden först när hemsidan är klar och ni är nöjda. Därefter en månadsavgift för drift, uppdateringar och support."
   },
   "paket": {
+    "visa": true,
     "t5": "Abisko",
     "t6": "En snygg och enkel hemsida, på plats snabbt.",
     "t7": "Startkostnad",
@@ -75,6 +77,7 @@
     "t55": "Alla priser exkl. moms. Startkostnaden betalas en gång och faktureras först när ni har godkänt den färdiga hemsidan. Månadsavgiften börjar när hemsidan har lanserats. Ändringar utöver det som ingår kostar 450 kr per timme."
   },
   "jamforelse": {
+    "visa": true,
     "t56": "Jämför paketen",
     "t64": "Funktion",
     "t65": "Abisko",
@@ -133,6 +136,7 @@
     "t127": "795 kr"
   },
   "efter_uf_aret": {
+    "visa": true,
     "t90": "Långsiktigt",
     "t91": "Er hemsida finns kvar",
     "t92": "även efter UF-året.",
@@ -141,6 +145,7 @@
     "t95": "Vill ni hellre gå vidare på egen hand lämnar vi över allt material och hjälper er att flytta till en annan leverantör, så att bytet blir smidigt."
   },
   "livesandning": {
+    "visa": true,
     "t96": "Livesändning",
     "t97": "Offereras per tillfälle. Ni får ett fast pris innan vi börjar.",
     "t98": "Läs mer"

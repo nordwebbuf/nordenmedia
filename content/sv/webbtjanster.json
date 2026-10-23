@@ -4,6 +4,7 @@
     "seo_description": "Hemsida, egen webbadress, företagsmejl, synlighet på Google och bokningar som sköter sig själva. Vi bygger och sköter allt, ni slipper tekniken."
   },
   "sidhuvud": {
+    "visa": true,
     "t1": "Hemsidor",
     "t2": "Er hemsida.",
     "t3": "Helt utan krångel.",
@@ -12,6 +13,7 @@
     "t6": "Se priser"
   },
   "tjanster": {
+    "visa": true,
     "t7": "Hemsidor och webbsystem",
     "t8": "Snabba och tydliga hemsidor som fungerar lika bra i mobilen. Vid behov med bokning, kontaktformulär och inloggning för era kunder.",
     "t9": "Bokning",
@@ -33,6 +35,7 @@
     "t25": "Vi ansvarar för att allt är igång, säkert och uppdaterat. Ni behöver aldrig tänka på webbhotell, säkerhetskopior eller uppdateringar."
   },
   "det_har_ingar": {
+    "visa": true,
     "t26": "Det här ingår",
     "t27": "i varje hemsida.",
     "t28": "Oavsett paket får ni en hemsida som är byggd för att synas, vara säker och fungera på alla skärmar.",
@@ -54,6 +57,7 @@
     "t44": "Tydliga kontraster, läsbar text och struktur som fungerar med skärmläsare."
   },
   "automatisering": {
+    "visa": true,
     "t45": "Mindre handpåläggning.",
     "t46": "Inget som glöms bort.",
     "t47": "När en kund bokar via hemsidan sköter systemet resten. Allt sparas i kundregistret och rätt meddelande går ut i rätt tid.",
@@ -83,6 +87,7 @@
     "t71": "Nyheter, erbjudanden och uppföljningar når rätt kunder vid rätt tillfälle."
   },
   "manadsrapport": {
+    "visa": true,
     "t72": "Juli",
     "t73": "Augusti",
     "t74": "September",
@@ -122,6 +127,7 @@
     "t108": "Våra kommentarer och nästa steg"
   },
   "kalkylator": {
+    "visa": true,
     "t109": "Hur mycket tid tar tekniken",
     "t110": "från er i dag?",
     "t111": "Dra i reglagen och få en uppskattning av hur mycket tid det digitala tar från er verksamhet varje år.",
@@ -139,6 +145,7 @@
     "t122": "Boka ett samtal"
   },
   "sa_arbetar_vi": {
+    "visa": true,
     "t123": "Från första samtal",
     "t124": "till löpande drift.",
     "t125": "Ni berättar vad ni behöver, så tar vi hand om resten. Oftast tar det tre till sex veckor från första samtalet till lansering. Hur snabbt det går beror på hur stor hemsidan är och hur ofta vi hinner ses. Efter lanseringen finns vi kvar och sköter allt.",

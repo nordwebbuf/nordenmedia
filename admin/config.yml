@@ -27,7 +27,7 @@ collections:
             label: "Sökmotorer och delning (titel och beskrivning)"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
               - { name: "seo_title", label: "Sidtitel (visas i fliken och på Google)", widget: string, required: false }
               - { name: "seo_description", label: "Beskrivning (visas på Google, ca 150 tecken)", widget: text, required: false }
@@ -35,8 +35,9 @@ collections:
             label: "Hero"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t1", label: "Etikett ovanför rubriken", widget: string, required: false }
               - { name: "t2", label: "Huvudrubrik", widget: string, required: false }
               - { name: "t3", label: "Huvudrubrik, markerad del", widget: string, required: false }
@@ -52,8 +53,9 @@ collections:
             label: "Betala när ni är nöjda"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t10", label: "Garanti: etikett", widget: string, required: false }
               - { name: "t11", label: "Garanti: rubrik", widget: string, required: false }
               - { name: "t12", label: "Garanti: brödtext", widget: text, required: false }
@@ -67,8 +69,9 @@ collections:
             label: "Innan och efter"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t19", label: "Rubrik", widget: string, required: false }
               - { name: "t20", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t21", label: "Problem 1", widget: string, required: false }
@@ -89,8 +92,9 @@ collections:
             label: "Vilka vi är"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t35", label: "Rubrik", widget: string, required: false }
               - { name: "t36", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t37", label: "Brödtext", widget: text, required: false }
@@ -101,8 +105,9 @@ collections:
             label: "Vad vi gör"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t40", label: "Rubrik", widget: string, required: false }
               - { name: "t41", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t42", label: "Ingress", widget: text, required: false }
@@ -121,8 +126,9 @@ collections:
             label: "Så går det till"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t54", label: "Rubrik", widget: string, required: false }
               - { name: "t55", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t56", label: "Ingress", widget: text, required: false }
@@ -141,8 +147,9 @@ collections:
             label: "Efter UF-året"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t68", label: "Etikett ovanför rubriken", widget: string, required: false }
               - { name: "t69", label: "Rubrik", widget: string, required: false }
               - { name: "t70", label: "Rubrik, markerad del", widget: string, required: false }
@@ -153,8 +160,9 @@ collections:
             label: "Vi livesänder också"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t74", label: "Etikett ovanför rubriken", widget: string, required: false }
               - { name: "t75", label: "Rubrik", widget: string, required: false }
               - { name: "t76", label: "Rubrik, markerad del", widget: string, required: false }
@@ -174,8 +182,9 @@ collections:
             label: "Vanliga frågor"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t87", label: "Rubrik", widget: string, required: false }
               - { name: "t88", label: "Sökfältets text", widget: string, required: false }
               - { name: "t89", label: "Fråga 1", widget: string, required: false }
@@ -210,7 +219,7 @@ collections:
             label: "Sökmotorer och delning (titel och beskrivning)"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
               - { name: "seo_title", label: "Sidtitel (visas i fliken och på Google)", widget: string, required: false }
               - { name: "seo_description", label: "Beskrivning (visas på Google, ca 150 tecken)", widget: text, required: false }
@@ -218,8 +227,9 @@ collections:
             label: "Sidhuvud"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t1", label: "Etikett ovanför rubriken", widget: string, required: false }
               - { name: "t2", label: "Huvudrubrik", widget: string, required: false }
               - { name: "t3", label: "Huvudrubrik, markerad del", widget: string, required: false }
@@ -230,8 +240,9 @@ collections:
             label: "Tjänster"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t7", label: "Tjänst 1: rubrik", widget: string, required: false }
               - { name: "t8", label: "Tjänst 1: text", widget: text, required: false }
               - { name: "t9", label: "Tjänst 1: etikett 1", widget: string, required: false }
@@ -255,8 +266,9 @@ collections:
             label: "Det här ingår"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t26", label: "Rubrik", widget: string, required: false }
               - { name: "t27", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t28", label: "Ingress", widget: text, required: false }
@@ -280,8 +292,9 @@ collections:
             label: "Automatisering"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t45", label: "Rubrik", widget: string, required: false }
               - { name: "t46", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t47", label: "Ingress", widget: text, required: false }
@@ -313,8 +326,9 @@ collections:
             label: "Månadsrapport"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t72", label: "Rapportexempel: månad 1 (knapp)", widget: string, required: false }
               - { name: "t73", label: "Rapportexempel: månad 2 (knapp)", widget: string, required: false }
               - { name: "t74", label: "Rapportexempel: månad 3 (knapp)", widget: string, required: false }
@@ -356,8 +370,9 @@ collections:
             label: "Kalkylator"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t109", label: "Rubrik", widget: string, required: false }
               - { name: "t110", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t111", label: "Ingress", widget: text, required: false }
@@ -377,8 +392,9 @@ collections:
             label: "Så arbetar vi"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t123", label: "Rubrik", widget: string, required: false }
               - { name: "t124", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t125", label: "Ingress", widget: text, required: false }
@@ -401,7 +417,7 @@ collections:
             label: "Sökmotorer och delning (titel och beskrivning)"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
               - { name: "seo_title", label: "Sidtitel (visas i fliken och på Google)", widget: string, required: false }
               - { name: "seo_description", label: "Beskrivning (visas på Google, ca 150 tecken)", widget: text, required: false }
@@ -409,8 +425,9 @@ collections:
             label: "Sidhuvud"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t1", label: "Etikett ovanför rubriken", widget: string, required: false }
               - { name: "t2", label: "Huvudrubrik", widget: string, required: false }
               - { name: "t3", label: "Huvudrubrik, markerad del", widget: string, required: false }
@@ -424,8 +441,9 @@ collections:
             label: "Vad ingår"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t9", label: "Rubrik", widget: string, required: false }
               - { name: "t10", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t11", label: "Ingress", widget: string, required: false }
@@ -441,8 +459,9 @@ collections:
             label: "Passar för"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t20", label: "Rubrik", widget: string, required: false }
               - { name: "t21", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t22", label: "Tillfälle 1", widget: string, required: false }
@@ -455,8 +474,9 @@ collections:
             label: "Var ska ni sända"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t28", label: "Rubrik", widget: string, required: false }
               - { name: "t29", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t30", label: "Ingress", widget: string, required: false }
@@ -472,8 +492,9 @@ collections:
             label: "Så går det till"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t38", label: "Rubrik", widget: string, required: false }
               - { name: "t39", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t40", label: "Ingress", widget: string, required: false }
@@ -496,7 +517,7 @@ collections:
             label: "Sökmotorer och delning (titel och beskrivning)"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
               - { name: "seo_title", label: "Sidtitel (visas i fliken och på Google)", widget: string, required: false }
               - { name: "seo_description", label: "Beskrivning (visas på Google, ca 150 tecken)", widget: text, required: false }
@@ -504,8 +525,9 @@ collections:
             label: "Sidhuvud"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t1", label: "Etikett ovanför rubriken", widget: string, required: false }
               - { name: "t2", label: "Huvudrubrik", widget: string, required: false }
               - { name: "t3", label: "Huvudrubrik, markerad del", widget: string, required: false }
@@ -514,8 +536,9 @@ collections:
             label: "Paket"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t5", label: "Abisko: namn", widget: string, required: false }
               - { name: "t6", label: "Abisko: kort beskrivning", widget: string, required: false }
               - { name: "t7", label: "Abisko: rubrik över startkostnad", widget: string, required: false }
@@ -583,8 +606,9 @@ collections:
             label: "Jämförelse"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t56", label: "Rubrik", widget: string, required: false }
               - { name: "t64", label: "Tabell: rubrik för första kolumnen (visas bara för skärmläsare)", widget: string, required: false }
               - { name: "t65", label: "Tabell: kolumn Abisko", widget: string, required: false }
@@ -645,8 +669,9 @@ collections:
             label: "Efter UF-året"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t90", label: "Etikett ovanför rubriken", widget: string, required: false }
               - { name: "t91", label: "Rubrik", widget: string, required: false }
               - { name: "t92", label: "Rubrik, markerad del", widget: string, required: false }
@@ -657,8 +682,9 @@ collections:
             label: "Livesändning"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t96", label: "Rubrik", widget: string, required: false }
               - { name: "t97", label: "Text", widget: string, required: false }
               - { name: "t98", label: "Länk", widget: string, required: false }
@@ -670,7 +696,7 @@ collections:
             label: "Sökmotorer och delning (titel och beskrivning)"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
               - { name: "seo_title", label: "Sidtitel (visas i fliken och på Google)", widget: string, required: false }
               - { name: "seo_description", label: "Beskrivning (visas på Google, ca 150 tecken)", widget: text, required: false }
@@ -678,8 +704,9 @@ collections:
             label: "Sidhuvud"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t1", label: "Etikett ovanför rubriken", widget: string, required: false }
               - { name: "t2", label: "Huvudrubrik", widget: string, required: false }
               - { name: "t3", label: "Huvudrubrik, markerad del", widget: string, required: false }
@@ -688,8 +715,9 @@ collections:
             label: "Team"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t5", label: "Rubrik", widget: string, required: false }
               - { name: "t6_photo", label: "Person 1: foto", widget: image, required: false }
               - { name: "t7", label: "Person 1: text när foto saknas", widget: string, required: false }
@@ -707,8 +735,9 @@ collections:
             label: "Hur vi tänker"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t18", label: "Rubrik", widget: string, required: false }
               - { name: "t19", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t20", label: "Värdering 1: rubrik", widget: string, required: false }
@@ -723,8 +752,9 @@ collections:
             label: "Efter UF-året"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t28", label: "Etikett ovanför rubriken", widget: string, required: false }
               - { name: "t29", label: "Rubrik", widget: string, required: false }
               - { name: "t30", label: "Rubrik, markerad del", widget: string, required: false }
@@ -735,8 +765,9 @@ collections:
             label: "Samarbeten och kunder"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t34", label: "Rubrik över samarbetspartner", widget: string, required: false }
               - { name: "t35_src", label: "Samarbetspartner 1: logotyp", widget: image, required: false }
               - { name: "t35_alt", label: "Samarbetspartner 1: bildbeskrivning", widget: string, required: false }
@@ -755,7 +786,7 @@ collections:
             label: "Sökmotorer och delning (titel och beskrivning)"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
               - { name: "seo_title", label: "Sidtitel (visas i fliken och på Google)", widget: string, required: false }
               - { name: "seo_description", label: "Beskrivning (visas på Google, ca 150 tecken)", widget: text, required: false }
@@ -763,8 +794,9 @@ collections:
             label: "Kontakt"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t1", label: "Etikett ovanför rubriken", widget: string, required: false }
               - { name: "t2", label: "Huvudrubrik", widget: string, required: false }
               - { name: "t3", label: "Huvudrubrik, markerad del", widget: string, required: false }
@@ -810,7 +842,7 @@ collections:
             label: "Sökmotorer och delning (titel och beskrivning)"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
               - { name: "seo_title", label: "Sidtitel (visas i fliken och på Google)", widget: string, required: false }
               - { name: "seo_description", label: "Beskrivning (visas på Google, ca 150 tecken)", widget: text, required: false }
@@ -818,8 +850,9 @@ collections:
             label: "Innehåll"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t1", label: "Huvudrubrik", widget: string, required: false }
               - { name: "t2", label: "Ingress", widget: string, required: false }
               - { name: "t3", label: "Senast uppdaterad", widget: string, required: false }
@@ -849,7 +882,7 @@ collections:
             label: "Sökmotorer och delning (titel och beskrivning)"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
               - { name: "seo_title", label: "Sidtitel (visas i fliken och på Google)", widget: string, required: false }
               - { name: "seo_description", label: "Beskrivning (visas på Google, ca 150 tecken)", widget: text, required: false }
@@ -857,8 +890,9 @@ collections:
             label: "Innehåll"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t1", label: "Etikett ovanför rubriken", widget: string, required: false }
               - { name: "t2", label: "Huvudrubrik", widget: string, required: false }
               - { name: "t3", label: "Huvudrubrik, markerad del", widget: string, required: false }
@@ -878,7 +912,7 @@ collections:
             label: "Sökmotorer och delning (titel och beskrivning)"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
               - { name: "seo_title", label: "Sidtitel (visas i fliken och på Google)", widget: string, required: false }
               - { name: "seo_description", label: "Beskrivning (visas på Google, ca 150 tecken)", widget: text, required: false }
@@ -886,8 +920,9 @@ collections:
             label: "Hero"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t1", label: "Etikett ovanför rubriken", widget: string, required: false }
               - { name: "t2", label: "Huvudrubrik", widget: string, required: false }
               - { name: "t3", label: "Huvudrubrik, markerad del", widget: string, required: false }
@@ -903,8 +938,9 @@ collections:
             label: "Pay when you are happy"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t10", label: "Garanti: etikett", widget: string, required: false }
               - { name: "t11", label: "Garanti: rubrik", widget: string, required: false }
               - { name: "t12", label: "Garanti: brödtext", widget: text, required: false }
@@ -918,8 +954,9 @@ collections:
             label: "Before and after"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t19", label: "Rubrik", widget: string, required: false }
               - { name: "t20", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t21", label: "Problem 1", widget: string, required: false }
@@ -940,8 +977,9 @@ collections:
             label: "Who we are"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t35", label: "Rubrik", widget: string, required: false }
               - { name: "t36", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t37", label: "Brödtext", widget: text, required: false }
@@ -952,8 +990,9 @@ collections:
             label: "What we do"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t40", label: "Rubrik", widget: string, required: false }
               - { name: "t41", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t42", label: "Ingress", widget: text, required: false }
@@ -972,8 +1011,9 @@ collections:
             label: "How it works"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t54", label: "Rubrik", widget: string, required: false }
               - { name: "t55", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t56", label: "Ingress", widget: text, required: false }
@@ -992,8 +1032,9 @@ collections:
             label: "After the UF year"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t68", label: "Etikett ovanför rubriken", widget: string, required: false }
               - { name: "t69", label: "Rubrik", widget: string, required: false }
               - { name: "t70", label: "Rubrik, markerad del", widget: string, required: false }
@@ -1004,8 +1045,9 @@ collections:
             label: "We also stream live"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t74", label: "Etikett ovanför rubriken", widget: string, required: false }
               - { name: "t75", label: "Rubrik", widget: string, required: false }
               - { name: "t76", label: "Rubrik, markerad del", widget: string, required: false }
@@ -1025,8 +1067,9 @@ collections:
             label: "FAQ"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t87", label: "Rubrik", widget: string, required: false }
               - { name: "t88", label: "Sökfältets text", widget: string, required: false }
               - { name: "t89", label: "Fråga 1", widget: string, required: false }
@@ -1061,7 +1104,7 @@ collections:
             label: "Sökmotorer och delning (titel och beskrivning)"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
               - { name: "seo_title", label: "Sidtitel (visas i fliken och på Google)", widget: string, required: false }
               - { name: "seo_description", label: "Beskrivning (visas på Google, ca 150 tecken)", widget: text, required: false }
@@ -1069,8 +1112,9 @@ collections:
             label: "Sidhuvud"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t1", label: "Etikett ovanför rubriken", widget: string, required: false }
               - { name: "t2", label: "Huvudrubrik", widget: string, required: false }
               - { name: "t3", label: "Huvudrubrik, markerad del", widget: string, required: false }
@@ -1081,8 +1125,9 @@ collections:
             label: "Tjänster"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t7", label: "Tjänst 1: rubrik", widget: string, required: false }
               - { name: "t8", label: "Tjänst 1: text", widget: text, required: false }
               - { name: "t9", label: "Tjänst 1: etikett 1", widget: string, required: false }
@@ -1106,8 +1151,9 @@ collections:
             label: "What is included"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t26", label: "Rubrik", widget: string, required: false }
               - { name: "t27", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t28", label: "Ingress", widget: text, required: false }
@@ -1131,8 +1177,9 @@ collections:
             label: "Automatisering"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t45", label: "Rubrik", widget: string, required: false }
               - { name: "t46", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t47", label: "Ingress", widget: text, required: false }
@@ -1164,8 +1211,9 @@ collections:
             label: "Månadsrapport"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t72", label: "Rapportexempel: månad 1 (knapp)", widget: string, required: false }
               - { name: "t73", label: "Rapportexempel: månad 2 (knapp)", widget: string, required: false }
               - { name: "t74", label: "Rapportexempel: månad 3 (knapp)", widget: string, required: false }
@@ -1207,8 +1255,9 @@ collections:
             label: "Calculator"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t109", label: "Rubrik", widget: string, required: false }
               - { name: "t110", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t111", label: "Ingress", widget: text, required: false }
@@ -1228,8 +1277,9 @@ collections:
             label: "Så arbetar vi"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t123", label: "Rubrik", widget: string, required: false }
               - { name: "t124", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t125", label: "Ingress", widget: text, required: false }
@@ -1252,7 +1302,7 @@ collections:
             label: "Sökmotorer och delning (titel och beskrivning)"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
               - { name: "seo_title", label: "Sidtitel (visas i fliken och på Google)", widget: string, required: false }
               - { name: "seo_description", label: "Beskrivning (visas på Google, ca 150 tecken)", widget: text, required: false }
@@ -1260,8 +1310,9 @@ collections:
             label: "Page header"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t1", label: "Etikett ovanför rubriken", widget: string, required: false }
               - { name: "t2", label: "Huvudrubrik", widget: string, required: false }
               - { name: "t3", label: "Huvudrubrik, markerad del", widget: string, required: false }
@@ -1275,8 +1326,9 @@ collections:
             label: "Vad ingår"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t9", label: "Rubrik", widget: string, required: false }
               - { name: "t10", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t11", label: "Ingress", widget: text, required: false }
@@ -1292,8 +1344,9 @@ collections:
             label: "Passar för"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t20", label: "Rubrik", widget: string, required: false }
               - { name: "t21", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t22", label: "Tillfälle 1", widget: string, required: false }
@@ -1306,8 +1359,9 @@ collections:
             label: "Var ska ni sända"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t28", label: "Rubrik", widget: string, required: false }
               - { name: "t29", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t30", label: "Ingress", widget: string, required: false }
@@ -1323,8 +1377,9 @@ collections:
             label: "Så går det till"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t38", label: "Rubrik", widget: string, required: false }
               - { name: "t39", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t40", label: "Ingress", widget: string, required: false }
@@ -1347,7 +1402,7 @@ collections:
             label: "Sökmotorer och delning (titel och beskrivning)"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
               - { name: "seo_title", label: "Sidtitel (visas i fliken och på Google)", widget: string, required: false }
               - { name: "seo_description", label: "Beskrivning (visas på Google, ca 150 tecken)", widget: text, required: false }
@@ -1355,8 +1410,9 @@ collections:
             label: "Page header"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t1", label: "Etikett ovanför rubriken", widget: string, required: false }
               - { name: "t2", label: "Huvudrubrik", widget: string, required: false }
               - { name: "t3", label: "Huvudrubrik, markerad del", widget: string, required: false }
@@ -1365,8 +1421,9 @@ collections:
             label: "Paket"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t5", label: "Abisko: namn", widget: string, required: false }
               - { name: "t6", label: "Abisko: kort beskrivning", widget: string, required: false }
               - { name: "t7", label: "Abisko: rubrik över startkostnad", widget: string, required: false }
@@ -1432,8 +1489,9 @@ collections:
             label: "Jämförelse"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t55", label: "Rubrik", widget: string, required: false }
               - { name: "t64", label: "Tabell: rubrik för första kolumnen (visas bara för skärmläsare)", widget: string, required: false }
               - { name: "t65", label: "Tabell: kolumn Abisko", widget: string, required: false }
@@ -1494,8 +1552,9 @@ collections:
             label: "After the UF year"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t89", label: "Etikett ovanför rubriken", widget: string, required: false }
               - { name: "t90", label: "Rubrik", widget: string, required: false }
               - { name: "t91", label: "Rubrik, markerad del", widget: string, required: false }
@@ -1506,8 +1565,9 @@ collections:
             label: "Live streaming"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t95", label: "Rubrik", widget: string, required: false }
               - { name: "t96", label: "Text", widget: string, required: false }
               - { name: "t97", label: "Länk", widget: string, required: false }
@@ -1519,7 +1579,7 @@ collections:
             label: "Sökmotorer och delning (titel och beskrivning)"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
               - { name: "seo_title", label: "Sidtitel (visas i fliken och på Google)", widget: string, required: false }
               - { name: "seo_description", label: "Beskrivning (visas på Google, ca 150 tecken)", widget: text, required: false }
@@ -1527,8 +1587,9 @@ collections:
             label: "Page header"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t1", label: "Etikett ovanför rubriken", widget: string, required: false }
               - { name: "t2", label: "Huvudrubrik", widget: string, required: false }
               - { name: "t3", label: "Huvudrubrik, markerad del", widget: string, required: false }
@@ -1537,8 +1598,9 @@ collections:
             label: "Team"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t5", label: "Rubrik", widget: string, required: false }
               - { name: "t6_photo", label: "Person 1: foto", widget: image, required: false }
               - { name: "t7", label: "Person 1: text när foto saknas", widget: string, required: false }
@@ -1556,8 +1618,9 @@ collections:
             label: "Hur vi tänker"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t18", label: "Rubrik", widget: string, required: false }
               - { name: "t19", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t20", label: "Värdering 1: rubrik", widget: string, required: false }
@@ -1572,8 +1635,9 @@ collections:
             label: "After the UF year"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t28", label: "Etikett ovanför rubriken", widget: string, required: false }
               - { name: "t29", label: "Rubrik", widget: string, required: false }
               - { name: "t30", label: "Rubrik, markerad del", widget: string, required: false }
@@ -1584,8 +1648,9 @@ collections:
             label: "Samarbeten och kunder"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t34", label: "Rubrik över samarbetspartner", widget: string, required: false }
               - { name: "t35_src", label: "Samarbetspartner 1: logotyp", widget: image, required: false }
               - { name: "t35_alt", label: "Samarbetspartner 1: bildbeskrivning", widget: string, required: false }
@@ -1604,7 +1669,7 @@ collections:
             label: "Sökmotorer och delning (titel och beskrivning)"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
               - { name: "seo_title", label: "Sidtitel (visas i fliken och på Google)", widget: string, required: false }
               - { name: "seo_description", label: "Beskrivning (visas på Google, ca 150 tecken)", widget: text, required: false }
@@ -1612,8 +1677,9 @@ collections:
             label: "Kontakt"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t1", label: "Etikett ovanför rubriken", widget: string, required: false }
               - { name: "t2", label: "Huvudrubrik", widget: string, required: false }
               - { name: "t3", label: "Huvudrubrik, markerad del", widget: string, required: false }
@@ -1659,7 +1725,7 @@ collections:
             label: "Sökmotorer och delning (titel och beskrivning)"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
               - { name: "seo_title", label: "Sidtitel (visas i fliken och på Google)", widget: string, required: false }
               - { name: "seo_description", label: "Beskrivning (visas på Google, ca 150 tecken)", widget: text, required: false }
@@ -1667,8 +1733,9 @@ collections:
             label: "Innehåll"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
+              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t1", label: "Huvudrubrik", widget: string, required: false }
               - { name: "t2", label: "Ingress", widget: string, required: false }
               - { name: "t3", label: "Senast uppdaterad", widget: string, required: false }
@@ -1702,7 +1769,7 @@ collections:
             label: "Meny och knappar"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
               - { name: "skip_link", label: "Länk för att hoppa till innehållet (för tangentbord och skärmläsare)", widget: string, required: false }
               - { name: "nav_webbtjanster", label: "Menyval: Hemsidor", widget: string, required: false }
@@ -1715,7 +1782,7 @@ collections:
             label: "Instagram och Facebook"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
               - { name: "social_instagram_href", label: "Instagram: länkadress (gäller båda språken)", widget: string, required: false }
               - { name: "social_instagram_aria_label", label: "Instagram: beskrivning för skärmläsare", widget: string, required: false }
@@ -1725,7 +1792,7 @@ collections:
             label: "Sidfot"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
               - { name: "footer_tag", label: "Kort beskrivning av företaget", widget: text, required: false }
               - { name: "footer_head_services", label: "Rubrik över tjänstelänkarna", widget: string, required: false }
@@ -1741,7 +1808,7 @@ collections:
             label: "Uppmaning längst ned (de flesta sidor)"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
               - { name: "cta_title", label: "Rubrik", widget: string, required: false }
               - { name: "cta_text", label: "Text", widget: string, required: false }
@@ -1751,7 +1818,7 @@ collections:
             label: "Uppmaning längst ned (Priser)"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
               - { name: "cta_alt_title", label: "Rubrik", widget: string, required: false }
               - { name: "cta_alt_text", label: "Text", widget: string, required: false }
@@ -1761,7 +1828,7 @@ collections:
             label: "Uppmaning längst ned (Livesändning)"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
               - { name: "cta_live_title", label: "Rubrik", widget: string, required: false }
               - { name: "cta_live_text", label: "Text", widget: string, required: false }
@@ -1775,7 +1842,7 @@ collections:
             label: "Meny och knappar"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
               - { name: "skip_link", label: "Länk för att hoppa till innehållet (för tangentbord och skärmläsare)", widget: string, required: false }
               - { name: "nav_webbtjanster", label: "Menyval: Hemsidor", widget: string, required: false }
@@ -1788,7 +1855,7 @@ collections:
             label: "Instagram och Facebook"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
               - { name: "social_instagram_aria_label", label: "Instagram: beskrivning för skärmläsare", widget: string, required: false }
               - { name: "social_facebook_aria_label", label: "Facebook: beskrivning för skärmläsare", widget: string, required: false }
@@ -1796,7 +1863,7 @@ collections:
             label: "Sidfot"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
               - { name: "footer_tag", label: "Kort beskrivning av företaget", widget: text, required: false }
               - { name: "footer_head_services", label: "Rubrik över tjänstelänkarna", widget: string, required: false }
@@ -1808,7 +1875,7 @@ collections:
             label: "Uppmaning längst ned (de flesta sidor)"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
               - { name: "cta_title", label: "Rubrik", widget: string, required: false }
               - { name: "cta_text", label: "Text", widget: string, required: false }
@@ -1818,7 +1885,7 @@ collections:
             label: "Uppmaning längst ned (Priser)"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
               - { name: "cta_alt_title", label: "Rubrik", widget: string, required: false }
               - { name: "cta_alt_text", label: "Text", widget: string, required: false }
@@ -1828,7 +1895,7 @@ collections:
             label: "Uppmaning längst ned (Livesändning)"
             widget: object
             collapsed: true
-            required: false
+            required: true
             fields:
               - { name: "cta_live_title", label: "Rubrik", widget: string, required: false }
               - { name: "cta_live_text", label: "Text", widget: string, required: false }

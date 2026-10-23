@@ -12,6 +12,9 @@ Field names in the JSON files:
   <key>_photo    image file of a team photo (data-photo)
   <key>_<attr>   an attribute listed in data-cms-attrs, e.g. href
 
+Each section (an HTML comment such as <!-- Hero --> in <main>) also has a field
+"visa": false removes the section from the page, its texts stay in the file.
+
 Only text and attributes are edited; the markup around them stays as it is.
 """
 import html
@@ -52,13 +55,13 @@ def _skipped(tag, attrs):
 
 
 def walk(src):
-    """Yield (kind, data) events: ('open', node), ('close', node), ('text', (node, start, end)), ('comment', (text, depth))."""
+    """Yield (kind, data) events: ('open', node), ('close', node), ('text', (node, start, end)), ('comment', (text, depth, start))."""
     pos, stack = 0, []
     while pos < len(src):
         m = TOKEN.match(src, pos)
         tok = m.group(0)
         if tok.startswith("<!--"):
-            yield "comment", (tok[4:-3].strip(), len(stack))
+            yield "comment", (tok[4:-3].strip(), len(stack), m.start())
         elif m.group(2):
             closing, tag = m.group(1) == "/", m.group(2).lower()
             if closing:
@@ -170,9 +173,14 @@ def site_path(value):
 
 def extract(src, strip_prefix="{{p}}"):
     """Ordered list of sections: {'name', 'label', 'fields': [{name, label, widget, value}]}."""
+    return [s for s in _sections(src) if s["fields"]]
+
+
+def _sections(src):
+    """All sections, also those without fields, with 'start': where they begin in src."""
     sections, cur = [], None
 
-    def section(label):
+    def section(label, start):
         nonlocal cur
         slug = re.sub(r"[^a-z0-9]+", "_", label.lower().translate(str.maketrans("åäöé", "aaoe"))).strip("_") or "innehall"
         names = {s["name"] for s in sections}
@@ -180,15 +188,15 @@ def extract(src, strip_prefix="{{p}}"):
         while slug in names:
             i += 1
             slug = f"{base}_{i}"
-        cur = {"name": slug, "label": label, "fields": []}
+        cur = {"name": slug, "label": label, "fields": [], "start": start}
         sections.append(cur)
 
     seen = set()
     for kind, data in walk(src):
         if kind == "comment":
-            text, depth = data
+            text, depth, _start = data
             if depth <= 1 and text and not text.startswith(("HEAD", "/HEAD")) and len(text) < 60:
-                section(text)
+                section(text, data[2])
         elif kind == "open" and "data-cms" in data["attrs"]:
             key = data["attrs"]["data-cms"]
             for suffix, attr, widget in _editable_attrs(data):
@@ -196,7 +204,7 @@ def extract(src, strip_prefix="{{p}}"):
                     continue
                 seen.add(f"{key}_{suffix}")
                 if cur is None:
-                    section("Innehåll")
+                    section("Innehåll", 0)
                 value = data["attrs"].get(attr, "")
                 if widget == "image":
                     value = site_path(value)
@@ -217,10 +225,20 @@ def extract(src, strip_prefix="{{p}}"):
             seen.add(name)
             value = _plain(src[data[1]:data[2]])
             if cur is None:
-                section("Innehåll")
+                section("Innehåll", 0)
             widget = "text" if len(value) > 90 else "string"
             cur["fields"].append({"name": name, "label": _label(node, value), "widget": widget, "value": value})
-    return [s for s in sections if s["fields"]]
+    return sections
+
+
+def hide_sections(src, hidden):
+    """src without the sections named in `hidden` (from their comment up to the next section)."""
+    secs = _sections(src)
+    for i in reversed(range(len(secs))):
+        if secs[i]["name"] in hidden:
+            end = secs[i + 1]["start"] if i + 1 < len(secs) else len(src)
+            src = src[:secs[i]["start"]] + src[end:]
+    return src
 
 
 # ---------- 3. apply: write content into the page and remove the data-cms attributes ----------
@@ -295,7 +313,7 @@ def flatten(data):
     for v in data.values():
         if isinstance(v, dict):
             for k, x in v.items():
-                if isinstance(x, (str, int, float)):
+                if isinstance(x, (str, int, float)) and not isinstance(x, bool):
                     flat[k] = str(x)
     return flat
 
@@ -303,8 +321,9 @@ def flatten(data):
 def faq_jsonld(page_html):
     """Rebuild the FAQPage structured data from the questions on the page, so it always matches them."""
     items = re.findall(r"<details[^>]*>\s*<summary[^>]*>(.*?)</summary>(.*?)</details>", page_html, re.S)
-    if not items:
-        return page_html
+    faq_rx = r'<script type="application/ld\+json">\s*\{\s*"@context": "https://schema.org",\s*"@type": "FAQPage".*?</script>'
+    if not items:  # the FAQ section is hidden
+        return re.sub(r"[ \t]*" + faq_rx + r"\n?", "", page_html, count=1, flags=re.S)
 
     def text(s):
         return " ".join(html.unescape(re.sub(r"<[^>]+>", " ", s)).split()).replace(" .", ".").replace(" ,", ",")
@@ -313,5 +332,4 @@ def faq_jsonld(page_html):
     body = "\n".join("      " + json.dumps(x, ensure_ascii=False) + ("," if i < len(qa) - 1 else "") for i, x in enumerate(qa))
     block = ('<script type="application/ld+json">\n  {\n    "@context": "https://schema.org",\n    "@type": "FAQPage",\n'
              '    "mainEntity": [\n' + body + "\n    ]\n  }\n  </script>")
-    return re.sub(r'<script type="application/ld\+json">\s*\{\s*"@context": "https://schema.org",\s*"@type": "FAQPage".*?</script>',
-                  lambda m: block, page_html, count=1, flags=re.S)
+    return re.sub(faq_rx, lambda m: block, page_html, count=1, flags=re.S)

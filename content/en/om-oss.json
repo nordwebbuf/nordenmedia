@@ -4,12 +4,14 @@
     "seo_description": "Norden Media UF is run by students at Björknäsgymnasiet in Boden. We build websites and live stream events, with one contact person all the way."
   },
   "page_header": {
+    "visa": true,
     "t1": "About us",
     "t2": "Technology is our job.",
     "t3": "Your business is our focus.",
     "t4": "Norden Media UF builds websites and live streams events. We are students at Björknäsgymnasiet in Boden and run the business as a student company in partnership with Ung Företagsamhet (Junior Achievement Sweden). We take care of the tech, so that our clients can spend their time on their business."
   },
   "team": {
+    "visa": true,
     "t5": "The people who work here",
     "t6_photo": "/assets/team/person-1.jpg",
     "t7": "Photo coming soon",
@@ -25,6 +27,7 @@
     "t17": "Finance manager"
   },
   "hur_vi_tanker": {
+    "visa": true,
     "t18": "What we",
     "t19": "stand for.",
     "t20": "No hassle",
@@ -37,6 +40,7 @@
     "t27": "We stay on after launch and keep improving what works."
   },
   "after_the_uf_year": {
+    "visa": true,
     "t28": "Long-term",
     "t29": "Your website stays",
     "t30": "after the UF year.",
@@ -45,6 +49,7 @@
     "t33": "If you would rather move on, we hand over all the material and help you move to another provider, so the switch is smooth."
   },
   "samarbeten_och_kunder": {
+    "visa": true,
     "t34": "In partnership with",
     "t35_src": "/assets/logos/ung-foretagsamhet.svg",
     "t35_alt": "Ung Företagsamhet",

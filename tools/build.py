@@ -391,7 +391,13 @@ def finalize(html, key, lang):
     values = cms.flatten(content(lang, "shared"))
     sv_shared = cms.flatten(content("sv", "shared"))
     values.update({k: v for k, v in sv_shared.items() if k in LANGUAGE_NEUTRAL or k.endswith("_href")})
-    values.update(cms.flatten(content(lang, key)))
+    page = content(lang, key)
+    values.update(cms.flatten(page))
+    hidden = {name for name, sec in page.items() if isinstance(sec, dict) and sec.get("visa") is False}
+    if hidden:
+        start = html.index('<main id="main">') + len('<main id="main">')
+        end = html.index("</main>")
+        html = html[:start] + cms.hide_sections(html[start:end], hidden) + html[end:]
     return cms.faq_jsonld(cms.apply(html, values, p))
 
 
