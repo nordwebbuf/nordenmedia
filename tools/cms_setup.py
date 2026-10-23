@@ -19,6 +19,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import build  # noqa: E402
 import cms  # noqa: E402
+from cms_labels import LABELS  # noqa: E402
 
 ROOT = build.ROOT
 REPO = "nordwebbuf/nordenmedia"
@@ -41,6 +42,14 @@ SHARED_KEYS = set(re.findall(r'data-cms="\{?(\w+)\}?(?:_\w+)?"', open(os.path.jo
 
 def is_shared(name):
     return any(re.match(rx, name) for _g, _l, rx in SHARED_GROUPS)
+
+
+def relabel(fields, page, lang):
+    """Use the descriptive label from cms_labels.py where there is one."""
+    labels = {**LABELS.get(page, {}), **LABELS.get(f"{page}_{lang}", {})}
+    for f in fields:
+        f["label"] = labels.get(f["name"], f["label"])
+    return fields
 
 
 def page_langs(key):
@@ -118,7 +127,7 @@ def main():
             html = rendered(key, lang)
             sections = []
             for s in cms.extract(main_part(html)):
-                fields = [f for f in s["fields"] if not is_shared(f["name"])]
+                fields = relabel([f for f in s["fields"] if not is_shared(f["name"])], key, lang)
                 if fields:
                     sections.append(dict(s, fields=fields))
             seo = {"name": "seo", "label": "Sökmotorer och delning (titel och beskrivning)", "fields": [
@@ -131,7 +140,7 @@ def main():
             write_json(path, merge(cms.load(path), sections))
             files[lang].append((key, sections))
             for s in cms.extract(html):
-                shared[lang].extend(f for f in s["fields"] if is_shared(f["name"]))
+                shared[lang].extend(relabel([f for f in s["fields"] if is_shared(f["name"])], "shared", lang))
 
     for lang in LANGS:
         seen, groups = set(), []
