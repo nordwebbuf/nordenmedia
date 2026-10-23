@@ -794,3 +794,10 @@ a.showcase:hover .showcase-phone { transform: translateY(-8px); }
 
 /* Pricing: number of pages per package */
 .compare-table .row-text td, .compare-table .row-pages td { font-weight: 500; color: var(--ink); white-space: nowrap; }
+
+/* Pricing: group headings in the comparison table and the "everything in ..., plus" line */
+.compare-table .row-group th { padding: 22px 20px 10px; text-align: left; font-size: .75rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); border-bottom: 1px solid var(--line); background: transparent; }
+.compare-table tbody tr.row-group:first-child th { padding-top: 14px; }
+.plan-list .plan-plus { font-weight: 600; }
+.plan-list .plan-plus i { color: var(--accent-2); }
+.plan-featured .plan-list .plan-plus i { color: var(--accent-block-ink); }

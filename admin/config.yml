@@ -517,55 +517,58 @@ collections:
             required: false
             fields:
               - { name: "t5", label: "Rubrik: Abisko", widget: string, required: false }
-              - { name: "t6", label: "Text: För er som vill komma igång med en enkel och m…", widget: string, required: false }
+              - { name: "t6", label: "Text: En snygg och enkel hemsida, på plats snabbt.", widget: string, required: false }
               - { name: "t7", label: "Text: Startkostnad", widget: string, required: false }
               - { name: "t8", label: "Text: 3 495", widget: string, required: false }
               - { name: "t9", label: "Text: kr", widget: string, required: false }
               - { name: "t10", label: "Text: Sedan per månad", widget: string, required: false }
               - { name: "t11", label: "Text: 195", widget: string, required: false }
               - { name: "t12", label: "Text: kr/mån", widget: string, required: false }
-              - { name: "t13", label: "Text: 1–3 sidor", widget: string, required: false }
-              - { name: "t14", label: "Text: Hemsida med kontaktformulär", widget: string, required: false }
-              - { name: "t15", label: "Text: Egen webbadress (domän)", widget: string, required: false }
-              - { name: "t16", label: "Text: Företagsmejl, en adress", widget: string, required: false }
-              - { name: "t17", label: "Text: Drift, säkerhet och uppdateringar", widget: string, required: false }
-              - { name: "t18", label: "Text: Grund för att synas på Google", widget: string, required: false }
+              - { name: "t13", label: "Text: Upp till 3 sidor", widget: string, required: false }
+              - { name: "t14", label: "Text: Mobilanpassad design med kontaktformulär", widget: string, required: false }
+              - { name: "t15", label: "Text: Egen domän och en", widget: string, required: false }
+              - { name: "t128", label: "Text: e-postadress", widget: string, required: false }
+              - { name: "t16", label: "Text: Drift, säkerhet och SSL", widget: string, required: false }
+              - { name: "t17", label: "Text: Grundläggande synlighet på Google", widget: string, required: false }
+              - { name: "t18", label: "Text: Ändra texter och bilder själva", widget: string, required: false }
               - { name: "t19", label: "Knapp: Välj Abisko", widget: string, required: false }
               - { name: "t20", label: "Text: Populärast", widget: string, required: false }
               - { name: "t21", label: "Rubrik: Sarek", widget: string, required: false }
-              - { name: "t22", label: "Text: Mest för pengarna. För er som vill bli hittade…", widget: string, required: false }
+              - { name: "t22", label: "Text: För er som vill synas, få fler förfrågningar o…", widget: string, required: false }
               - { name: "t23", label: "Text: Startkostnad", widget: string, required: false }
               - { name: "t24", label: "Text: 5 995", widget: string, required: false }
               - { name: "t25", label: "Text: kr", widget: string, required: false }
               - { name: "t26", label: "Text: Sedan per månad", widget: string, required: false }
-              - { name: "t27", label: "Text: 295", widget: string, required: false }
+              - { name: "t27", label: "Text: 395", widget: string, required: false }
               - { name: "t28", label: "Text: kr/mån", widget: string, required: false }
-              - { name: "t29", label: "Text: Allt i Abisko", widget: string, required: false }
+              - { name: "t29", label: "Text: Allt i Abisko, plus:", widget: string, required: false }
               - { name: "t30", label: "Text: Upp till 10 sidor", widget: string, required: false }
-              - { name: "t31", label: "Text: Företagsmejl för hela teamet, upp till 5 adres…", widget: string, required: false }
-              - { name: "t32", label: "Text: Profil i Google Maps och synlighet i", widget: string, required: false }
-              - { name: "t122", label: "Text: AI-tjänster", widget: string, required: false }
-              - { name: "t33", label: "Text: Bokning direkt på hemsidan", widget: string, required: false }
-              - { name: "t34", label: "Text: Månadsrapport med förslag på förbättringar", widget: string, required: false }
-              - { name: "t35", label: "Text: Små ändringar ingår, upp till 1 timme i månaden", widget: string, required: false }
+              - { name: "t31", label: "Text: Upp till 5", widget: string, required: false }
+              - { name: "t129", label: "Text: e-postadresser", widget: string, required: false }
+              - { name: "t130", label: "Text: Google-företagsprofil", widget: string, required: false }
+              - { name: "t32", label: "Text: och synlighet i", widget: string, required: false }
+              - { name: "t131", label: "Text: AI-svar", widget: string, required: false }
+              - { name: "t33", label: "Text: Bokning eller offertformulär", widget: string, required: false }
+              - { name: "t34", label: "Text: Månadsrapport med förslag", widget: string, required: false }
+              - { name: "t35", label: "Text: 1 timme ändringar varje månad", widget: string, required: false }
               - { name: "t36", label: "Knapp: Välj Sarek", widget: string, required: false }
               - { name: "t37", label: "Rubrik: Kebne", widget: string, required: false }
-              - { name: "t38", label: "Text: För er som vill ha allt. Automatisering, kundi…", widget: string, required: false }
+              - { name: "t38", label: "Text: En komplett digital partner som tar hand om al…", widget: string, required: false }
               - { name: "t39", label: "Text: Startkostnad", widget: string, required: false }
-              - { name: "t40", label: "Text: 14 995", widget: string, required: false }
+              - { name: "t40", label: "Text: 11 995", widget: string, required: false }
               - { name: "t41", label: "Text: kr", widget: string, required: false }
               - { name: "t42", label: "Text: Sedan per månad", widget: string, required: false }
-              - { name: "t43", label: "Text: 1 295", widget: string, required: false }
+              - { name: "t43", label: "Text: 795", widget: string, required: false }
               - { name: "t44", label: "Text: kr/mån", widget: string, required: false }
-              - { name: "t45", label: "Text: Allt i Sarek", widget: string, required: false }
-              - { name: "t57", label: "Text: Obegränsat antal sidor", widget: string, required: false }
-              - { name: "t58", label: "Text: Obegränsat antal mejladresser", widget: string, required: false }
-              - { name: "t59", label: "Text: Kundinloggning och kundregister", widget: string, required: false }
-              - { name: "t60", label: "Text: Automatiska bekräftelser och utskick", widget: string, required: false }
-              - { name: "t61", label: "Text: Ändringar ingår, upp till 3 timmar i månaden", widget: string, required: false }
-              - { name: "t62", label: "Text: Prioriterad support, svar samma dag", widget: string, required: false }
-              - { name: "t63", label: "Text: Strategimöte varje kvartal", widget: string, required: false }
-              - { name: "t64", label: "Knapp: Välj Kebne", widget: string, required: false }
+              - { name: "t45", label: "Text: Allt i Sarek, plus:", widget: string, required: false }
+              - { name: "t57", label: "Text: Obegränsat antal sidor och", widget: string, required: false }
+              - { name: "t132", label: "Text: e-postadresser", widget: string, required: false }
+              - { name: "t58", label: "Text: Kundinloggning och kundregister", widget: string, required: false }
+              - { name: "t59", label: "Text: Automatiska bekräftelser och utskick", widget: string, required: false }
+              - { name: "t60", label: "Text: 3 timmar ändringar varje månad", widget: string, required: false }
+              - { name: "t61", label: "Text: Prioriterad support, svar samma dag", widget: string, required: false }
+              - { name: "t62", label: "Text: Strategimöte varje kvartal", widget: string, required: false }
+              - { name: "t63", label: "Knapp: Välj Kebne", widget: string, required: false }
               - { name: "t46", label: "Text: Nöjd kund-garanti", widget: string, required: false }
               - { name: "t47", label: "Rubrik: Ni betalar först när ni är nöjda.", widget: string, required: false }
               - { name: "t48", label: "Text: Vi bygger klart och visar resultatet. Först nä…", widget: text, required: false }
@@ -583,54 +586,61 @@ collections:
             required: false
             fields:
               - { name: "t56", label: "Rubrik: Jämför paketen", widget: string, required: false }
-              - { name: "t65", label: "Text: Funktion", widget: string, required: false }
-              - { name: "t66", label: "Tabellrubrik: Abisko", widget: string, required: false }
-              - { name: "t67", label: "Tabellrubrik: Sarek", widget: string, required: false }
-              - { name: "t68", label: "Tabellrubrik: Kebne", widget: string, required: false }
+              - { name: "t64", label: "Text: Funktion", widget: string, required: false }
+              - { name: "t65", label: "Tabellrubrik: Abisko", widget: string, required: false }
+              - { name: "t66", label: "Tabellrubrik: Sarek", widget: string, required: false }
+              - { name: "t67", label: "Tabellrubrik: Kebne", widget: string, required: false }
+              - { name: "t68", label: "Tabellrubrik: Hemsida", widget: string, required: false }
               - { name: "t69", label: "Tabellrubrik: Antal sidor", widget: string, required: false }
-              - { name: "t70", label: "Tabellcell: 1–3", widget: string, required: false }
+              - { name: "t70", label: "Tabellcell: Upp till 3", widget: string, required: false }
               - { name: "t71", label: "Tabellcell: Upp till 10", widget: string, required: false }
               - { name: "t72", label: "Tabellcell: Obegränsat", widget: string, required: false }
-              - { name: "t73", label: "Tabellrubrik: Hemsida med kontaktformulär", widget: string, required: false }
-              - { name: "t74", label: "Tabellrubrik: Egen webbadress (domän)", widget: string, required: false }
-              - { name: "t75", label: "Tabellrubrik: Drift, säkerhet och uppdateringar", widget: string, required: false }
-              - { name: "t76", label: "Tabellrubrik: Grund för att synas på Google", widget: string, required: false }
-              - { name: "t77", label: "Tabellrubrik: Företagsmejl", widget: string, required: false }
-              - { name: "t78", label: "Tabellcell: 1 adress", widget: string, required: false }
-              - { name: "t79", label: "Tabellcell: Upp till 5", widget: string, required: false }
-              - { name: "t80", label: "Tabellcell: Obegränsat", widget: string, required: false }
-              - { name: "t81", label: "Tabellrubrik: Profil i Google Maps", widget: string, required: false }
-              - { name: "t82", label: "Text: -", widget: string, required: false }
-              - { name: "t83", label: "Tabellrubrik: Synlighet i AI-tjänster", widget: string, required: false }
-              - { name: "t84", label: "Text: -", widget: string, required: false }
-              - { name: "t85", label: "Tabellrubrik: Bokning på hemsidan", widget: string, required: false }
-              - { name: "t86", label: "Text: -", widget: string, required: false }
-              - { name: "t87", label: "Tabellrubrik: Månadsrapport", widget: string, required: false }
-              - { name: "t88", label: "Text: -", widget: string, required: false }
-              - { name: "t89", label: "Tabellrubrik: Ändringar som ingår", widget: string, required: false }
+              - { name: "t73", label: "Tabellrubrik: Mobilanpassad design", widget: string, required: false }
+              - { name: "t74", label: "Tabellrubrik: Kontaktformulär", widget: string, required: false }
+              - { name: "t75", label: "Tabellrubrik: Ändra texter och bilder själva", widget: string, required: false }
+              - { name: "t76", label: "Tabellrubrik: Bokning eller offertformulär", widget: string, required: false }
+              - { name: "t77", label: "Text: -", widget: string, required: false }
+              - { name: "t78", label: "Tabellrubrik: Kundinloggning och kundregister", widget: string, required: false }
+              - { name: "t79", label: "Text: -", widget: string, required: false }
+              - { name: "t80", label: "Text: -", widget: string, required: false }
+              - { name: "t81", label: "Tabellrubrik: Domän och e-post", widget: string, required: false }
+              - { name: "t82", label: "Tabellrubrik: Egen domän", widget: string, required: false }
+              - { name: "t83", label: "Tabellrubrik: E-postadresser", widget: string, required: false }
+              - { name: "t84", label: "Tabellcell: 1", widget: string, required: false }
+              - { name: "t85", label: "Tabellcell: Upp till 5", widget: string, required: false }
+              - { name: "t86", label: "Tabellcell: Obegränsat", widget: string, required: false }
+              - { name: "t87", label: "Tabellrubrik: Synlighet", widget: string, required: false }
+              - { name: "t88", label: "Tabellrubrik: Grundläggande synlighet på Google", widget: string, required: false }
+              - { name: "t89", label: "Tabellrubrik: Google-företagsprofil", widget: string, required: false }
               - { name: "t99", label: "Text: -", widget: string, required: false }
-              - { name: "t100", label: "Tabellcell: 1 tim/mån", widget: string, required: false }
-              - { name: "t101", label: "Tabellcell: 3 tim/mån", widget: string, required: false }
-              - { name: "t102", label: "Tabellrubrik: Kundinloggning och kundregister", widget: string, required: false }
+              - { name: "t100", label: "Tabellrubrik: Synlighet i AI-svar", widget: string, required: false }
+              - { name: "t101", label: "Text: -", widget: string, required: false }
+              - { name: "t102", label: "Tabellrubrik: Månadsrapport", widget: string, required: false }
               - { name: "t103", label: "Text: -", widget: string, required: false }
-              - { name: "t104", label: "Text: -", widget: string, required: false }
-              - { name: "t105", label: "Tabellrubrik: Automatiska bekräftelser och utskick", widget: string, required: false }
-              - { name: "t106", label: "Text: -", widget: string, required: false }
+              - { name: "t104", label: "Tabellrubrik: Drift och support", widget: string, required: false }
+              - { name: "t105", label: "Tabellrubrik: Drift, säkerhet och SSL", widget: string, required: false }
+              - { name: "t106", label: "Tabellrubrik: Ändringar som ingår", widget: string, required: false }
               - { name: "t107", label: "Text: -", widget: string, required: false }
-              - { name: "t108", label: "Tabellrubrik: Prioriterad support", widget: string, required: false }
-              - { name: "t109", label: "Text: -", widget: string, required: false }
-              - { name: "t110", label: "Text: -", widget: string, required: false }
-              - { name: "t111", label: "Tabellrubrik: Strategimöte varje kvartal", widget: string, required: false }
+              - { name: "t108", label: "Tabellcell: 1 tim/mån", widget: string, required: false }
+              - { name: "t109", label: "Tabellcell: 3 tim/mån", widget: string, required: false }
+              - { name: "t110", label: "Tabellrubrik: Automatiska bekräftelser och utskick", widget: string, required: false }
+              - { name: "t111", label: "Text: -", widget: string, required: false }
               - { name: "t112", label: "Text: -", widget: string, required: false }
-              - { name: "t113", label: "Text: -", widget: string, required: false }
-              - { name: "t114", label: "Tabellrubrik: Startkostnad, en gång", widget: string, required: false }
-              - { name: "t115", label: "Tabellcell: 3 495 kr", widget: string, required: false }
-              - { name: "t116", label: "Tabellcell: 5 995 kr", widget: string, required: false }
-              - { name: "t117", label: "Tabellcell: 14 995 kr", widget: string, required: false }
-              - { name: "t118", label: "Tabellrubrik: Pris per månad", widget: string, required: false }
-              - { name: "t119", label: "Tabellcell: 195 kr", widget: string, required: false }
-              - { name: "t120", label: "Tabellcell: 295 kr", widget: string, required: false }
-              - { name: "t121", label: "Tabellcell: 1 295 kr", widget: string, required: false }
+              - { name: "t113", label: "Tabellrubrik: Support", widget: string, required: false }
+              - { name: "t114", label: "Tabellcell: E-post", widget: string, required: false }
+              - { name: "t115", label: "Tabellcell: E-post och telefon", widget: string, required: false }
+              - { name: "t116", label: "Tabellcell: Prioriterad, samma dag", widget: string, required: false }
+              - { name: "t117", label: "Tabellrubrik: Strategimöte varje kvartal", widget: string, required: false }
+              - { name: "t118", label: "Text: -", widget: string, required: false }
+              - { name: "t119", label: "Text: -", widget: string, required: false }
+              - { name: "t120", label: "Tabellrubrik: Startkostnad, en gång", widget: string, required: false }
+              - { name: "t121", label: "Tabellcell: 3 495 kr", widget: string, required: false }
+              - { name: "t122", label: "Tabellcell: 5 995 kr", widget: string, required: false }
+              - { name: "t123", label: "Tabellcell: 11 995 kr", widget: string, required: false }
+              - { name: "t124", label: "Tabellrubrik: Pris per månad", widget: string, required: false }
+              - { name: "t125", label: "Tabellcell: 195 kr", widget: string, required: false }
+              - { name: "t126", label: "Tabellcell: 395 kr", widget: string, required: false }
+              - { name: "t127", label: "Tabellcell: 795 kr", widget: string, required: false }
           - name: "efter_uf_aret"
             label: "Efter UF-året"
             widget: object
@@ -1358,54 +1368,56 @@ collections:
             required: false
             fields:
               - { name: "t5", label: "Rubrik: Abisko", widget: string, required: false }
-              - { name: "t6", label: "Text: For businesses that want to get started with a…", widget: string, required: false }
+              - { name: "t6", label: "Text: A clean, simple website, up and running quickly.", widget: string, required: false }
               - { name: "t7", label: "Text: Start-up cost", widget: string, required: false }
               - { name: "t8", label: "Text: 3,495", widget: string, required: false }
               - { name: "t9", label: "Text: SEK", widget: string, required: false }
               - { name: "t10", label: "Text: Then per month", widget: string, required: false }
               - { name: "t11", label: "Text: 195", widget: string, required: false }
               - { name: "t12", label: "Text: SEK/month", widget: string, required: false }
-              - { name: "t13", label: "Text: 1–3 pages", widget: string, required: false }
-              - { name: "t14", label: "Text: Website with contact form", widget: string, required: false }
-              - { name: "t15", label: "Text: Your own web address (domain)", widget: string, required: false }
-              - { name: "t16", label: "Text: Business email, one address", widget: string, required: false }
-              - { name: "t17", label: "Text: Hosting, security and updates", widget: string, required: false }
-              - { name: "t18", label: "Text: The basics for being found on Google", widget: string, required: false }
+              - { name: "t13", label: "Text: Up to 3 pages", widget: string, required: false }
+              - { name: "t128", label: "Text: Mobile-friendly", widget: string, required: false }
+              - { name: "t14", label: "Text: design with contact form", widget: string, required: false }
+              - { name: "t15", label: "Text: Your own domain and one email address", widget: string, required: false }
+              - { name: "t16", label: "Text: Hosting, security and SSL", widget: string, required: false }
+              - { name: "t17", label: "Text: The basics for being found on Google", widget: string, required: false }
+              - { name: "t18", label: "Text: Edit texts and images yourself", widget: string, required: false }
               - { name: "t19", label: "Knapp: Choose Abisko", widget: string, required: false }
               - { name: "t20", label: "Text: Most popular", widget: string, required: false }
               - { name: "t21", label: "Rubrik: Sarek", widget: string, required: false }
-              - { name: "t22", label: "Text: Best value. For businesses that want to be fou…", widget: string, required: false }
+              - { name: "t22", label: "Text: For businesses that want to be found, get more…", widget: string, required: false }
               - { name: "t23", label: "Text: Start-up cost", widget: string, required: false }
               - { name: "t24", label: "Text: 5,995", widget: string, required: false }
               - { name: "t25", label: "Text: SEK", widget: string, required: false }
               - { name: "t26", label: "Text: Then per month", widget: string, required: false }
-              - { name: "t27", label: "Text: 295", widget: string, required: false }
+              - { name: "t27", label: "Text: 395", widget: string, required: false }
               - { name: "t28", label: "Text: SEK/month", widget: string, required: false }
-              - { name: "t29", label: "Text: Everything in Abisko", widget: string, required: false }
+              - { name: "t29", label: "Text: Everything in Abisko, plus:", widget: string, required: false }
               - { name: "t30", label: "Text: Up to 10 pages", widget: string, required: false }
-              - { name: "t31", label: "Text: Business email for the whole team, up to 5 add…", widget: string, required: false }
-              - { name: "t32", label: "Text: Google Maps profile and visibility in AI servi…", widget: string, required: false }
-              - { name: "t33", label: "Text: Online booking on your website", widget: string, required: false }
-              - { name: "t34", label: "Text: Monthly report with suggested improvements", widget: string, required: false }
-              - { name: "t35", label: "Text: Small changes included, up to 1 hour a month", widget: string, required: false }
+              - { name: "t31", label: "Text: Up to 5 email addresses", widget: string, required: false }
+              - { name: "t32", label: "Text: Google Business Profile and visibility in AI a…", widget: string, required: false }
+              - { name: "t33", label: "Text: Booking or quote form", widget: string, required: false }
+              - { name: "t34", label: "Text: Monthly report with suggestions", widget: string, required: false }
+              - { name: "t35", label: "Text: 1 hour of changes every month", widget: string, required: false }
               - { name: "t36", label: "Knapp: Choose Sarek", widget: string, required: false }
               - { name: "t37", label: "Rubrik: Kebne", widget: string, required: false }
-              - { name: "t38", label: "Text: For businesses that want it all. Automation, c…", widget: string, required: false }
+              - { name: "t38", label: "Text: A complete digital partner that takes care of…", widget: string, required: false }
               - { name: "t39", label: "Text: Start-up cost", widget: string, required: false }
-              - { name: "t40", label: "Text: 14,995", widget: string, required: false }
+              - { name: "t40", label: "Text: 11,995", widget: string, required: false }
               - { name: "t41", label: "Text: SEK", widget: string, required: false }
               - { name: "t42", label: "Text: Then per month", widget: string, required: false }
-              - { name: "t43", label: "Text: 1,295", widget: string, required: false }
+              - { name: "t43", label: "Text: 795", widget: string, required: false }
               - { name: "t44", label: "Text: SEK/month", widget: string, required: false }
-              - { name: "t56", label: "Text: Everything in Sarek", widget: string, required: false }
-              - { name: "t57", label: "Text: Unlimited pages", widget: string, required: false }
-              - { name: "t58", label: "Text: Unlimited email addresses", widget: string, required: false }
-              - { name: "t59", label: "Text: Customer login and customer register", widget: string, required: false }
-              - { name: "t60", label: "Text: Automatic confirmations and messages", widget: string, required: false }
-              - { name: "t61", label: "Text: Changes included, up to 3 hours a month", widget: string, required: false }
-              - { name: "t62", label: "Text: Priority support, same-day replies", widget: string, required: false }
-              - { name: "t63", label: "Text: Strategy meeting every quarter", widget: string, required: false }
-              - { name: "t64", label: "Knapp: Choose Kebne", widget: string, required: false }
+              - { name: "t56", label: "Text: Everything in Sarek, plus:", widget: string, required: false }
+              - { name: "t57", label: "Text: Unlimited pages and email addresses", widget: string, required: false }
+              - { name: "t58", label: "Text: Customer login and customer register", widget: string, required: false }
+              - { name: "t59", label: "Text: Automatic confirmations and messages", widget: string, required: false }
+              - { name: "t60", label: "Text: 3 hours of changes every month", widget: string, required: false }
+              - { name: "t61", label: "Text: Priority support,", widget: string, required: false }
+              - { name: "t129", label: "Text: same-day", widget: string, required: false }
+              - { name: "t61_2", label: "Text: replies", widget: string, required: false }
+              - { name: "t62", label: "Text: Strategy meeting every quarter", widget: string, required: false }
+              - { name: "t63", label: "Knapp: Choose Kebne", widget: string, required: false }
               - { name: "t45", label: "Text: Satisfaction guarantee", widget: string, required: false }
               - { name: "t46", label: "Rubrik: You only pay when you are happy.", widget: string, required: false }
               - { name: "t47", label: "Text: We finish the work and show you the result. On…", widget: text, required: false }
@@ -1423,54 +1435,61 @@ collections:
             required: false
             fields:
               - { name: "t55", label: "Rubrik: Compare the packages", widget: string, required: false }
-              - { name: "t65", label: "Text: Feature", widget: string, required: false }
-              - { name: "t66", label: "Tabellrubrik: Abisko", widget: string, required: false }
-              - { name: "t67", label: "Tabellrubrik: Sarek", widget: string, required: false }
-              - { name: "t68", label: "Tabellrubrik: Kebne", widget: string, required: false }
+              - { name: "t64", label: "Text: Feature", widget: string, required: false }
+              - { name: "t65", label: "Tabellrubrik: Abisko", widget: string, required: false }
+              - { name: "t66", label: "Tabellrubrik: Sarek", widget: string, required: false }
+              - { name: "t67", label: "Tabellrubrik: Kebne", widget: string, required: false }
+              - { name: "t68", label: "Tabellrubrik: Website", widget: string, required: false }
               - { name: "t69", label: "Tabellrubrik: Number of pages", widget: string, required: false }
-              - { name: "t70", label: "Tabellcell: 1–3", widget: string, required: false }
+              - { name: "t70", label: "Tabellcell: Up to 3", widget: string, required: false }
               - { name: "t71", label: "Tabellcell: Up to 10", widget: string, required: false }
               - { name: "t72", label: "Tabellcell: Unlimited", widget: string, required: false }
-              - { name: "t73", label: "Tabellrubrik: Website with contact form", widget: string, required: false }
-              - { name: "t74", label: "Tabellrubrik: Your own web address (domain)", widget: string, required: false }
-              - { name: "t75", label: "Tabellrubrik: Hosting, security and updates", widget: string, required: false }
-              - { name: "t76", label: "Tabellrubrik: The basics for being found on Google", widget: string, required: false }
-              - { name: "t77", label: "Tabellrubrik: Business email", widget: string, required: false }
-              - { name: "t78", label: "Tabellcell: 1 address", widget: string, required: false }
-              - { name: "t79", label: "Tabellcell: Up to 5", widget: string, required: false }
-              - { name: "t80", label: "Tabellcell: Unlimited", widget: string, required: false }
-              - { name: "t81", label: "Tabellrubrik: Google Maps profile", widget: string, required: false }
-              - { name: "t82", label: "Text: -", widget: string, required: false }
-              - { name: "t83", label: "Tabellrubrik: Visibility in AI services", widget: string, required: false }
-              - { name: "t84", label: "Text: -", widget: string, required: false }
-              - { name: "t85", label: "Tabellrubrik: Online booking", widget: string, required: false }
-              - { name: "t86", label: "Text: -", widget: string, required: false }
-              - { name: "t87", label: "Tabellrubrik: Monthly report", widget: string, required: false }
-              - { name: "t88", label: "Text: -", widget: string, required: false }
-              - { name: "t98", label: "Tabellrubrik: Changes included", widget: string, required: false }
+              - { name: "t73", label: "Tabellrubrik: Mobile-friendly design", widget: string, required: false }
+              - { name: "t74", label: "Tabellrubrik: Contact form", widget: string, required: false }
+              - { name: "t75", label: "Tabellrubrik: Edit texts and images yourself", widget: string, required: false }
+              - { name: "t76", label: "Tabellrubrik: Booking or quote form", widget: string, required: false }
+              - { name: "t77", label: "Text: -", widget: string, required: false }
+              - { name: "t78", label: "Tabellrubrik: Customer login and customer register", widget: string, required: false }
+              - { name: "t79", label: "Text: -", widget: string, required: false }
+              - { name: "t80", label: "Text: -", widget: string, required: false }
+              - { name: "t81", label: "Tabellrubrik: Domain and email", widget: string, required: false }
+              - { name: "t82", label: "Tabellrubrik: Your own domain", widget: string, required: false }
+              - { name: "t83", label: "Tabellrubrik: Email addresses", widget: string, required: false }
+              - { name: "t84", label: "Tabellcell: 1", widget: string, required: false }
+              - { name: "t85", label: "Tabellcell: Up to 5", widget: string, required: false }
+              - { name: "t86", label: "Tabellcell: Unlimited", widget: string, required: false }
+              - { name: "t87", label: "Tabellrubrik: Visibility", widget: string, required: false }
+              - { name: "t88", label: "Tabellrubrik: The basics for being found on Google", widget: string, required: false }
+              - { name: "t98", label: "Tabellrubrik: Google Business Profile", widget: string, required: false }
               - { name: "t99", label: "Text: -", widget: string, required: false }
-              - { name: "t100", label: "Tabellcell: 1 h/month", widget: string, required: false }
-              - { name: "t101", label: "Tabellcell: 3 h/month", widget: string, required: false }
-              - { name: "t102", label: "Tabellrubrik: Customer login and customer register", widget: string, required: false }
+              - { name: "t100", label: "Tabellrubrik: Visibility in AI answers", widget: string, required: false }
+              - { name: "t101", label: "Text: -", widget: string, required: false }
+              - { name: "t102", label: "Tabellrubrik: Monthly report", widget: string, required: false }
               - { name: "t103", label: "Text: -", widget: string, required: false }
-              - { name: "t104", label: "Text: -", widget: string, required: false }
-              - { name: "t105", label: "Tabellrubrik: Automatic confirmations and messages", widget: string, required: false }
-              - { name: "t106", label: "Text: -", widget: string, required: false }
+              - { name: "t104", label: "Tabellrubrik: Hosting and support", widget: string, required: false }
+              - { name: "t105", label: "Tabellrubrik: Hosting, security and SSL", widget: string, required: false }
+              - { name: "t106", label: "Tabellrubrik: Changes included", widget: string, required: false }
               - { name: "t107", label: "Text: -", widget: string, required: false }
-              - { name: "t108", label: "Tabellrubrik: Priority support", widget: string, required: false }
-              - { name: "t109", label: "Text: -", widget: string, required: false }
-              - { name: "t110", label: "Text: -", widget: string, required: false }
-              - { name: "t111", label: "Tabellrubrik: Strategy meeting every quarter", widget: string, required: false }
+              - { name: "t108", label: "Tabellcell: 1 h/month", widget: string, required: false }
+              - { name: "t109", label: "Tabellcell: 3 h/month", widget: string, required: false }
+              - { name: "t110", label: "Tabellrubrik: Automatic confirmations and messages", widget: string, required: false }
+              - { name: "t111", label: "Text: -", widget: string, required: false }
               - { name: "t112", label: "Text: -", widget: string, required: false }
-              - { name: "t113", label: "Text: -", widget: string, required: false }
-              - { name: "t114", label: "Tabellrubrik: Start-up cost, one-off", widget: string, required: false }
-              - { name: "t115", label: "Tabellcell: 3,495 SEK", widget: string, required: false }
-              - { name: "t116", label: "Tabellcell: 5,995 SEK", widget: string, required: false }
-              - { name: "t117", label: "Tabellcell: 14,995 SEK", widget: string, required: false }
-              - { name: "t118", label: "Tabellrubrik: Price per month", widget: string, required: false }
-              - { name: "t119", label: "Tabellcell: 195 SEK", widget: string, required: false }
-              - { name: "t120", label: "Tabellcell: 295 SEK", widget: string, required: false }
-              - { name: "t121", label: "Tabellcell: 1,295 SEK", widget: string, required: false }
+              - { name: "t113", label: "Tabellrubrik: Support", widget: string, required: false }
+              - { name: "t114", label: "Tabellcell: Email", widget: string, required: false }
+              - { name: "t115", label: "Tabellcell: Email and phone", widget: string, required: false }
+              - { name: "t116", label: "Tabellcell: Priority, same day", widget: string, required: false }
+              - { name: "t117", label: "Tabellrubrik: Strategy meeting every quarter", widget: string, required: false }
+              - { name: "t118", label: "Text: -", widget: string, required: false }
+              - { name: "t119", label: "Text: -", widget: string, required: false }
+              - { name: "t120", label: "Tabellrubrik: Start-up cost, one-off", widget: string, required: false }
+              - { name: "t121", label: "Tabellcell: 3,495 SEK", widget: string, required: false }
+              - { name: "t122", label: "Tabellcell: 5,995 SEK", widget: string, required: false }
+              - { name: "t123", label: "Tabellcell: 11,995 SEK", widget: string, required: false }
+              - { name: "t124", label: "Tabellrubrik: Price per month", widget: string, required: false }
+              - { name: "t125", label: "Tabellcell: 195 SEK", widget: string, required: false }
+              - { name: "t126", label: "Tabellcell: 395 SEK", widget: string, required: false }
+              - { name: "t127", label: "Tabellcell: 795 SEK", widget: string, required: false }
           - name: "after_the_uf_year"
             label: "After the UF year"
             widget: object
