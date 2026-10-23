@@ -30,7 +30,7 @@
     "t18": "Först då kommer fakturan"
   },
   "innan_och_efter": {
-    "visa": true,
+    "visa": false,
     "t19": "Vanliga problem.",
     "t20": "Konkreta resultat.",
     "t21": "Ingen hemsida, eller en som ingen hittar",
