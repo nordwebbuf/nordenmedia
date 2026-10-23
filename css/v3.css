@@ -781,3 +781,16 @@ a.showcase:hover .showcase-phone { transform: translateY(-8px); }
 .hero-foot .partners-label { color: rgb(226 232 255 / .72); }
 .hero-photo::before { background: linear-gradient(180deg, rgb(5 11 28 / .55) 0%, rgb(5 11 28 / 0) 28%, rgb(5 11 28 / 0) 70%, rgb(5 11 28 / .7) 100%); }
 .hero-photo .display strong { background: linear-gradient(100deg, #FFFFFF 0%, #DCE5FF 35%, #A9C1FF 100%); -webkit-background-clip: text; background-clip: text; }
+
+/* ---------- Lokala, personliga: photo instead of the logo card ---------- */
+.about-short-media { margin: 0; border-radius: 18px; overflow: hidden; aspect-ratio: 4 / 3; background: var(--bg-band); border: 1px solid var(--line); box-shadow: var(--shadow); }
+.about-short-media img { width: 100%; height: 100%; object-fit: cover; }
+
+/* ---------- Footer: Instagram and Facebook ---------- */
+.footer-social { display: flex; gap: 10px; margin-top: 24px; }
+.footer-social a { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 999px; border: 1px solid var(--line-strong, var(--line)); color: var(--ink-2); font-size: 1.35rem; transition: color .2s var(--ease), border-color .2s var(--ease), background .2s var(--ease); }
+.footer-social a:hover { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }
+.footer-social a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* Pricing: number of pages per package */
+.compare-table .row-text td, .compare-table .row-pages td { font-weight: 500; color: var(--ink); white-space: nowrap; }

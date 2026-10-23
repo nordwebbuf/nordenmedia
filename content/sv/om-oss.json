@@ -1,0 +1,59 @@
+{
+  "seo": {
+    "seo_title": "Om oss, UF-företag från Boden | Norden Media UF",
+    "seo_description": "Norden Media UF drivs av elever på Björknäsgymnasiet i Boden. Vi bygger hemsidor och livesänder evenemang, med en kontaktperson hela vägen."
+  },
+  "sidhuvud": {
+    "t1": "Om oss",
+    "t2": "Tekniken är vårt jobb.",
+    "t3": "Ert företag är vårt fokus.",
+    "t4": "Norden Media UF bygger hemsidor och livesänder evenemang. Vi är elever på Björknäsgymnasiet i Boden och driver företaget som UF-företag i samarbete med Ung Företagsamhet. Vi tar hand om tekniken, så att våra kunder kan lägga tiden på sin verksamhet."
+  },
+  "team": {
+    "t5": "Vi som jobbar här",
+    "t6_photo": "/assets/team/person-1.jpg",
+    "t7": "Foto kommer",
+    "t8": "Förnamn Efternamn",
+    "t9": "Grundare",
+    "t10_photo": "/assets/team/person-2.jpg",
+    "t11": "Foto kommer",
+    "t12": "Förnamn Efternamn",
+    "t13": "Grundare",
+    "t14_photo": "/assets/team/person-3.jpg",
+    "t15": "Foto kommer",
+    "t16": "Förnamn Efternamn",
+    "t17": "Grundare"
+  },
+  "hur_vi_tanker": {
+    "t18": "Det här",
+    "t19": "står vi för.",
+    "t20": "Inget krångel",
+    "t21": "Vi tar ansvar för tekniken, så att ni slipper oroa er för den.",
+    "t22": "Betala när ni är nöjda",
+    "t23": "Fast pris, och ingen faktura förrän ni har godkänt resultatet.",
+    "t24": "Vanlig svenska",
+    "t25": "Vi förklarar på svenska, inte på tekniska.",
+    "t26": "Långsiktigt",
+    "t27": "Vi stannar kvar efter lanseringen och fortsätter att förbättra det som fungerar."
+  },
+  "efter_uf_aret": {
+    "t28": "Långsiktigt",
+    "t29": "Er hemsida finns kvar",
+    "t30": "även efter UF-året.",
+    "t31": "Ett UF-företag drivs under ett läsår, men samarbetet med oss behöver inte ta slut där. Vår plan är att fortsätta verksamheten som aktiebolag, med samma personer och samma drift, för alla kunder som vill vara kvar.",
+    "t32": "Hemsidan och allt innehåll är ert.",
+    "t33": "Vill ni hellre gå vidare på egen hand lämnar vi över allt material och hjälper er att flytta till en annan leverantör, så att bytet blir smidigt."
+  },
+  "samarbeten_och_kunder": {
+    "t34": "I samarbete med",
+    "t35_src": "/assets/logos/ung-foretagsamhet.svg",
+    "t35_alt": "Ung Företagsamhet",
+    "t36_src": "/assets/logos/bjorknasgymnasiet.png",
+    "t36_alt": "Björknäsgymnasiet",
+    "t37": "Tidigare kunder",
+    "t38_src": "/assets/logos/boden-business-park.png",
+    "t38_alt": "Boden Business Park",
+    "t39_src": "/assets/logos/bodens-kommun.svg",
+    "t39_alt": "Bodens kommun"
+  }
+}

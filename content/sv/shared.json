@@ -1,0 +1,47 @@
+{
+  "meny": {
+    "skip_link": "Hoppa till innehållet",
+    "nav_webbtjanster": "Hemsidor",
+    "nav_livesandning": "Livesändning",
+    "nav_priser": "Priser",
+    "nav_om_oss": "Om oss",
+    "contact": "Kontakt",
+    "book_call": "Boka ett samtal"
+  },
+  "sociala_medier": {
+    "social_instagram_href": "https://www.instagram.com/nordenmediauf/",
+    "social_instagram_aria_label": "Norden Media UF på Instagram",
+    "social_facebook_href": "https://www.facebook.com/nordenmediauf",
+    "social_facebook_aria_label": "Norden Media UF på Facebook"
+  },
+  "sidfot": {
+    "footer_tag": "Vi bygger och sköter hemsidor för företag och organisationer, och livesänder evenemang och sammanträden.",
+    "footer_head_services": "Tjänster",
+    "footer_head_company": "NordenMedia",
+    "footer_privacy": "Integritetspolicy",
+    "footer_head_contact": "Kontakt",
+    "footer_email_href": "mailto:hej@nordenmedia.se",
+    "footer_email": "hej@nordenmedia.se",
+    "copyright": "©",
+    "copyright_2": "Norden Media UF",
+    "to_top": "Till toppen"
+  },
+  "cta": {
+    "cta_title": "Lägg tiden på verksamheten. Vi tar hand om resten.",
+    "cta_text": "Boka ett kort samtal så tar vi det därifrån. Det kostar ingenting att fråga.",
+    "cta_primary": "Boka ett samtal",
+    "cta_secondary": "Se priser"
+  },
+  "cta_alt": {
+    "cta_alt_title": "Osäkra på vilket paket som passar?",
+    "cta_alt_text": "Berätta om ert företag så hjälper vi er att välja. Det kostar ingenting att fråga.",
+    "cta_alt_primary": "Boka ett samtal",
+    "cta_alt_secondary": "Se vad som ingår"
+  },
+  "cta_live": {
+    "cta_live_title": "Har ni ett evenemang på gång?",
+    "cta_live_text": "Berätta om det så återkommer vi med ett förslag och ett fast pris.",
+    "cta_live_primary": "Boka ett samtal",
+    "cta_live_secondary": "Vi bygger även hemsidor"
+  }
+}

@@ -1,6 +1,9 @@
 """Translations for the websites-first home page. Applied before all others."""
 
 T6 = [
+    # footer: social media
+    ("Norden Media UF på Instagram", "Norden Media UF on Instagram"),
+    ("Norden Media UF på Facebook", "Norden Media UF on Facebook"),
     # hero
     ("Hemsidor för företag och organisationer", "Websites for businesses and organisations"),
     ("Vi bygger hemsidor som visar vilka ni är, syns på Google och ger fler kunder. Sedan sköter vi allt, från drift till uppdateringar.",

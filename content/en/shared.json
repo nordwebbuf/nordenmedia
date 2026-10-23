@@ -1,0 +1,41 @@
+{
+  "meny": {
+    "skip_link": "Skip to content",
+    "nav_webbtjanster": "Websites",
+    "nav_livesandning": "Live streaming",
+    "nav_priser": "Pricing",
+    "nav_om_oss": "About us",
+    "contact": "Contact",
+    "book_call": "Book a call"
+  },
+  "sociala_medier": {
+    "social_instagram_aria_label": "Norden Media UF on Instagram",
+    "social_facebook_aria_label": "Norden Media UF on Facebook"
+  },
+  "sidfot": {
+    "footer_tag": "We build and run websites for businesses and organisations, and live stream events and meetings.",
+    "footer_head_services": "Services",
+    "footer_head_company": "NordenMedia",
+    "footer_privacy": "Privacy policy",
+    "footer_head_contact": "Contact",
+    "to_top": "Back to top"
+  },
+  "cta": {
+    "cta_title": "Spend your time on your business. We take care of the rest.",
+    "cta_text": "Book a short call and we will take it from there. It costs nothing to ask.",
+    "cta_primary": "Book a call",
+    "cta_secondary": "See pricing"
+  },
+  "cta_alt": {
+    "cta_alt_title": "Not sure which package suits you?",
+    "cta_alt_text": "Tell us about your business and we will help you choose. It costs nothing to ask.",
+    "cta_alt_primary": "Book a call",
+    "cta_alt_secondary": "See what is included"
+  },
+  "cta_live": {
+    "cta_live_title": "Have an event coming up?",
+    "cta_live_text": "Tell us about it and we will come back with a proposal and a fixed price.",
+    "cta_live_primary": "Book a call",
+    "cta_live_secondary": "We also build websites"
+  }
+}

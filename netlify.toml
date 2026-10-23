@@ -1,0 +1,12 @@
+# Netlify builds the pages from src/ and the CMS content in content/ on every push,
+# so edits made in Sveltia CMS (/admin/) show up on the site after about a minute.
+[build]
+  command = "python3 tools/build.py"
+  publish = "."
+
+# The CMS admin page should never be cached or indexed
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    Cache-Control = "no-cache"
+    X-Robots-Tag = "noindex"

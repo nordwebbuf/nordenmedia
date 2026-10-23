@@ -6,6 +6,11 @@ Page content lives in src/sv/<page>.html (Swedish) and src/en/<page>.html
 (English, written by hand). Header, footer and <head> are shared and defined
 here; their English text comes from the tables in tools/i18n*.py. The script
 lists any Swedish text left in the English pages.
+
+Texts and images that are edited in Sveltia CMS (/admin/) live in content/:
+content/<lang>/<page>.json and content/<lang>/shared.json. They are written
+into the pages last, see tools/cms.py. After adding new elements to src/,
+run `python tools/cms_setup.py` so they get keys and show up in the CMS.
 """
 import json
 import os
@@ -19,10 +24,18 @@ from i18n_v3 import T3  # noqa: E402
 from i18n_v4 import T4  # noqa: E402
 from i18n_v5 import T5  # noqa: E402
 from i18n_v6 import T6  # noqa: E402
+import cms  # noqa: E402
 
 T = T6 + T5 + T4 + T1 + T3 + T2
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+SOCIAL = {"instagram": "https://www.instagram.com/nordenmediauf/", "facebook": "https://www.facebook.com/nordenmediauf"}
+
+
+def content(lang, name):
+    """Nested content of content/<lang>/<name>.json (empty if the file does not exist)."""
+    return cms.load(os.path.join(ROOT, "content", lang, f"{name}.json"))
 
 # key: (sv file, en file, sv title, en title, sv description, en description)
 PAGES = {
@@ -42,8 +55,8 @@ PAGES = {
                      "Vi livesänder konferenser, föreläsningar, årsmöten och evenemang med flera kameror, grafik och inspelning, till er hemsida eller sociala medier.",
                      "We live stream conferences, lectures, AGMs and events with multiple cameras, graphics and recording, to your website or social media."),
     "priser": ("priser.html", "pricing.html",
-               "Priser för hemsida, från 495 kr/mån | Norden Media UF",
-               "Website pricing, from SEK 495/month | Norden Media UF",
+               "Priser för hemsida, från 195 kr/mån | Norden Media UF",
+               "Website pricing, from SEK 195/month | Norden Media UF",
                "Tre paket med fast startkostnad och fast månadsavgift för hemsida, mejl, synlighet och drift. Ni betalar först när hemsidan är klar och ni är nöjda.",
                "Three packages with a fixed start-up cost and a fixed monthly fee for website, email, visibility and hosting. You only pay once you are happy."),
     "om-oss": ("om-oss.html", "about.html",
@@ -68,18 +81,18 @@ NAV = ["webbtjanster", "livesandning", "priser", "om-oss"]
 NAV_LABEL = {"webbtjanster": "Hemsidor", "livesandning": "Livesändning", "priser": "Priser", "om-oss": "Om oss"}
 
 
-def cta(title, text, primary, secondary_href, secondary_label, label="Kontakta oss"):
+def cta(key, title, text, primary, secondary_href, secondary_label, label="Kontakta oss"):
     return f'''    <!-- CTA -->
     <section class="cta-band-wrap" aria-label="{label}">
       <div class="container">
         <div class="cta-band reveal">
           <div>
-            <h2 class="cta-title">{title}</h2>
-            <p>{text}</p>
+            <h2 class="cta-title" data-cms="{key}_title">{title}</h2>
+            <p data-cms="{key}_text">{text}</p>
           </div>
           <div class="cta-actions">
-            <a href="{{{{p}}}}kontakt.html" class="btn btn-light">{primary} <i class="ph-light ph-arrow-right" aria-hidden="true"></i></a>
-            <a href="{{{{p}}}}{secondary_href}" class="btn btn-ghost-light">{secondary_label}</a>
+            <a href="{{{{p}}}}kontakt.html" class="btn btn-light" data-cms="{key}_primary">{primary} <i class="ph-light ph-arrow-right" aria-hidden="true"></i></a>
+            <a href="{{{{p}}}}{secondary_href}" class="btn btn-ghost-light" data-cms="{key}_secondary">{secondary_label}</a>
           </div>
         </div>
       </div>
@@ -87,20 +100,26 @@ def cta(title, text, primary, secondary_href, secondary_label, label="Kontakta o
 
 
 CTAS = {
-    "{{CTA}}": cta("Lägg tiden på verksamheten. Vi tar hand om resten.", "Boka ett kort samtal så tar vi det därifrån. Det kostar ingenting att fråga.", "Boka ett samtal", "priser.html", "Se priser"),
-    "{{CTA_ALT}}": cta("Osäkra på vilket paket som passar?", "Berätta om ert företag så hjälper vi er att välja. Det kostar ingenting att fråga.", "Boka ett samtal", "webbtjanster.html", "Se vad som ingår"),
-    "{{CTA_LIVE}}": cta("Har ni ett evenemang på gång?", "Berätta om det så återkommer vi med ett förslag och ett fast pris.", "Boka ett samtal", "webbtjanster.html", "Vi bygger även hemsidor"),
+    "{{CTA}}": cta("cta", "Lägg tiden på verksamheten. Vi tar hand om resten.", "Boka ett kort samtal så tar vi det därifrån. Det kostar ingenting att fråga.", "Boka ett samtal", "priser.html", "Se priser"),
+    "{{CTA_ALT}}": cta("cta_alt", "Osäkra på vilket paket som passar?", "Berätta om ert företag så hjälper vi er att välja. Det kostar ingenting att fråga.", "Boka ett samtal", "webbtjanster.html", "Se vad som ingår"),
+    "{{CTA_LIVE}}": cta("cta_live", "Har ni ett evenemang på gång?", "Berätta om det så återkommer vi med ett förslag och ett fast pris.", "Boka ett samtal", "webbtjanster.html", "Vi bygger även hemsidor"),
 }
 CTAS_EN = {
-    "{{CTA}}": cta("Spend your time on your business. We take care of the rest.", "Book a short call and we will take it from there. It costs nothing to ask.", "Book a call", "priser.html", "See pricing", "Contact us"),
-    "{{CTA_ALT}}": cta("Not sure which package suits you?", "Tell us about your business and we will help you choose. It costs nothing to ask.", "Book a call", "webbtjanster.html", "See what is included", "Contact us"),
-    "{{CTA_LIVE}}": cta("Have an event coming up?", "Tell us about it and we will come back with a proposal and a fixed price.", "Book a call", "webbtjanster.html", "We also build websites", "Contact us"),
+    "{{CTA}}": cta("cta", "Spend your time on your business. We take care of the rest.", "Book a short call and we will take it from there. It costs nothing to ask.", "Book a call", "priser.html", "See pricing", "Contact us"),
+    "{{CTA_ALT}}": cta("cta_alt", "Not sure which package suits you?", "Tell us about your business and we will help you choose. It costs nothing to ask.", "Book a call", "webbtjanster.html", "See what is included", "Contact us"),
+    "{{CTA_LIVE}}": cta("cta_live", "Have an event coming up?", "Tell us about it and we will come back with a proposal and a fixed price.", "Book a call", "webbtjanster.html", "We also build websites", "Contact us"),
 }
 
 
 def head(key, lang, p):
     sv_file, en_file, sv_title, en_title, sv_desc, en_desc = PAGES[key]
     title, desc = (sv_title, sv_desc) if lang == "sv" else (en_title, en_desc)
+    seo = content(lang, key).get("seo", {})
+    title = html_attr(seo.get("seo_title") or title)
+    desc = html_attr(seo.get("seo_description") or desc)
+    shared = cms.flatten(content("sv", "shared"))
+    same_as = json.dumps([shared.get("social_instagram_href", SOCIAL["instagram"]),
+                          shared.get("social_facebook_href", SOCIAL["facebook"])])
     def url(l):
         f = sv_file if l == "sv" else en_file
         f = "" if f == "index.html" else f
@@ -130,7 +149,7 @@ def head(key, lang, p):
     org_desc = ("Hemsidor, företagsmejl, synlighet på Google, bokningssystem, drift och livesändningar för företag och organisationer."
                 if lang == "sv" else
                 "Websites, business email, visibility on Google, booking systems, hosting and live streaming for businesses and organisations.")
-    price = "Från 495 kr/mån" if lang == "sv" else "From SEK 495/month"
+    price = "Från 195 kr/mån" if lang == "sv" else "From SEK 195/month"
     return f'''<!doctype html>
 <html lang="{lang}">
 <head>
@@ -187,7 +206,8 @@ def head(key, lang, p):
         "priceRange": "{price}",
         "address": {{"@type": "PostalAddress", "addressLocality": "Boden", "addressRegion": "Norrbottens län", "addressCountry": "SE"}},
         "areaServed": [{{"@type": "AdministrativeArea", "name": "Norrbottens län"}}, {{"@type": "Country", "name": "Sverige"}}],
-        "knowsLanguage": ["sv", "en"]
+        "knowsLanguage": ["sv", "en"],
+        "sameAs": {same_as}
       }},
       {{
         "@type": "WebSite",
@@ -220,18 +240,18 @@ def chrome(key, lang, p, body):
         out = []
         for k in NAV:
             cur = ' aria-current="page"' if k == key else ""
-            out.append(f'<li><a href="{p}{PAGES[k][0]}"{cur}>{NAV_LABEL[k]}</a></li>')
+            out.append(f'<li><a href="{p}{PAGES[k][0]}"{cur} data-cms="nav_{k.replace("-", "_")}">{NAV_LABEL[k]}</a></li>')
         return "\n          ".join(out)
 
     contact_cur = ' aria-current="page"' if key == "kontakt" else ""
     mobile_cta = "" if key in ("kontakt", "404", "integritetspolicy") else f'''
   <div class="mobile-cta" data-mobile-cta aria-hidden="true">
-    <a href="{p}kontakt.html" class="btn btn-primary btn-block" tabindex="-1">Boka ett samtal <i class="ph-light ph-arrow-right" aria-hidden="true"></i></a>
+    <a href="{p}kontakt.html" class="btn btn-primary btn-block" tabindex="-1" data-cms="book_call">Boka ett samtal <i class="ph-light ph-arrow-right" aria-hidden="true"></i></a>
   </div>
 '''
     return f'''
 <body>
-  <a class="skip-link" href="#main">Hoppa till innehållet</a>
+  <a class="skip-link" href="#main" data-cms="skip_link">Hoppa till innehållet</a>
   <div class="top-sentinel" aria-hidden="true"></div>
 
   <header class="site-header" data-header>
@@ -254,7 +274,7 @@ def chrome(key, lang, p, body):
         </button>
       </div>
 
-      <a href="{p}kontakt.html" class="btn btn-primary btn-sm header-cta"{contact_cur}>Kontakt</a>
+      <a href="{p}kontakt.html" class="btn btn-primary btn-sm header-cta"{contact_cur} data-cms="contact">Kontakt</a>
 
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
         <span class="sr-only">Öppna menyn</span>
@@ -268,7 +288,7 @@ def chrome(key, lang, p, body):
       <ul class="mobile-list">
           {nav_items("mobile")}
       </ul>
-      <a href="{p}kontakt.html" class="btn btn-primary btn-block"{contact_cur}>Kontakt <i class="ph-light ph-arrow-right" aria-hidden="true"></i></a>
+      <a href="{p}kontakt.html" class="btn btn-primary btn-block"{contact_cur} data-cms="contact">Kontakt <i class="ph-light ph-arrow-right" aria-hidden="true"></i></a>
     </nav>
   </div>
 
@@ -279,39 +299,45 @@ def chrome(key, lang, p, body):
   <footer class="site-footer">
     <div class="container">
       <div class="footer-top">
-        <p class="footer-tag">Vi bygger och sköter hemsidor för företag och organisationer, och livesänder evenemang och sammanträden.</p>
+        <div class="footer-intro">
+          <p class="footer-tag" data-cms="footer_tag">Vi bygger och sköter hemsidor för företag och organisationer, och livesänder evenemang och sammanträden.</p>
+          <ul class="footer-social" aria-label="Sociala medier">
+            <li><a href="{SOCIAL["instagram"]}" target="_blank" rel="noopener" aria-label="Norden Media UF på Instagram" data-cms="social_instagram" data-cms-attrs="href,aria-label"><i class="ph-light ph-instagram-logo" aria-hidden="true"></i></a></li>
+            <li><a href="{SOCIAL["facebook"]}" target="_blank" rel="noopener" aria-label="Norden Media UF på Facebook" data-cms="social_facebook" data-cms-attrs="href,aria-label"><i class="ph-light ph-facebook-logo" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
         <nav class="footer-cols" aria-label="Sidfot">
           <div>
-            <p class="footer-head">Tjänster</p>
+            <p class="footer-head" data-cms="footer_head_services">Tjänster</p>
             <ul>
-              <li><a href="{p}webbtjanster.html">Hemsidor</a></li>
-              <li><a href="{p}livesandning.html">Livesändning</a></li>
-              <li><a href="{p}priser.html">Priser</a></li>
+              <li><a href="{p}webbtjanster.html" data-cms="nav_webbtjanster">Hemsidor</a></li>
+              <li><a href="{p}livesandning.html" data-cms="nav_livesandning">Livesändning</a></li>
+              <li><a href="{p}priser.html" data-cms="nav_priser">Priser</a></li>
             </ul>
           </div>
           <div>
-            <p class="footer-head">NordenMedia</p>
+            <p class="footer-head" data-cms="footer_head_company">NordenMedia</p>
             <ul>
-              <li><a href="{p}om-oss.html">Om oss</a></li>
-              <li><a href="{p}kontakt.html">Kontakt</a></li>
-              <li><a href="{p}integritetspolicy.html">Integritetspolicy</a></li>
+              <li><a href="{p}om-oss.html" data-cms="nav_om_oss">Om oss</a></li>
+              <li><a href="{p}kontakt.html" data-cms="contact">Kontakt</a></li>
+              <li><a data-cms="footer_privacy" href="{p}integritetspolicy.html">Integritetspolicy</a></li>
             </ul>
           </div>
           <div>
-            <p class="footer-head">Kontakt</p>
+            <p class="footer-head" data-cms="footer_head_contact">Kontakt</p>
             <ul>
-              <li><a href="mailto:hej@nordenmedia.se">hej@nordenmedia.se</a></li>
-              <li><a href="{p}kontakt.html">Boka ett samtal</a></li>
+              <li><a href="mailto:hej@nordenmedia.se" data-cms="footer_email" data-cms-attrs="href">hej@nordenmedia.se</a></li>
+              <li><a href="{p}kontakt.html" data-cms="book_call">Boka ett samtal</a></li>
             </ul>
           </div>
         </nav>
       </div>
       <span class="logo logo-xl" role="img" aria-label="NordenMedia"></span>
       <div class="footer-bottom">
-        <p>© <span data-year>2026</span> Norden Media UF</p>
+        <p data-cms="copyright">© <span data-year>2026</span> Norden Media UF</p>
         <ul class="footer-legal">
           {foot_lang}
-          <li><a href="#top" class="to-top">Till toppen <i class="ph-light ph-arrow-up" aria-hidden="true"></i></a></li>
+          <li><a href="#top" class="to-top" data-cms="to_top">Till toppen <i class="ph-light ph-arrow-up" aria-hidden="true"></i></a></li>
         </ul>
       </div>
     </div>
@@ -347,6 +373,26 @@ def render(key, lang):
 
 
 LOGO = json.load(open(os.path.join(ROOT, "tools", "logo_paths.json"), encoding="utf-8"))
+
+
+def html_attr(text):
+    """Text from the CMS, safe inside an attribute and <title>."""
+    import html
+    return html.escape(html.unescape(text), quote=True)
+
+
+# Same in every language, so they are only edited once (in the Swedish settings)
+LANGUAGE_NEUTRAL = {"footer_email", "copyright", "copyright_2"}
+
+
+def finalize(html, key, lang):
+    """Write the CMS content into a finished page and rebuild the FAQ structured data."""
+    p = "/" if key == "404" else ("" if lang == "sv" else "../")
+    values = cms.flatten(content(lang, "shared"))
+    sv_shared = cms.flatten(content("sv", "shared"))
+    values.update({k: v for k, v in sv_shared.items() if k in LANGUAGE_NEUTRAL or k.endswith("_href")})
+    values.update(cms.flatten(content(lang, key)))
+    return cms.faq_jsonld(cms.apply(html, values, p))
 
 
 def bust_cache(html):
@@ -422,23 +468,23 @@ def sitemap():
     xml = ('<?xml version="1.0" encoding="UTF-8"?>\n'
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
            + "\n".join(rows) + "\n</urlset>\n")
-    open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8").write(xml)
+    open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8", newline="\n").write(xml)
 
 
 def main():
     problems = 0
     os.makedirs(os.path.join(ROOT, "en"), exist_ok=True)
     for key, (sv_file, en_file, *_rest) in PAGES.items():
-        sv_html = render(key, "sv")
-        open(os.path.join(ROOT, sv_file), "w", encoding="utf-8").write(sv_html)
+        sv_html = finalize(render(key, "sv"), key, "sv")
+        open(os.path.join(ROOT, sv_file), "w", encoding="utf-8", newline="\n").write(sv_html)
         if not en_file:
             continue
-        en_html = translate(key, render(key, "en"))
+        en_html = finalize(translate(key, render(key, "en")), key, "en")
         # language switch back to Swedish must keep ../
         sv_target = "../" + (sv_file if sv_file != "index.html" else "")
         en_html = re.sub(r'(<a class="tool-btn lang-switch" href=")[^"]*(" hreflang="sv")', rf"\g<1>{sv_target}\2", en_html)
         en_html = re.sub(r'(<li><a href=")[^"]*(" hreflang="sv" lang="sv">Svenska)', rf"\g<1>{sv_target}\2", en_html)
-        open(os.path.join(ROOT, "en", en_file), "w", encoding="utf-8").write(en_html)
+        open(os.path.join(ROOT, "en", en_file), "w", encoding="utf-8", newline="\n").write(en_html)
         left = leftovers(en_html)
         if left:
             problems += 1
@@ -447,7 +493,8 @@ def main():
                 print("   ", ln)
     sitemap()
     print("Built", len(PAGES), "Swedish and", sum(1 for v in PAGES.values() if v[1]), "English pages")
-    return 1 if problems else 0
+    # On Netlify the check only warns: a CMS edit should never stop the site from being published
+    return 1 if problems and not os.environ.get("NETLIFY") else 0
 
 
 if __name__ == "__main__":

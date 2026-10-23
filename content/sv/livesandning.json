@@ -1,0 +1,69 @@
+{
+  "seo": {
+    "seo_title": "Livesändning av evenemang och möten | Norden Media UF",
+    "seo_description": "Vi livesänder konferenser, föreläsningar, årsmöten och evenemang med flera kameror, grafik och inspelning, till er hemsida eller sociala medier."
+  },
+  "sidhuvud": {
+    "t1": "Livesändning",
+    "t2": "Livesänd era evenemang.",
+    "t3": "Vi sköter tekniken.",
+    "t4": "Ni håller i programmet. Vi tar med tekniken och sköter kameror, ljud, grafik och sändning, så att alla kan vara med var de än befinner sig.",
+    "t5": "Boka ett samtal",
+    "t6": "Vad ingår?",
+    "t7_src": "/assets/live/boden-business-park.jpg",
+    "t7_alt": "Publik på ett evenemang i Boden Business Park, med talare på scen och presentation på storbildsskärm",
+    "t8": "Live"
+  },
+  "vad_ingar": {
+    "t9": "Allt som behövs.",
+    "t10": "Inget ni behöver fixa.",
+    "t11": "Ni fokuserar på innehållet och publiken. Vi tar med tekniken, riggar, testar och sänder.",
+    "t12": "Flerkameraproduktion",
+    "t13": "Flera kameravinklar, bildmix och tydligt ljud från början till slut.",
+    "t14": "Sändning dit tittarna finns",
+    "t15": "Till er hemsida, YouTube, Facebook eller LinkedIn, samtidigt.",
+    "t16": "Grafik i bild",
+    "t17": "Namnskyltar, logotyp och presentationer direkt i sändningen.",
+    "t18": "Inspelning och klipp",
+    "t19": "Hela sändningen sparas, och vi klipper korta filmer för sociala medier efteråt."
+  },
+  "passar_for": {
+    "t20": "Passar när fler",
+    "t21": "ska kunna vara med.",
+    "t22": "Konferenser",
+    "t23": "Föreläsningar och seminarier",
+    "t24": "Lanseringar",
+    "t25": "Sammanträden och årsmöten",
+    "t26": "Evenemang och ceremonier",
+    "t27": "Paneldebatter och intervjuer"
+  },
+  "var_ska_ni_sanda": {
+    "t28": "En sändning.",
+    "t29": "Många platser.",
+    "t30": "Välj var era tittare finns. Vi sänder till alla samtidigt.",
+    "t31": "Ert evenemang",
+    "t32": "Kameror, ljud och grafik",
+    "t33": "Er hemsida",
+    "t34": "YouTube",
+    "t35": "Facebook",
+    "t36": "LinkedIn",
+    "t37": "Sänds till",
+    "t37_2": "samtidigt."
+  },
+  "sa_gar_det_till": {
+    "t38": "Så går en",
+    "t39": "sändning till.",
+    "t40": "Livesändningar offereras per tillfälle. Ni får ett fast pris innan vi börjar.",
+    "t41": "Boka ett samtal",
+    "t42": "Planering och offert",
+    "t43": "Vi går igenom program, lokal, publik och var sändningen ska visas. Sedan får ni en offert med fast pris.",
+    "t44": "Kontroll av lokalen",
+    "t45": "Vi besöker lokalen, eller går igenom den på distans, och kontrollerar uppkoppling, el, ljus och var kamerorna ska stå.",
+    "t46": "Rigg och test",
+    "t47": "Vi kommer i god tid, riggar kameror och ljud och testar hela kedjan, från mikrofon till tittare, innan sändningen börjar.",
+    "t48": "Sändning",
+    "t49": "Vi styr bild, ljud och grafik under hela sändningen, så att ni kan fokusera på era gäster.",
+    "t50": "Efterarbete",
+    "t51": "Ni får inspelningen och, om ni vill, korta klipp att dela vidare."
+  }
+}
