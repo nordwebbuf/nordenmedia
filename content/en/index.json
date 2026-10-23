@@ -5,7 +5,7 @@
   },
   "hero": {
     "visa": true,
-    "t1": "Websites for businesses and organisations",
+    "t1": "Your local web agency in Boden",
     "t2": "You run the business.",
     "t3": "We handle the web.",
     "t4": "We build websites that show who you are, get found on Google and bring in more customers. Then we take care of everything, from hosting to updates.",
@@ -50,12 +50,12 @@
   },
   "who_we_are": {
     "visa": true,
-    "t35": "Local, personal",
-    "t36": "and easy to reach.",
-    "t37": "Norden Media UF is run by students at Björknäsgymnasiet in Boden, as a student company in partnership with Ung Företagsamhet (Junior Achievement Sweden). We reply quickly and explain everything in plain language.",
+    "t35": "A small team from Boden",
+    "t36": "that takes care of everything.",
+    "t37": "We are three students at Björknäsgymnasiet who run Norden Media UF together with Ung Företagsamhet (Junior Achievement Sweden). You reach us directly, get quick answers and skip the technical detours. Every client is a reference for us, so we make sure it is done right.",
     "t38": "More about us",
-    "t39_src": "/assets/placeholders/bild-kommer.svg",
-    "t39_alt": "The team behind Norden Media UF"
+    "t39_src": "/assets/team/gruppbild.jpg",
+    "t39_alt": "The team behind Norden Media UF: three people in black t-shirts in front of a light wall"
   },
   "what_we_do": {
     "visa": true,

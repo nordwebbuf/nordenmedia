@@ -50,12 +50,12 @@
   },
   "vilka_vi_ar": {
     "visa": true,
-    "t35": "Lokala, personliga",
-    "t36": "och lätta att nå.",
-    "t37": "Norden Media UF drivs av elever på Björknäsgymnasiet i Boden, som UF-företag i samarbete med Ung Företagsamhet. Vi svarar snabbt och förklarar allt i ett språk som går att förstå.",
+    "t35": "Ett litet team från Boden",
+    "t36": "som tar hand om allt.",
+    "t37": "Vi är tre elever på Björknäsgymnasiet som driver Norden Media UF tillsammans med Ung Företagsamhet. Ni når oss direkt, får svar snabbt och slipper tekniska omvägar. Varje kund är en referens för oss, så vi ser till att det blir rätt.",
     "t38": "Läs mer om oss",
-    "t39_src": "/assets/placeholders/bild-kommer.svg",
-    "t39_alt": "Teamet bakom Norden Media UF"
+    "t39_src": "/assets/team/gruppbild.jpg",
+    "t39_alt": "Teamet bakom Norden Media UF: tre personer i svarta t-shirts framför en ljus vägg"
   },
   "vad_vi_gor": {
     "visa": true,

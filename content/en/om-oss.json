@@ -1,18 +1,18 @@
 {
   "seo": {
     "seo_title": "About us, a student company from Boden | Norden Media UF",
-    "seo_description": "Norden Media UF is run by students at Björknäsgymnasiet in Boden. We build websites and live stream events, with one contact person all the way."
+    "seo_description": "Norden Media UF is a local media agency in Boden run by three students at Björknäsgymnasiet. We build websites and live stream events for businesses and organisations."
   },
   "page_header": {
     "visa": true,
     "t1": "About us",
-    "t2": "Technology is our job.",
-    "t3": "Your business is our focus.",
-    "t4": "Norden Media UF builds websites and live streams events. We are students at Björknäsgymnasiet in Boden and run the business as a student company in partnership with Ung Företagsamhet (Junior Achievement Sweden). We take care of the tech, so that our clients can spend their time on their business."
+    "t2": "A local team",
+    "t3": "that knows the web.",
+    "t4": "Norden Media UF is a media agency run by three students at Björknäsgymnasiet in Boden, as a student company in partnership with Ung Företagsamhet (Junior Achievement Sweden). We build websites and live stream events for businesses and organisations in Norrbotten. We are small enough to always answer ourselves, and curious enough to stay on top of what is new on the web."
   },
   "team": {
     "visa": true,
-    "t5": "The people who work here",
+    "t5": "The team",
     "t6_photo": "/assets/team/person-1.jpg",
     "t7": "Photo coming soon",
     "t8": "Linus Brännholm",
@@ -31,13 +31,13 @@
     "t18": "What we",
     "t19": "stand for.",
     "t20": "No hassle",
-    "t21": "We take responsibility for the tech, so you never have to worry about it.",
+    "t21": "You tell us what you want. We handle the tech, from domain and email to hosting.",
     "t22": "Pay when you are happy",
     "t23": "A fixed price, and no invoice until you have approved the result.",
-    "t24": "Plain language",
-    "t25": "We explain things in plain language, not tech-speak.",
+    "t24": "Straight answers",
+    "t25": "We explain things in plain language and tell you if something is not worth the money.",
     "t26": "Long-term",
-    "t27": "We stay on after launch and keep improving what works."
+    "t27": "We stay on after launch and develop the website as your business grows."
   },
   "after_the_uf_year": {
     "visa": true,

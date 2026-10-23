@@ -1,18 +1,18 @@
 {
   "seo": {
     "seo_title": "Om oss, UF-företag från Boden | Norden Media UF",
-    "seo_description": "Norden Media UF drivs av elever på Björknäsgymnasiet i Boden. Vi bygger hemsidor och livesänder evenemang, med en kontaktperson hela vägen."
+    "seo_description": "Norden Media UF är en lokal mediebyrå i Boden som drivs av tre elever på Björknäsgymnasiet. Vi bygger hemsidor och livesänder evenemang för företag och organisationer."
   },
   "sidhuvud": {
     "visa": true,
     "t1": "Om oss",
-    "t2": "Tekniken är vårt jobb.",
-    "t3": "Ert företag är vårt fokus.",
-    "t4": "Norden Media UF bygger hemsidor och livesänder evenemang. Vi är elever på Björknäsgymnasiet i Boden och driver företaget som UF-företag i samarbete med Ung Företagsamhet. Vi tar hand om tekniken, så att våra kunder kan lägga tiden på sin verksamhet."
+    "t2": "Ett lokalt team",
+    "t3": "med koll på webben.",
+    "t4": "Norden Media UF är en mediebyrå som drivs av tre elever på Björknäsgymnasiet i Boden, som UF-företag i samarbete med Ung Företagsamhet. Vi bygger hemsidor och livesänder evenemang för företag och organisationer i Norrbotten. Vi är små nog att alltid svara själva, och nyfikna nog att hålla oss uppdaterade om det senaste inom webben."
   },
   "team": {
     "visa": true,
-    "t5": "Vi som jobbar här",
+    "t5": "Teamet",
     "t6_photo": "/assets/team/person-1.jpg",
     "t7": "Foto kommer",
     "t8": "Linus Brännholm",
@@ -31,13 +31,13 @@
     "t18": "Det här",
     "t19": "står vi för.",
     "t20": "Inget krångel",
-    "t21": "Vi tar ansvar för tekniken, så att ni slipper oroa er för den.",
+    "t21": "Ni berättar vad ni vill ha. Vi sköter tekniken, från domän och mejl till drift.",
     "t22": "Betala när ni är nöjda",
     "t23": "Fast pris, och ingen faktura förrän ni har godkänt resultatet.",
-    "t24": "Vanlig svenska",
-    "t25": "Vi förklarar på svenska, inte på tekniska.",
+    "t24": "Raka besked",
+    "t25": "Vi förklarar på vanlig svenska och säger till om något inte är värt pengarna.",
     "t26": "Långsiktigt",
-    "t27": "Vi stannar kvar efter lanseringen och fortsätter att förbättra det som fungerar."
+    "t27": "Vi finns kvar efter lanseringen och utvecklar hemsidan i takt med att ert företag växer."
   },
   "efter_uf_aret": {
     "visa": true,
