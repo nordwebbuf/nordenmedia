@@ -893,7 +893,8 @@ a.showcase:hover .showcase-phone { transform: translateY(-8px); }
 /* ---------- "Känner ni igen er?": four recognisable problems, compact ---------- */
 #for-vem { padding-bottom: clamp(40px, 5vw, 72px); }
 #for-vem .section-head { margin-bottom: clamp(20px, 2.4vw, 32px); }
-.pain-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.pain-list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 960px) { .pain-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .pain-card { padding: 22px; border-radius: var(--r); background: var(--surface); border: 1px solid var(--line); }
 .pain-card > i { display: inline-flex; width: 40px; height: 40px; border-radius: 12px; align-items: center; justify-content: center; background: var(--accent-soft); color: var(--accent); font-size: 1.25rem; }
 .pain-card h3 { margin-top: 16px; font-size: 1.125rem; line-height: 1.25; text-wrap: balance; }
