@@ -1680,7 +1680,6 @@ collections:
             collapsed: true
             required: true
             fields:
-              - { name: "footer_tag", label: "Kort beskrivning av företaget", widget: text, required: false }
               - { name: "footer_head_services", label: "Rubrik över tjänstelänkarna", widget: string, required: false }
               - { name: "footer_head_company", label: "Rubrik över företagslänkarna", widget: string, required: false }
               - { name: "footer_privacy", label: "Länk till integritetspolicyn", widget: string, required: false }
@@ -1751,7 +1750,6 @@ collections:
             collapsed: true
             required: true
             fields:
-              - { name: "footer_tag", label: "Kort beskrivning av företaget", widget: text, required: false }
               - { name: "footer_head_services", label: "Rubrik över tjänstelänkarna", widget: string, required: false }
               - { name: "footer_head_company", label: "Rubrik över företagslänkarna", widget: string, required: false }
               - { name: "footer_privacy", label: "Länk till integritetspolicyn", widget: string, required: false }

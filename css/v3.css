@@ -942,3 +942,9 @@ a.showcase:hover .showcase-phone { transform: translateY(-8px); }
 /* Choices are just a label with an icon */
 .choice-box { flex-direction: row; align-items: center; gap: 10px; padding: 14px 16px; }
 .choice-box i { margin: 0; font-size: 1.35rem; }
+
+/* ---------- Footer: links only up top, social icons next to the copyright ---------- */
+.footer-top { grid-template-columns: 1fr; }
+.footer-bottom-start { display: flex; align-items: center; gap: 16px; }
+.footer-bottom .footer-social { margin-top: 0; gap: 8px; }
+.footer-bottom .footer-social a { width: 36px; height: 36px; font-size: 1.15rem; }

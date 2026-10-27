@@ -310,12 +310,6 @@ def chrome(key, lang, p, body):
   <footer class="site-footer">
     <div class="container">
       <div class="footer-top">
-        <div class="footer-intro">
-          <p class="footer-tag" data-cms="footer_tag">Vi bygger och sköter hemsidor för företag och organisationer, och livesänder evenemang och sammanträden.</p>
-          <ul class="footer-social" aria-label="Sociala medier">
-            {social_items()}
-          </ul>
-        </div>
         <nav class="footer-cols" aria-label="Sidfot">
           <div>
             <p class="footer-head" data-cms="footer_head_services">Tjänster</p>
@@ -344,7 +338,12 @@ def chrome(key, lang, p, body):
       </div>
       <span class="logo logo-xl" role="img" aria-label="NordenMedia"></span>
       <div class="footer-bottom">
-        <p data-cms="copyright">© <span data-year>2026</span> Norden Media UF</p>
+        <div class="footer-bottom-start">
+          <ul class="footer-social" aria-label="Sociala medier">
+            {social_items()}
+          </ul>
+          <p data-cms="copyright">© <span data-year>2026</span> Norden Media UF</p>
+        </div>
         <ul class="footer-legal">
           {foot_lang}
           <li><a href="#top" class="to-top" data-cms="to_top">Till toppen <i class="ph-light ph-arrow-up" aria-hidden="true"></i></a></li>
