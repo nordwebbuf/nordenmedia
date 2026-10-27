@@ -77,10 +77,8 @@ collections:
               - { name: "t22", label: "Problem 1: text", widget: text, required: false }
               - { name: "t23", label: "Problem 2: rubrik", widget: string, required: false }
               - { name: "t24", label: "Problem 2: text", widget: text, required: false }
-              - { name: "t25", label: "Problem 3: rubrik", widget: string, required: false }
-              - { name: "t26", label: "Problem 3: text", widget: text, required: false }
-              - { name: "t27", label: "Problem 4: rubrik", widget: string, required: false }
-              - { name: "t28", label: "Problem 4: text", widget: text, required: false }
+              - { name: "t27", label: "Problem 3: rubrik", widget: string, required: false }
+              - { name: "t28", label: "Problem 3: text", widget: text, required: false }
               - { name: "t29", label: "Avslutning: mening", widget: string, required: false }
               - { name: "t30", label: "Avslutning: länktext", widget: string, required: false }
           - name: "vilka_vi_ar"
@@ -944,10 +942,8 @@ collections:
               - { name: "t22", label: "Problem 1: text", widget: text, required: false }
               - { name: "t23", label: "Problem 2: rubrik", widget: string, required: false }
               - { name: "t24", label: "Problem 2: text", widget: text, required: false }
-              - { name: "t25", label: "Problem 3: rubrik", widget: string, required: false }
-              - { name: "t26", label: "Problem 3: text", widget: text, required: false }
-              - { name: "t27", label: "Problem 4: rubrik", widget: string, required: false }
-              - { name: "t28", label: "Problem 4: text", widget: text, required: false }
+              - { name: "t27", label: "Problem 3: rubrik", widget: string, required: false }
+              - { name: "t28", label: "Problem 3: text", widget: text, required: false }
               - { name: "t29", label: "Avslutning: mening", widget: string, required: false }
               - { name: "t30", label: "Avslutning: länktext", widget: string, required: false }
           - name: "who_we_are"
