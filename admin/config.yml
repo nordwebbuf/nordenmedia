@@ -295,16 +295,6 @@ collections:
               - { name: "t59", label: "Bokningsdemo: rubrik över händelserna", widget: string, required: false }
               - { name: "t60", label: "Bokningsdemo: text innan något är valt", widget: string, required: false }
               - { name: "t61", label: "Bokningsdemo: text om att det är en demo", widget: string, required: false }
-              - { name: "t62", label: "Automatiskt steg 1: rubrik", widget: string, required: false }
-              - { name: "t63", label: "Automatiskt steg 1: text", widget: string, required: false }
-              - { name: "t64", label: "Automatiskt steg 2: rubrik", widget: string, required: false }
-              - { name: "t65", label: "Automatiskt steg 2: text", widget: string, required: false }
-              - { name: "t66", label: "Automatiskt steg 3: rubrik", widget: string, required: false }
-              - { name: "t67", label: "Automatiskt steg 3: text", widget: string, required: false }
-              - { name: "t68", label: "Automatiskt steg 4: rubrik", widget: string, required: false }
-              - { name: "t69", label: "Automatiskt steg 4: text", widget: string, required: false }
-              - { name: "t70", label: "Automatiskt steg 5: rubrik", widget: string, required: false }
-              - { name: "t71", label: "Automatiskt steg 5: text", widget: string, required: false }
           - name: "manadsrapport"
             label: "Månadsrapport"
             widget: object
@@ -349,28 +339,6 @@ collections:
               - { name: "t106", label: "Punkt 1", widget: string, required: false }
               - { name: "t107", label: "Punkt 2", widget: string, required: false }
               - { name: "t108", label: "Punkt 3", widget: string, required: false }
-          - name: "kalkylator"
-            label: "Kalkylator"
-            widget: object
-            collapsed: true
-            required: true
-            fields:
-              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
-              - { name: "t109", label: "Rubrik", widget: string, required: false }
-              - { name: "t110", label: "Rubrik, markerad del", widget: string, required: false }
-              - { name: "t111", label: "Ingress", widget: text, required: false }
-              - { name: "t112", label: "Reglage 1: namn", widget: string, required: false }
-              - { name: "t113", label: "Reglage 1: förklaring", widget: string, required: false }
-              - { name: "t114", label: "Reglage 2: namn", widget: string, required: false }
-              - { name: "t115", label: "Reglage 3: namn", widget: string, required: false }
-              - { name: "t116", label: "Resultat: rubrik", widget: string, required: false }
-              - { name: "t117", label: "Resultat: enhet efter antal timmar", widget: string, required: false }
-              - { name: "t118", label: "Resultat: enhet efter antal arbetsdagar", widget: string, required: false }
-              - { name: "t119", label: "Resultat: enhet efter antal fakturor", widget: string, required: false }
-              - { name: "t120", label: "Avslutning: början", widget: string, required: false }
-              - { name: "t121", label: "Avslutning: fetstil", widget: string, required: false }
-              - { name: "t120_2", label: "Avslutning: text efter fetstilen", widget: text, required: false }
-              - { name: "t122", label: "Knapp", widget: string, required: false }
           - name: "sa_arbetar_vi"
             label: "Så arbetar vi"
             widget: object
@@ -1162,16 +1130,6 @@ collections:
               - { name: "t59", label: "Bokningsdemo: rubrik över händelserna", widget: string, required: false }
               - { name: "t60", label: "Bokningsdemo: text innan något är valt", widget: string, required: false }
               - { name: "t61", label: "Bokningsdemo: text om att det är en demo", widget: string, required: false }
-              - { name: "t62", label: "Automatiskt steg 1: rubrik", widget: string, required: false }
-              - { name: "t63", label: "Automatiskt steg 1: text", widget: string, required: false }
-              - { name: "t64", label: "Automatiskt steg 2: rubrik", widget: string, required: false }
-              - { name: "t65", label: "Automatiskt steg 2: text", widget: string, required: false }
-              - { name: "t66", label: "Automatiskt steg 3: rubrik", widget: string, required: false }
-              - { name: "t67", label: "Automatiskt steg 3: text", widget: string, required: false }
-              - { name: "t68", label: "Automatiskt steg 4: rubrik", widget: string, required: false }
-              - { name: "t69", label: "Automatiskt steg 4: text", widget: string, required: false }
-              - { name: "t70", label: "Automatiskt steg 5: rubrik", widget: string, required: false }
-              - { name: "t71", label: "Automatiskt steg 5: text", widget: string, required: false }
           - name: "manadsrapport"
             label: "Månadsrapport"
             widget: object
@@ -1216,28 +1174,6 @@ collections:
               - { name: "t106", label: "Punkt 1", widget: string, required: false }
               - { name: "t107", label: "Punkt 2", widget: string, required: false }
               - { name: "t108", label: "Punkt 3", widget: string, required: false }
-          - name: "calculator"
-            label: "Calculator"
-            widget: object
-            collapsed: true
-            required: true
-            fields:
-              - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
-              - { name: "t109", label: "Rubrik", widget: string, required: false }
-              - { name: "t110", label: "Rubrik, markerad del", widget: string, required: false }
-              - { name: "t111", label: "Ingress", widget: text, required: false }
-              - { name: "t112", label: "Reglage 1: namn", widget: string, required: false }
-              - { name: "t113", label: "Reglage 1: förklaring", widget: string, required: false }
-              - { name: "t114", label: "Reglage 2: namn", widget: string, required: false }
-              - { name: "t115", label: "Reglage 3: namn", widget: string, required: false }
-              - { name: "t116", label: "Resultat: rubrik", widget: string, required: false }
-              - { name: "t117", label: "Resultat: enhet efter antal timmar", widget: string, required: false }
-              - { name: "t118", label: "Resultat: enhet efter antal arbetsdagar", widget: string, required: false }
-              - { name: "t119", label: "Resultat: enhet efter antal fakturor", widget: string, required: false }
-              - { name: "t120", label: "Avslutning: början", widget: string, required: false }
-              - { name: "t121", label: "Avslutning: fetstil", widget: string, required: false }
-              - { name: "t120_2", label: "Avslutning: text efter fetstilen", widget: text, required: false }
-              - { name: "t122", label: "Knapp", widget: string, required: false }
           - name: "sa_arbetar_vi"
             label: "Så arbetar vi"
             widget: object

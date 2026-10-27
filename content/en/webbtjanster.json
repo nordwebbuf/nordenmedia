@@ -68,17 +68,7 @@
     "t58": "Book again",
     "t59": "What happens automatically",
     "t60": "Pick a service and time and press Book.",
-    "t61": "This is a demo. Nothing is sent.",
-    "t62": "The customer books",
-    "t63": "Directly on the website, whenever it suits them. Evenings and weekends too.",
-    "t64": "Instant confirmation",
-    "t65": "The customer gets a confirmation with time, place and anything useful to know.",
-    "t66": "Reminder beforehand",
-    "t67": "An automatic reminder before the visit reduces the risk of no-shows.",
-    "t68": "Customer register updated",
-    "t69": "Contact details and history are kept in one place, with no double entry.",
-    "t70": "Mailings",
-    "t71": "News, offers and follow-ups reach the right customers at the right moment."
+    "t61": "This is a demo. Nothing is sent."
   },
   "manadsrapport": {
     "visa": true,
@@ -119,24 +109,6 @@
     "t106": "Number of visits and where they come from",
     "t107": "Enquiries and bookings through the website",
     "t108": "Our comments and next steps"
-  },
-  "calculator": {
-    "visa": true,
-    "t109": "How much time does tech take",
-    "t110": "from you today?",
-    "t111": "Move the sliders for an estimate of how much time digital admin takes from your business each year.",
-    "t112": "Number of digital suppliers",
-    "t113": "For example for your website, domain, email, web hosting and booking system.",
-    "t114": "Hours per week on bookings and reminders",
-    "t115": "Hours per month on website, email and settings",
-    "t116": "Per year for you today",
-    "t117": "hours on tech and admin",
-    "t118": "full working days",
-    "t119": "invoices to keep track of",
-    "t120": "With us you have",
-    "t121": "one contact for everything digital",
-    "t120_2": ", and confirmations and reminders take care of themselves. Much of that time can go back into your business.",
-    "t122": "Book a call"
   },
   "sa_arbetar_vi": {
     "visa": true,

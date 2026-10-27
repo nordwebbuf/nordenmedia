@@ -68,17 +68,7 @@
     "t58": "Boka igen",
     "t59": "Det här händer automatiskt",
     "t60": "Välj tjänst och tid och tryck på Boka.",
-    "t61": "Det här är en demo. Inget skickas.",
-    "t62": "Kunden bokar",
-    "t63": "Direkt på hemsidan, när det passar kunden. Även kvällar och helger.",
-    "t64": "Bekräftelse direkt",
-    "t65": "Kunden får en bekräftelse med tid, plats och det som är bra att veta.",
-    "t66": "Påminnelse innan",
-    "t67": "En automatisk påminnelse inför besöket minskar risken för uteblivna bokningar.",
-    "t68": "Kundregistret uppdateras",
-    "t69": "Kontaktuppgifter och historik samlas på ett ställe, utan dubbelarbete.",
-    "t70": "Utskick",
-    "t71": "Nyheter, erbjudanden och uppföljningar når rätt kunder vid rätt tillfälle."
+    "t61": "Det här är en demo. Inget skickas."
   },
   "manadsrapport": {
     "visa": true,
@@ -119,24 +109,6 @@
     "t106": "Antal besök och varifrån de kommer",
     "t107": "Förfrågningar och bokningar via hemsidan",
     "t108": "Våra kommentarer och nästa steg"
-  },
-  "kalkylator": {
-    "visa": true,
-    "t109": "Hur mycket tid tar tekniken",
-    "t110": "från er i dag?",
-    "t111": "Dra i reglagen och få en uppskattning av hur mycket tid det digitala tar från er verksamhet varje år.",
-    "t112": "Antal digitala leverantörer",
-    "t113": "Till exempel för hemsida, domän, mejl, webbhotell och bokningssystem.",
-    "t114": "Timmar i veckan på bokningar och påminnelser",
-    "t115": "Timmar i månaden på hemsida, mejl och inställningar",
-    "t116": "Per år hos er i dag",
-    "t117": "timmar på teknik och administration",
-    "t118": "hela arbetsdagar",
-    "t119": "fakturor att hålla koll på",
-    "t120": "Med oss har ni",
-    "t121": "en kontakt för allt digitalt",
-    "t120_2": ", och bekräftelser och påminnelser sköter sig själva. Mycket av tiden kan gå tillbaka till verksamheten.",
-    "t122": "Boka ett samtal"
   },
   "sa_arbetar_vi": {
     "visa": true,
