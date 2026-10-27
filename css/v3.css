@@ -954,3 +954,5 @@ a.showcase:hover .showcase-phone { transform: translateY(-8px); }
 }
 /* About page on phones: Linus is listed last */
 @media (max-width: 640px) { .team .person:first-child { order: 3; } }
+/* A second lead paragraph sits closer to the first */
+.page-hero .lead + .lead-more { margin-top: 14px; }
