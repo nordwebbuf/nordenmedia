@@ -887,3 +887,5 @@ a.showcase:hover .showcase-phone { transform: translateY(-8px); }
 .header-cta[aria-current="page"] { background: var(--accent-strong); color: var(--on-accent); }
 /* Guarantee card: neutral shadow, so the page background stays even down to the next section */
 .guarantee { box-shadow: var(--shadow); }
+/* Hero headline: room for descenders (j, g, p) under the gradient text */
+.hero-photo .display strong { padding-bottom: .14em; margin-bottom: -.1em; }
