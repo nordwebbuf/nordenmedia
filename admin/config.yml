@@ -158,7 +158,6 @@ collections:
             required: true
             fields:
               - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
-              - { name: "t74", label: "Etikett ovanför rubriken", widget: string, required: false }
               - { name: "t75", label: "Rubrik", widget: string, required: false }
               - { name: "t76", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t77", label: "Brödtext", widget: text, required: false }
@@ -1026,7 +1025,6 @@ collections:
             required: true
             fields:
               - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
-              - { name: "t74", label: "Etikett ovanför rubriken", widget: string, required: false }
               - { name: "t75", label: "Rubrik", widget: string, required: false }
               - { name: "t76", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t77", label: "Brödtext", widget: text, required: false }
