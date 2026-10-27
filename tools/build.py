@@ -326,7 +326,7 @@ def chrome(key, lang, p, body):
             </ul>
           </div>
           <div>
-            <p class="footer-head" data-cms="footer_head_company">NordenMedia</p>
+            <p class="footer-head" data-cms="footer_head_company">Norden Media UF</p>
             <ul>
               <li><a href="{p}om-oss.html" data-cms="nav_om_oss">Om oss</a></li>
               <li><a href="{p}kontakt.html" data-cms="contact">Kontakt</a></li>
