@@ -912,3 +912,14 @@ a.showcase:hover .showcase-phone { transform: translateY(-8px); }
 @media (max-width: 640px) {
   .hero-photo::before { background: linear-gradient(180deg, rgb(5 11 28 / .45) 0%, rgb(5 11 28 / 0) 22%, rgb(5 11 28 / 0) 78%, rgb(5 11 28 / .55) 100%); }
 }
+/* Phones: headings scale with the screen so each part fits on one line (two lines in total) where the copy allows */
+@media (max-width: 640px) {
+  .title { font-size: min(2rem, 7.8vw); }
+  .display-page, .hero:not(.hero-photo) .display-page { font-size: min(2.5rem, 9.6vw); }
+  .page-hero-contact .display-page { font-size: min(2.25rem, 9.2vw); }
+}
+/* Live streaming page on phones: skip the "one stream, many places" diagram */
+@media (max-width: 640px) {
+  #platser { display: none; }
+  #platser + .section { padding-top: clamp(48px, 5vw, 72px); }
+}
