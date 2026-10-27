@@ -21,7 +21,6 @@
     "visa": true,
     "t10": "Satisfaction guarantee",
     "t11": "You only pay when you are happy.",
-    "t12": "We finish the work and show you the result. We only send the invoice once you have approved it. No upfront payment, no risk.",
     "t13": "We finish the build",
     "t14": "At a fixed price",
     "t15": "You review",
@@ -30,7 +29,7 @@
     "t18": "Only then do we invoice"
   },
   "before_and_after": {
-    "visa": false,
+    "visa": true,
     "t19": "Common problems.",
     "t20": "Concrete results.",
     "t21": "No website, or one that nobody finds",
@@ -110,7 +109,6 @@
     "t83": "Request a quote",
     "t84_src": "/assets/live/boden-business-park.jpg",
     "t84_alt": "Audience at an event at Boden Business Park, with a speaker on stage and a presentation on a large screen",
-    "t85": "Live",
     "t86_src": "/assets/live/livesandning.jpg",
     "t86_alt": "Video camera with a monitor filming a conversation on stage"
   },

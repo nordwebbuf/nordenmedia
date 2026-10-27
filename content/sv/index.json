@@ -21,7 +21,6 @@
     "visa": true,
     "t10": "Nöjd kund-garanti",
     "t11": "Ni betalar först när ni är nöjda.",
-    "t12": "Vi bygger klart och visar resultatet. Först när ni har godkänt det skickar vi fakturan. Ingen förskottsbetalning, ingen risk.",
     "t13": "Vi bygger klart",
     "t14": "Till ett fast pris",
     "t15": "Ni granskar",
@@ -30,7 +29,7 @@
     "t18": "Först då kommer fakturan"
   },
   "innan_och_efter": {
-    "visa": false,
+    "visa": true,
     "t19": "Vanliga problem.",
     "t20": "Konkreta resultat.",
     "t21": "Ingen hemsida, eller en som ingen hittar",
@@ -110,7 +109,6 @@
     "t83": "Begär offert",
     "t84_src": "/assets/live/boden-business-park.jpg",
     "t84_alt": "Publik på ett evenemang i Boden Business Park, med talare på scen och presentation på storbildsskärm",
-    "t85": "Live",
     "t86_src": "/assets/live/livesandning.jpg",
     "t86_alt": "Videokamera med skärm som filmar ett samtal på en scen"
   },

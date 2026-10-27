@@ -58,7 +58,6 @@ collections:
               - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t10", label: "Garanti: etikett", widget: string, required: false }
               - { name: "t11", label: "Garanti: rubrik", widget: string, required: false }
-              - { name: "t12", label: "Garanti: brödtext", widget: text, required: false }
               - { name: "t13", label: "Garanti, steg 1: rubrik", widget: string, required: false }
               - { name: "t14", label: "Garanti, steg 1: text", widget: string, required: false }
               - { name: "t15", label: "Garanti, steg 2: rubrik", widget: string, required: false }
@@ -171,7 +170,6 @@ collections:
               - { name: "t83", label: "Knapp 2", widget: string, required: false }
               - { name: "t84_src", label: "Stor bild", widget: image, required: false }
               - { name: "t84_alt", label: "Stor bild: bildbeskrivning", widget: string, required: false }
-              - { name: "t85", label: "Märke på bilden (\"Live\")", widget: string, required: false }
               - { name: "t86_src", label: "Liten bild", widget: image, required: false }
               - { name: "t86_alt", label: "Liten bild: bildbeskrivning", widget: string, required: false }
           - name: "vanliga_fragor"
@@ -590,7 +588,6 @@ collections:
               - { name: "t63", label: "Kebne: knapp", widget: string, required: false }
               - { name: "t46", label: "Garanti: etikett", widget: string, required: false }
               - { name: "t47", label: "Garanti: rubrik", widget: string, required: false }
-              - { name: "t48", label: "Garanti: brödtext", widget: text, required: false }
               - { name: "t49", label: "Garanti, steg 1: rubrik", widget: string, required: false }
               - { name: "t50", label: "Garanti, steg 1: text", widget: string, required: false }
               - { name: "t51", label: "Garanti, steg 2: rubrik", widget: string, required: false }
@@ -939,7 +936,6 @@ collections:
               - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t10", label: "Garanti: etikett", widget: string, required: false }
               - { name: "t11", label: "Garanti: rubrik", widget: string, required: false }
-              - { name: "t12", label: "Garanti: brödtext", widget: text, required: false }
               - { name: "t13", label: "Garanti, steg 1: rubrik", widget: string, required: false }
               - { name: "t14", label: "Garanti, steg 1: text", widget: string, required: false }
               - { name: "t15", label: "Garanti, steg 2: rubrik", widget: string, required: false }
@@ -1052,7 +1048,6 @@ collections:
               - { name: "t83", label: "Knapp 2", widget: string, required: false }
               - { name: "t84_src", label: "Stor bild", widget: image, required: false }
               - { name: "t84_alt", label: "Stor bild: bildbeskrivning", widget: string, required: false }
-              - { name: "t85", label: "Märke på bilden (\"Live\")", widget: string, required: false }
               - { name: "t86_src", label: "Liten bild", widget: image, required: false }
               - { name: "t86_alt", label: "Liten bild: bildbeskrivning", widget: string, required: false }
           - name: "faq"
@@ -1469,7 +1464,6 @@ collections:
               - { name: "t63", label: "Kebne: knapp", widget: string, required: false }
               - { name: "t45", label: "Garanti: etikett", widget: string, required: false }
               - { name: "t46", label: "Garanti: rubrik", widget: string, required: false }
-              - { name: "t47", label: "Garanti: brödtext", widget: text, required: false }
               - { name: "t48", label: "Garanti, steg 1: rubrik", widget: string, required: false }
               - { name: "t49", label: "Garanti, steg 1: text", widget: string, required: false }
               - { name: "t50", label: "Garanti, steg 2: rubrik", widget: string, required: false }
