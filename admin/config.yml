@@ -65,7 +65,7 @@ collections:
               - { name: "t17", label: "Garanti, steg 3: rubrik", widget: string, required: false }
               - { name: "t18", label: "Garanti, steg 3: text", widget: string, required: false }
           - name: "innan_och_efter"
-            label: "Innan och efter"
+            label: "Känner ni igen er"
             widget: object
             collapsed: true
             required: true
@@ -73,20 +73,16 @@ collections:
               - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t19", label: "Rubrik", widget: string, required: false }
               - { name: "t20", label: "Rubrik, markerad del", widget: string, required: false }
-              - { name: "t21", label: "Problem 1", widget: string, required: false }
-              - { name: "t22", label: "Lösning 1: rubrik", widget: string, required: false }
-              - { name: "t23", label: "Lösning 1: text", widget: text, required: false }
-              - { name: "t24", label: "Problem 2", widget: string, required: false }
-              - { name: "t25", label: "Lösning 2: rubrik", widget: string, required: false }
-              - { name: "t26", label: "Lösning 2: text", widget: text, required: false }
-              - { name: "t27", label: "Problem 3", widget: string, required: false }
-              - { name: "t28", label: "Lösning 3: rubrik", widget: string, required: false }
-              - { name: "t29", label: "Lösning 3: text", widget: text, required: false }
-              - { name: "t30", label: "Problem 4", widget: string, required: false }
-              - { name: "t31", label: "Lösning 4: rubrik", widget: string, required: false }
-              - { name: "t32", label: "Lösning 4: text", widget: text, required: false }
-              - { name: "t33", label: "Avslutning: fetstilt mening", widget: string, required: false }
-              - { name: "t34", label: "Avslutning: text", widget: text, required: false }
+              - { name: "t21", label: "Problem 1: rubrik", widget: string, required: false }
+              - { name: "t22", label: "Problem 1: text", widget: text, required: false }
+              - { name: "t23", label: "Problem 2: rubrik", widget: string, required: false }
+              - { name: "t24", label: "Problem 2: text", widget: text, required: false }
+              - { name: "t25", label: "Problem 3: rubrik", widget: string, required: false }
+              - { name: "t26", label: "Problem 3: text", widget: text, required: false }
+              - { name: "t27", label: "Problem 4: rubrik", widget: string, required: false }
+              - { name: "t28", label: "Problem 4: text", widget: text, required: false }
+              - { name: "t29", label: "Avslutning: mening", widget: string, required: false }
+              - { name: "t30", label: "Avslutning: länktext", widget: string, required: false }
           - name: "vilka_vi_ar"
             label: "Vilka vi är"
             widget: object
@@ -943,7 +939,7 @@ collections:
               - { name: "t17", label: "Garanti, steg 3: rubrik", widget: string, required: false }
               - { name: "t18", label: "Garanti, steg 3: text", widget: string, required: false }
           - name: "before_and_after"
-            label: "Before and after"
+            label: "Sound familiar"
             widget: object
             collapsed: true
             required: true
@@ -951,20 +947,16 @@ collections:
               - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t19", label: "Rubrik", widget: string, required: false }
               - { name: "t20", label: "Rubrik, markerad del", widget: string, required: false }
-              - { name: "t21", label: "Problem 1", widget: string, required: false }
-              - { name: "t22", label: "Lösning 1: rubrik", widget: string, required: false }
-              - { name: "t23", label: "Lösning 1: text", widget: text, required: false }
-              - { name: "t24", label: "Problem 2", widget: string, required: false }
-              - { name: "t25", label: "Lösning 2: rubrik", widget: string, required: false }
-              - { name: "t26", label: "Lösning 2: text", widget: text, required: false }
-              - { name: "t27", label: "Problem 3", widget: string, required: false }
-              - { name: "t28", label: "Lösning 3: rubrik", widget: string, required: false }
-              - { name: "t29", label: "Lösning 3: text", widget: text, required: false }
-              - { name: "t30", label: "Problem 4", widget: string, required: false }
-              - { name: "t31", label: "Lösning 4: rubrik", widget: string, required: false }
-              - { name: "t32", label: "Lösning 4: text", widget: text, required: false }
-              - { name: "t33", label: "Avslutning: fetstilt mening", widget: string, required: false }
-              - { name: "t34", label: "Avslutning: text", widget: text, required: false }
+              - { name: "t21", label: "Problem 1: rubrik", widget: string, required: false }
+              - { name: "t22", label: "Problem 1: text", widget: text, required: false }
+              - { name: "t23", label: "Problem 2: rubrik", widget: string, required: false }
+              - { name: "t24", label: "Problem 2: text", widget: text, required: false }
+              - { name: "t25", label: "Problem 3: rubrik", widget: string, required: false }
+              - { name: "t26", label: "Problem 3: text", widget: text, required: false }
+              - { name: "t27", label: "Problem 4: rubrik", widget: string, required: false }
+              - { name: "t28", label: "Problem 4: text", widget: text, required: false }
+              - { name: "t29", label: "Avslutning: mening", widget: string, required: false }
+              - { name: "t30", label: "Avslutning: länktext", widget: string, required: false }
           - name: "who_we_are"
             label: "Who we are"
             widget: object
