@@ -925,3 +925,20 @@ a.showcase:hover .showcase-phone { transform: translateY(-8px); }
 }
 /* "Känner ni igen er?" reads as one line */
 #forvem-title strong { display: inline; }
+
+/* ---------- Contact: one column, form first, then call or email ---------- */
+.contact-stack { max-width: calc(760px + var(--gutter) * 2); display: grid; gap: clamp(28px, 4vw, 40px); }
+.contact-stack .contact-direct { margin-top: 0; padding-top: 0; border-top: 0; }
+.contact-ways { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.contact-way { display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: var(--r); border: 1px solid var(--line); background: var(--surface); color: var(--ink); transition: border-color .2s var(--ease); }
+.contact-way:hover { border-color: var(--accent); }
+.contact-way > i { flex-shrink: 0; width: 40px; height: 40px; border-radius: 12px; display: inline-flex; align-items: center; justify-content: center; background: var(--accent-soft); color: var(--accent); font-size: 1.25rem; }
+.contact-way small { display: block; font-size: .8125rem; color: var(--muted); }
+.contact-way b { font-family: var(--font-display); font-weight: 500; font-size: 1.125rem; }
+/* The phone option gets a light highlight */
+.contact-way-call { border-color: color-mix(in srgb, var(--accent) 30%, var(--line)); background: var(--accent-soft); }
+.contact-way-call > i { background: var(--accent); color: var(--on-accent); }
+@media (max-width: 640px) { .contact-ways { grid-template-columns: 1fr; } }
+/* Choices are just a label with an icon */
+.choice-box { flex-direction: row; align-items: center; gap: 10px; padding: 14px 16px; }
+.choice-box i { margin: 0; font-size: 1.35rem; }

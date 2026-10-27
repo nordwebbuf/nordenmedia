@@ -387,7 +387,6 @@ collections:
               - { name: "t6", label: "Knapp 2", widget: string, required: false }
               - { name: "t7_src", label: "Bild", widget: image, required: false }
               - { name: "t7_alt", label: "Bild: bildbeskrivning", widget: string, required: false }
-              - { name: "t8", label: "Märke på bilden (\"Live\")", widget: string, required: false }
           - name: "vad_ingar"
             label: "Vad ingår"
             widget: object
@@ -751,14 +750,11 @@ collections:
               - { name: "t2", label: "Huvudrubrik", widget: string, required: false }
               - { name: "t3", label: "Huvudrubrik, markerad del", widget: string, required: false }
               - { name: "t4", label: "Ingress (texten under rubriken)", widget: text, required: false }
-              - { name: "t5", label: "Steg 1: rubrik", widget: string, required: false }
-              - { name: "t6", label: "Steg 1: text", widget: string, required: false }
-              - { name: "t7", label: "Steg 2: rubrik", widget: string, required: false }
-              - { name: "t8", label: "Steg 2: text", widget: string, required: false }
-              - { name: "t9", label: "Steg 3: rubrik", widget: string, required: false }
-              - { name: "t10", label: "Steg 3: text", widget: string, required: false }
               - { name: "t11", label: "Text före mejladressen", widget: string, required: false }
               - { name: "t12", label: "Mejladress (länk)", widget: string, required: false }
+              - { name: "t37", label: "Kontakt: rubrik över telefon", widget: string, required: false }
+              - { name: "t38", label: "Telefonnummer", widget: string, required: false }
+              - { name: "t39", label: "Kontakt: rubrik över mejl", widget: string, required: false }
               - { name: "t13", label: "Formulär: Namn, fältnamn", widget: string, required: false }
               - { name: "t14", label: "Formulär: Namn, felmeddelande", widget: string, required: false }
               - { name: "t15", label: "Formulär: Företag, fältnamn", widget: string, required: false }
@@ -769,11 +765,8 @@ collections:
               - { name: "t20", label: "Formulär: Telefon, \"valfritt\"", widget: string, required: false }
               - { name: "t21", label: "Formulär: rubrik över valen", widget: string, required: false }
               - { name: "t22", label: "Formulär: val 1, rubrik", widget: string, required: false }
-              - { name: "t23", label: "Formulär: val 1, text", widget: string, required: false }
               - { name: "t24", label: "Formulär: val 2, rubrik", widget: string, required: false }
-              - { name: "t25", label: "Formulär: val 2, text", widget: string, required: false }
               - { name: "t26", label: "Formulär: val 3, rubrik", widget: string, required: false }
-              - { name: "t27", label: "Formulär: val 3, text", widget: string, required: false }
               - { name: "t28", label: "Formulär: Meddelande, fältnamn", widget: string, required: false }
               - { name: "t29", label: "Formulär: Meddelande, \"valfritt\"", widget: string, required: false }
               - { name: "t30", label: "Formulär: samtycke, text", widget: text, required: false }
@@ -1222,7 +1215,6 @@ collections:
               - { name: "t6", label: "Knapp 2", widget: string, required: false }
               - { name: "t7_src", label: "Bild", widget: image, required: false }
               - { name: "t7_alt", label: "Bild: bildbeskrivning", widget: string, required: false }
-              - { name: "t8", label: "Märke på bilden (\"Live\")", widget: string, required: false }
           - name: "vad_ingar"
             label: "Vad ingår"
             widget: object
@@ -1584,14 +1576,11 @@ collections:
               - { name: "t2", label: "Huvudrubrik", widget: string, required: false }
               - { name: "t3", label: "Huvudrubrik, markerad del", widget: string, required: false }
               - { name: "t4", label: "Ingress (texten under rubriken)", widget: string, required: false }
-              - { name: "t5", label: "Steg 1: rubrik", widget: string, required: false }
-              - { name: "t6", label: "Steg 1: text", widget: string, required: false }
-              - { name: "t7", label: "Steg 2: rubrik", widget: string, required: false }
-              - { name: "t8", label: "Steg 2: text", widget: string, required: false }
-              - { name: "t9", label: "Steg 3: rubrik", widget: string, required: false }
-              - { name: "t10", label: "Steg 3: text", widget: string, required: false }
               - { name: "t11", label: "Text före mejladressen", widget: string, required: false }
               - { name: "t12", label: "Mejladress (länk)", widget: string, required: false }
+              - { name: "t37", label: "Kontakt: rubrik över telefon", widget: string, required: false }
+              - { name: "t38", label: "Telefonnummer", widget: string, required: false }
+              - { name: "t39", label: "Kontakt: rubrik över mejl", widget: string, required: false }
               - { name: "t13", label: "Formulär: Namn, fältnamn", widget: string, required: false }
               - { name: "t14", label: "Formulär: Namn, felmeddelande", widget: string, required: false }
               - { name: "t15", label: "Formulär: Företag, fältnamn", widget: string, required: false }
@@ -1602,11 +1591,8 @@ collections:
               - { name: "t20", label: "Formulär: Telefon, \"valfritt\"", widget: string, required: false }
               - { name: "t21", label: "Formulär: rubrik över valen", widget: string, required: false }
               - { name: "t22", label: "Formulär: val 1, rubrik", widget: string, required: false }
-              - { name: "t23", label: "Formulär: val 1, text", widget: string, required: false }
               - { name: "t24", label: "Formulär: val 2, rubrik", widget: string, required: false }
-              - { name: "t25", label: "Formulär: val 2, text", widget: string, required: false }
               - { name: "t26", label: "Formulär: val 3, rubrik", widget: string, required: false }
-              - { name: "t27", label: "Formulär: val 3, text", widget: string, required: false }
               - { name: "t28", label: "Formulär: Meddelande, fältnamn", widget: string, required: false }
               - { name: "t29", label: "Formulär: Meddelande, \"valfritt\"", widget: string, required: false }
               - { name: "t30", label: "Formulär: samtycke, text", widget: text, required: false }

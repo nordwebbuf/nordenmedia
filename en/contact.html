@@ -34,7 +34,7 @@
   <link rel="stylesheet" href="../css/fonts.css?v=016ca014">
   <link rel="stylesheet" href="../assets/icons/phosphor-light.css?v=2e9f6e8f">
   <link rel="stylesheet" href="../css/styles.css?v=48d8d5d4">
-  <link rel="stylesheet" href="../css/v3.css?v=9e1e69df">
+  <link rel="stylesheet" href="../css/v3.css?v=0b012a27">
   <script>
     (function () {
       var d = document.documentElement; d.classList.add('js');
@@ -134,22 +134,11 @@
   <main id="main">
     <!-- Kontakt -->
     <section class="page-hero page-hero-contact" id="top">
-      <div class="container contact-grid">
+      <div class="container contact-stack">
         <div class="contact-copy">
           <p class="eyebrow hero-in" style="--i:0">Contact</p>
           <h1 class="display display-page hero-in" style="--i:1">Tell us what you do. <strong>We take it from there.</strong></h1>
           <p class="lead hero-in" style="--i:2">Fill in the form and we will get in touch to book a short call. It costs nothing to ask.</p>
-
-          <ol class="next-steps hero-in" style="--i:3">
-            <li><span class="next-num" aria-hidden="true"><i class="ph-light ph-paper-plane-tilt"></i></span><div><h2>You send a request</h2><p>It takes two minutes.</p></div></li>
-            <li><span class="next-num" aria-hidden="true"><i class="ph-light ph-phone"></i></span><div><h2>We get in touch</h2><p>We book a short call and go through what you have today.</p></div></li>
-            <li><span class="next-num" aria-hidden="true"><i class="ph-light ph-file-text"></i></span><div><h2>You get a proposal</h2><p>With what is included, what it costs and when it can be ready.</p></div></li>
-          </ol>
-
-          <div class="contact-direct hero-in" style="--i:4">
-            <p>Prefer email?</p>
-            <a href="mailto:hej@nordenmedia.se" class="text-link text-link-lg">hej@nordenmedia.se <i class="ph-light ph-arrow-up-right" aria-hidden="true"></i></a>
-          </div>
         </div>
 
         <div class="form-card hero-in" style="--i:2">
@@ -181,9 +170,9 @@
             <fieldset class="field">
               <legend>What do you need help with?</legend>
               <div class="chips chips-cards">
-                <label class="choice"><input type="checkbox" name="needs" value="Websites"><span class="choice-box"><i class="ph-light ph-browsers" aria-hidden="true"></i><b>Websites</b><small>A new website or help with an existing one</small></span></label>
-                <label class="choice"><input type="checkbox" name="needs" value="Live streaming"><span class="choice-box"><i class="ph-light ph-broadcast" aria-hidden="true"></i><b>Live streaming</b><small>Events, meetings and conferences</small></span></label>
-                <label class="choice"><input type="checkbox" name="needs" value="Other"><span class="choice-box"><i class="ph-light ph-chat-circle-dots" aria-hidden="true"></i><b>Other</b><small>Something else on your mind</small></span></label>
+                <label class="choice"><input type="checkbox" name="needs" value="Websites"><span class="choice-box"><i class="ph-light ph-browsers" aria-hidden="true"></i><b>Websites</b></span></label>
+                <label class="choice"><input type="checkbox" name="needs" value="Live streaming"><span class="choice-box"><i class="ph-light ph-broadcast" aria-hidden="true"></i><b>Live streaming</b></span></label>
+                <label class="choice"><input type="checkbox" name="needs" value="Other"><span class="choice-box"><i class="ph-light ph-chat-circle-dots" aria-hidden="true"></i><b>Other</b></span></label>
               </div>
             </fieldset>
 
@@ -218,6 +207,13 @@
             <span class="success-icon"><i class="ph-light ph-check" aria-hidden="true"></i></span>
             <h2>Thank you, we have received your request.</h2>
             <p>We will be in touch shortly to book a call.</p>
+          </div>
+        </div>
+        <div class="contact-direct">
+          <p>Prefer to call or email?</p>
+          <div class="contact-ways">
+            <a href="tel:+46702399899" class="contact-way contact-way-call"><i class="ph-light ph-phone" aria-hidden="true"></i><span><small>Call us</small><b>+46 70-239 98 99</b></span></a>
+            <a href="mailto:hej@nordenmedia.se" class="contact-way"><i class="ph-light ph-envelope-simple" aria-hidden="true"></i><span><small>Email us</small><b>hej@nordenmedia.se</b></span></a>
           </div>
         </div>
       </div>
