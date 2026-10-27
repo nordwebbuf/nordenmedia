@@ -943,8 +943,12 @@ a.showcase:hover .showcase-phone { transform: translateY(-8px); }
 .choice-box { flex-direction: row; align-items: center; gap: 10px; padding: 14px 16px; }
 .choice-box i { margin: 0; font-size: 1.35rem; }
 
-/* ---------- Footer: links only up top, social icons next to the copyright ---------- */
+/* ---------- Footer: links up top, social icons to the right of the contact column ---------- */
 .footer-top { grid-template-columns: 1fr; }
-.footer-bottom-start { display: flex; align-items: center; gap: 16px; }
-.footer-bottom .footer-social { margin-top: 0; gap: 8px; }
-.footer-bottom .footer-social a { width: 36px; height: 36px; font-size: 1.15rem; }
+.footer-cols { grid-template-columns: repeat(3, minmax(0, 1fr)) auto; }
+.footer-cols .footer-social { margin-top: 0; align-self: start; }
+@media (max-width: 640px) {
+  .footer-cols { grid-template-columns: 1fr 1fr; }
+  .footer-cols > div:last-of-type { grid-column: auto; }
+  .footer-cols .footer-social { align-self: end; justify-self: start; }
+}

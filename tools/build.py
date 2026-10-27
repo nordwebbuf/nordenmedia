@@ -334,16 +334,14 @@ def chrome(key, lang, p, body):
               <li><a href="{p}kontakt.html" data-cms="book_call">Boka ett samtal</a></li>
             </ul>
           </div>
+          <ul class="footer-social" aria-label="Sociala medier">
+            {social_items()}
+          </ul>
         </nav>
       </div>
       <span class="logo logo-xl" role="img" aria-label="NordenMedia"></span>
       <div class="footer-bottom">
-        <div class="footer-bottom-start">
-          <ul class="footer-social" aria-label="Sociala medier">
-            {social_items()}
-          </ul>
-          <p data-cms="copyright">© <span data-year>2026</span> Norden Media UF</p>
-        </div>
+        <p data-cms="copyright">© <span data-year>2026</span> Norden Media UF</p>
         <ul class="footer-legal">
           {foot_lang}
           <li><a href="#top" class="to-top" data-cms="to_top">Till toppen <i class="ph-light ph-arrow-up" aria-hidden="true"></i></a></li>
