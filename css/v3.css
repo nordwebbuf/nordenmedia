@@ -911,3 +911,7 @@ a.showcase:hover .showcase-phone { transform: translateY(-8px); }
   .turn-text { font-size: .8125rem; }
   .turns-note { padding: 14px; font-size: .875rem; }
 }
+/* Phones: lighter overlay so the animated glow shows through */
+@media (max-width: 640px) {
+  .hero-photo::before { background: linear-gradient(180deg, rgb(5 11 28 / .45) 0%, rgb(5 11 28 / 0) 22%, rgb(5 11 28 / 0) 78%, rgb(5 11 28 / .55) 100%); }
+}

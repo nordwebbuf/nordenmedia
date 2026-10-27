@@ -30,7 +30,9 @@
     void main() {
       vec2 uv = gl_FragCoord.xy / uRes;
       float ar = uRes.x / uRes.y;
-      vec2 p = vec2(uv.x * ar, uv.y);
+      // 0 on wide screens, 1 on tall phone screens: phones get a stronger, wider glow.
+      float port = clamp((1.0 - ar) / 0.55, 0.0, 1.0);
+      vec2 p = vec2(uv.x * max(ar, 0.8), uv.y);
       float t = uTime * 0.05;
 
       // Domain-warped noise gives large, soft, slowly folding fields of light.
@@ -58,12 +60,13 @@
       vec3 o = vec3(0.016, 0.035, 0.095);
       o += col * pow(smoothstep(0.28, 0.92, f), 1.15) * 0.95;  // the large soft glow
       o += mix(col, ice, 0.25) * curtain * band * 0.75;      // the moving curtains
+      o *= 1.0 + 0.5 * port;
 
       // Keep the edges calm and dark so the centred text stays readable.
-      float vig = smoothstep(1.3, 0.15, length(vec2((uv.x - 0.5) * 1.2, (uv.y - 0.6) * 1.1)));
-      o *= mix(0.4, 1.0, vig);
+      float vig = smoothstep(1.3, 0.15, length(vec2((uv.x - 0.5) * mix(1.2, 0.6, port), (uv.y - 0.6) * mix(1.1, 0.9, port))));
+      o *= mix(mix(0.4, 0.65, port), 1.0, vig);
       // A calmer zone right behind the headline keeps the text crisp.
-      o *= 1.0 - 0.2 * exp(-pow(length(vec2((uv.x - 0.5) * 1.6, (uv.y - 0.6) * 2.4)), 2.0) * 2.5);
+      o *= 1.0 - mix(0.2, 0.1, port) * exp(-pow(length(vec2((uv.x - 0.5) * 1.6, (uv.y - 0.6) * 2.4)), 2.0) * 2.5);
       o += (hash(gl_FragCoord.xy + fract(uTime) * 91.0) - 0.5) * 0.025;
       gl_FragColor = vec4(o, 1.0);
     }`;
