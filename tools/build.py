@@ -30,7 +30,7 @@ T = T6 + T5 + T4 + T1 + T3 + T2
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SOCIAL = {"instagram": "https://www.instagram.com/nordenmediauf/", "facebook": ""}
+SOCIAL = {"instagram": "https://www.instagram.com/nordenmediauf/", "facebook": "#"}
 
 
 def social_items(link_class=""):
@@ -128,7 +128,7 @@ def head(key, lang, p):
     desc = html_attr(seo.get("seo_description") or desc)
     shared = cms.flatten(content("sv", "shared"))
     same_as = json.dumps([u for u in (shared.get("social_instagram_href", SOCIAL["instagram"]),
-                                      shared.get("social_facebook_href", SOCIAL["facebook"])) if u])
+                                      shared.get("social_facebook_href", SOCIAL["facebook"])) if u and u != "#"])
     def url(l):
         f = sv_file if l == "sv" else en_file
         f = "" if f == "index.html" else f
@@ -407,6 +407,8 @@ def finalize(html, key, lang):
         html = html[:start] + cms.hide_sections(html[start:end], hidden) + html[end:]
     html = cms.apply(html, values, p)
     html = re.sub(r'<li><a href=""[^>]*class="social-link[^"]*"[^>]*>.*?</a></li>', "", html)
+    # "#" is a placeholder: the icon shows but the link goes nowhere and does not open a new tab
+    html = re.sub(r'(<a href="#"[^>]*class="social-link[^"]*") target="_blank" rel="noopener"', r'\1', html)
     return cms.faq_jsonld(html)
 
 

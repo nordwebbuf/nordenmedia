@@ -946,7 +946,7 @@ a.showcase:hover .showcase-phone { transform: translateY(-8px); }
 /* ---------- Footer: links up top, social icons to the right of the contact column ---------- */
 .footer-top { grid-template-columns: 1fr; }
 .footer-cols { grid-template-columns: repeat(3, minmax(0, 1fr)) auto; }
-.footer-cols .footer-social { margin-top: 0; align-self: start; }
+.footer-cols .footer-social { display: flex; gap: 8px; margin-top: 0; align-self: start; }
 @media (max-width: 640px) {
   .footer-cols { grid-template-columns: 1fr 1fr; }
   .footer-cols > div:last-of-type { grid-column: auto; }
