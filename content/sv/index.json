@@ -30,8 +30,8 @@
   },
   "innan_och_efter": {
     "visa": true,
-    "t19": "Känner ni",
-    "t20": "igen er?",
+    "t19": "Känner ni igen er",
+    "t20": "i något av det här?",
     "t21": "Hemsidan ni helst inte visar.",
     "t22": "Den ser gammal ut, krånglar i mobilen och ni hänvisar hellre till Facebook.",
     "t23": "Kunden googlar. Hittar konkurrenten.",
@@ -98,8 +98,8 @@
   "vi_livesander_ocksa": {
     "visa": true,
     "t74": "Livesändning",
-    "t75": "Ert evenemang,",
-    "t76": "proffsigt livesänt.",
+    "t75": "Livesändningar",
+    "t76": "som når hela publiken.",
     "t77": "Vi sänder konferenser, föreläsningar och event med flera kameror, tydligt ljud och grafik, direkt till hemsidan och sociala medier.",
     "t82": "Läs mer om livesändning",
     "t83": "Begär offert",

@@ -30,8 +30,8 @@
   },
   "before_and_after": {
     "visa": true,
-    "t19": "Sound",
-    "t20": "familiar?",
+    "t19": "Does any of this",
+    "t20": "sound familiar?",
     "t21": "The website you would rather not show.",
     "t22": "It looks dated, struggles on mobile and you would rather point people to Facebook.",
     "t23": "Customers search. They find your competitor.",
@@ -98,8 +98,8 @@
   "we_also_stream_live": {
     "visa": true,
     "t74": "Live streaming",
-    "t75": "Your event,",
-    "t76": "professionally streamed.",
+    "t75": "Live streaming",
+    "t76": "that reaches everyone.",
     "t77": "We stream conferences, lectures and events with multiple cameras, clear sound and graphics, straight to your website and social media.",
     "t82": "Read more about live streaming",
     "t83": "Request a quote",

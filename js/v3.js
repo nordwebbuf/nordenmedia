@@ -113,7 +113,12 @@
     };
     book.addEventListener('click', () => {
       clear();
-      const [svc, time] = [...demo.querySelectorAll('.demo-opts')].map((g) => g.querySelector('[aria-pressed="true"]').textContent);
+      // Nothing is preselected; an unanswered choice falls back to its first option.
+      const [svc, time] = [...demo.querySelectorAll('.demo-opts')].map((g) => {
+        const picked = g.querySelector('[aria-pressed="true"]') || g.querySelector('button');
+        press(g, picked);
+        return picked.textContent;
+      });
       empty.hidden = true;
       book.disabled = true;
       demo.classList.add('is-running');
