@@ -873,3 +873,15 @@ a.showcase:hover .showcase-phone { transform: translateY(-8px); }
   :root:not([data-theme="light"]) .plan-featured { box-shadow: 0 0 0 1px var(--line-strong), var(--shadow); }
   :root:not([data-theme="light"]) .plan-featured .plan-start, :root:not([data-theme="light"]) .plan-featured .plan-cost-label { color: var(--accent); }
 }
+
+/* ---------- Proportions: one scale per heading level, comfortable tap areas ---------- */
+/* Section headings share one size, so no section shouts louder than the next */
+.title { font-size: clamp(2rem, 1.45rem + 1.6vw, 2.75rem); }
+.cta-title { text-wrap: balance; }
+/* Contact page: headline stays on two lines beside the form */
+.page-hero-contact .display-page { max-width: none; font-size: clamp(2.25rem, 1.3rem + 1.9vw, 3rem); }
+/* Text links get a 44px-tall hit area without moving the underline */
+.text-link, .to-top { position: relative; }
+.text-link::before, .to-top::before { content: ""; position: absolute; inset: -12px -6px; }
+/* Current page in the header keeps the same blue as every other primary button */
+.header-cta[aria-current="page"] { background: var(--accent-strong); color: var(--on-accent); }
