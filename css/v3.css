@@ -885,3 +885,5 @@ a.showcase:hover .showcase-phone { transform: translateY(-8px); }
 .text-link::before, .to-top::before { content: ""; position: absolute; inset: -12px -6px; }
 /* Current page in the header keeps the same blue as every other primary button */
 .header-cta[aria-current="page"] { background: var(--accent-strong); color: var(--on-accent); }
+/* Guarantee card: neutral shadow, so the page background stays even down to the next section */
+.guarantee { box-shadow: var(--shadow); }
