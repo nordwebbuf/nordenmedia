@@ -922,3 +922,5 @@ a.showcase:hover .showcase-phone { transform: translateY(-8px); }
   #platser { display: none; }
   #platser + .section { padding-top: clamp(48px, 5vw, 72px); }
 }
+/* "Känner ni igen er?" reads as one line */
+#forvem-title strong { display: inline; }
