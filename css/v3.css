@@ -707,7 +707,7 @@ a.showcase:hover .showcase-phone { transform: translateY(-8px); }
 .live-feature-list { display: grid; gap: 12px; margin: 26px 0 30px; }
 .live-feature-list li { display: flex; align-items: center; gap: 12px; color: var(--accent-block-ink); }
 .live-feature-list i { width: 36px; height: 36px; flex-shrink: 0; border-radius: 10px; display: inline-flex; align-items: center; justify-content: center; background: rgb(255 255 255 / .1); color: #C9D7FF; font-size: 1.2rem; }
-.live-feature-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.live-feature-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
 .live-feature-media { position: relative; margin-bottom: clamp(24px, 4vw, 48px); }
 .live-feature-media > img:first-child { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 16px; box-shadow: 0 40px 80px -30px rgb(0 0 0 / .6); }
 .live-feature-media .live-badge { top: 18px; left: 18px; }
