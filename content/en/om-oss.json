@@ -6,9 +6,9 @@
   "page_header": {
     "visa": true,
     "t1": "About us",
-    "t2": "A local team",
-    "t3": "that knows the web.",
-    "t4": "Norden Media UF is a media agency run by three students at Björknäsgymnasiet in Boden, as a student company in partnership with Ung Företagsamhet (Junior Achievement Sweden). We build websites and live stream events for businesses and organisations in Norrbotten. We are small enough to always answer ourselves, and curious enough to stay on top of what is new on the web."
+    "t2": "The team behind",
+    "t3": "Norden Media UF.",
+    "t4": "We are three students on the Technology Programme, specialising in information and media technology, at Björknäsgymnasiet in Boden. As a UF student company working with Ung Företagsamhet (Junior Achievement Sweden), we help businesses and organisations in Norrbotten with websites, digital visibility and live streaming."
   },
   "team": {
     "visa": true,
@@ -28,25 +28,25 @@
   },
   "hur_vi_tanker": {
     "visa": true,
-    "t18": "What we",
-    "t19": "stand for.",
-    "t20": "No hassle",
-    "t21": "You tell us what you want. We handle the tech, from domain and email to hosting.",
-    "t22": "Pay when you are happy",
-    "t23": "A fixed price, and no invoice until you have approved the result.",
-    "t24": "Straight answers",
-    "t25": "We explain things in plain language and tell you if something is not worth the money.",
-    "t26": "Long-term",
-    "t27": "We stay on after launch and develop the website as your business grows."
+    "t18": "How",
+    "t19": "we work.",
+    "t20": "Clear commitments",
+    "t21": "You get a fixed price and a clear description of what is included before work begins.",
+    "t22": "Payment after approval",
+    "t23": "The invoice is only sent once you have reviewed and approved the finished website.",
+    "t24": "Straight communication",
+    "t25": "You have one contact person, quick answers and explanations without technical detours.",
+    "t26": "Long-term responsibility",
+    "t27": "We manage and develop the website as your business grows."
   },
   "after_the_uf_year": {
     "visa": true,
     "t28": "Long-term",
-    "t29": "Your website stays",
-    "t30": "after the UF year.",
-    "t31": "A UF student company runs for one school year, but working with us does not have to end there. Our plan is to continue the business as a limited company, with the same people and the same service, for every client who wants to stay.",
-    "t32": "The website and all its content belong to you.",
-    "t33": "If you would rather run it yourselves, we show you how everything works and hand over all the material. If you need changes later on, we are still here to help at an hourly rate."
+    "t29": "A partnership",
+    "t30": "that lasts.",
+    "t31": "The UF year is only the beginning. We plan to continue the business as a limited company, with the same team and the same commitment to our clients.",
+    "t32": "You always own your website.",
+    "t33": "If you choose to manage it yourselves, we hand over all the material and walk you through how it works. We are happy to help with changes and further development at an hourly rate."
   },
   "samarbeten_och_kunder": {
     "visa": true,

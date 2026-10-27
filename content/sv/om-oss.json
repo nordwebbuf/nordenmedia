@@ -6,9 +6,9 @@
   "sidhuvud": {
     "visa": true,
     "t1": "Om oss",
-    "t2": "Ett lokalt team",
-    "t3": "med koll på webben.",
-    "t4": "Norden Media UF är en mediebyrå som drivs av tre elever på Björknäsgymnasiet i Boden, som UF-företag i samarbete med Ung Företagsamhet. Vi bygger hemsidor och livesänder evenemang för företag och organisationer i Norrbotten. Vi är små nog att alltid svara själva, och nyfikna nog att hålla oss uppdaterade om det senaste inom webben."
+    "t2": "Teamet bakom",
+    "t3": "Norden Media UF.",
+    "t4": "Vi är tre elever på Teknikprogrammet, inriktning informations- och medieteknik, vid Björknäsgymnasiet i Boden. Som UF-företag i samarbete med Ung Företagsamhet hjälper vi företag och organisationer i Norrbotten med hemsidor, digital synlighet och livesändningar."
   },
   "team": {
     "visa": true,
@@ -28,25 +28,25 @@
   },
   "hur_vi_tanker": {
     "visa": true,
-    "t18": "Det här",
-    "t19": "står vi för.",
-    "t20": "Inget krångel",
-    "t21": "Ni berättar vad ni vill ha. Vi sköter tekniken, från domän och mejl till drift.",
-    "t22": "Betala när ni är nöjda",
-    "t23": "Fast pris, och ingen faktura förrän ni har godkänt resultatet.",
-    "t24": "Raka besked",
-    "t25": "Vi förklarar på vanlig svenska och säger till om något inte är värt pengarna.",
-    "t26": "Långsiktigt",
-    "t27": "Vi finns kvar efter lanseringen och utvecklar hemsidan i takt med att ert företag växer."
+    "t18": "Så här",
+    "t19": "arbetar vi.",
+    "t20": "Tydliga åtaganden",
+    "t21": "Ni får ett fast pris och en tydlig beskrivning av vad som ingår innan arbetet börjar.",
+    "t22": "Betalning efter godkännande",
+    "t23": "Fakturan skickas först när ni har granskat och godkänt den färdiga hemsidan.",
+    "t24": "Rak kommunikation",
+    "t25": "Ni har en fast kontaktperson, får snabba svar och förklaringar utan tekniska omvägar.",
+    "t26": "Långsiktigt ansvar",
+    "t27": "Vi förvaltar och vidareutvecklar hemsidan i takt med att er verksamhet växer."
   },
   "efter_uf_aret": {
     "visa": true,
     "t28": "Långsiktigt",
-    "t29": "Er hemsida finns kvar",
-    "t30": "även efter UF-året.",
-    "t31": "Ett UF-företag drivs under ett läsår, men samarbetet med oss behöver inte ta slut där. Vår plan är att fortsätta verksamheten som aktiebolag, med samma personer och samma drift, för alla kunder som vill vara kvar.",
-    "t32": "Hemsidan och allt innehåll är ert.",
-    "t33": "Vill ni hellre sköta den själva visar vi hur allt fungerar och lämnar över allt material. Behöver ni hjälp med ändringar senare finns vi kvar och hjälper till mot timpris."
+    "t29": "Ett samarbete",
+    "t30": "som håller över tid.",
+    "t31": "UF-året är bara början. Vi planerar att driva verksamheten vidare som aktiebolag, med samma team och samma åtagande gentemot våra kunder.",
+    "t32": "Ni äger alltid er hemsida.",
+    "t33": "Väljer ni att förvalta den själva lämnar vi över allt material och går igenom hur den fungerar. Ändringar och vidareutveckling hjälper vi gärna till med mot timpris."
   },
   "samarbeten_och_kunder": {
     "visa": true,

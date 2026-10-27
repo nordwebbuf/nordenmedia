@@ -952,3 +952,5 @@ a.showcase:hover .showcase-phone { transform: translateY(-8px); }
   .footer-cols > div:last-of-type { grid-column: auto; }
   .footer-cols .footer-social { align-self: end; justify-self: start; }
 }
+/* About page on phones: Linus is listed last */
+@media (max-width: 640px) { .team .person:first-child { order: 3; } }
