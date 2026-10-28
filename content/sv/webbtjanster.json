@@ -6,8 +6,8 @@
   "sidhuvud": {
     "visa": true,
     "t1": "Hemsidor",
-    "t2": "Ni är bra på det ni gör.",
-    "t3": "Låt det synas.",
+    "t2": "Ett starkt varumärke",
+    "t3": "börjar på webben.",
     "t4": "Vi bygger en snabb, mobilanpassad hemsida som visar upp ert arbete och gör det lätt för kunderna att välja er. Med egen domän, företagsmejl och synlighet på Google, och vi sköter drift, säkerhet och uppdateringar.",
     "t5": "Boka ett samtal",
     "t6": "Se priser"
@@ -119,12 +119,12 @@
     "t127": "Samtal",
     "t128": "Vi lär känna ert företag, era kunder och hur ni arbetar i dag.",
     "t129": "Förslag",
-    "t130": "Ni får ett fast pris för att bygga och en tydlig månadsavgift, med vad som ingår. Utifrån det ni vill ha får ni ett kort formulär om innehållet att svara på.",
+    "t130": "Ni får ett fast pris för att bygga och en tydlig månadsavgift, med vad som ingår. Utifrån det ni vill ha får ni ett kort formulär om innehållet att svara på. Efter lanseringen kan ni alltid ändra allt innehåll själva, enkelt via er kundportal.",
     "t131": "Design och utveckling",
-    "t132": "Vi skriver texterna, bygger hemsidan på en testadress som bara ni ser och kopplar ihop systemen.",
+    "t132": "Vi skriver texterna, bygger hemsidan på en testadress som bara ni ser och kopplar ihop systemen. Ni kan följa arbetet hela vägen.",
     "t133": "Godkännande och lansering",
-    "t134": "Ni granskar och godkänner hemsidan.",
+    "t134": "Ni granskar och godkänner hemsidan. Sedan flyttar vi er adress och mejl och publicerar, så att ni syns på Google från första dagen.",
     "t135": "Drift och utveckling",
-    "t136": "Vi håller hemsidan igång, säker och uppdaterad, och hjälper er när något ska ändras."
+    "t136": "Vi håller hemsidan igång, säker och uppdaterad, och hjälper er när något ska ändras. I paketen Sarek och Kebne får ni varje månad en rapport med förslag på förbättringar."
   }
 }

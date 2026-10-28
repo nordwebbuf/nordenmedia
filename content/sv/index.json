@@ -5,9 +5,9 @@
   },
   "hero": {
     "visa": true,
-    "t1": "Lokal webbyrå i norr",
-    "t2": "Ett starkt varumärke",
-    "t3": "börjar på webben",
+    "t1": "Lokal mediebyrå i norr",
+    "t2": "Ni är bra på det ni gör.",
+    "t3": "Låt det synas.",
     "t4": "Vi bygger hemsidor som visar vilka ni är, syns på Google och ger fler kunder. Tydligt, tryggt och till fast pris.",
     "t5": "Boka ett samtal",
     "t6": "Se vad vi gör",
@@ -78,13 +78,13 @@
     "t58": "Samtal",
     "t59": "Vi lär känna ert företag, era kunder och hur ni arbetar i dag.",
     "t60": "Förslag",
-    "t61": "Ni får ett fast pris för att bygga och en tydlig månadsavgift, med vad som ingår. Utifrån det ni vill ha får ni ett kort formulär om innehållet att svara på.",
+    "t61": "Ni får ett fast pris för att bygga och en tydlig månadsavgift, med vad som ingår. Utifrån det ni vill ha får ni ett kort formulär om innehållet att svara på. Efter lanseringen kan ni alltid ändra allt innehåll själva, enkelt via er kundportal.",
     "t62": "Design och utveckling",
-    "t63": "Vi skriver texterna, bygger hemsidan på en testadress som bara ni ser och kopplar ihop systemen.",
+    "t63": "Vi skriver texterna, bygger hemsidan på en testadress som bara ni ser och kopplar ihop systemen. Ni kan följa arbetet hela vägen.",
     "t64": "Godkännande och lansering",
-    "t65": "Ni granskar och godkänner hemsidan.",
+    "t65": "Ni granskar och godkänner hemsidan. Sedan flyttar vi er adress och mejl och publicerar, så att ni syns på Google från första dagen.",
     "t66": "Drift och utveckling",
-    "t67": "Vi håller hemsidan igång, säker och uppdaterad, och hjälper er när något ska ändras."
+    "t67": "Vi håller hemsidan igång, säker och uppdaterad, och hjälper er när något ska ändras. I paketen Sarek och Kebne får ni varje månad en rapport med förslag på förbättringar."
   },
   "efter_uf_aret": {
     "visa": true,
