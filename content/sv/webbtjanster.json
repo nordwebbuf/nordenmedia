@@ -15,18 +15,18 @@
   "tjanster": {
     "visa": true,
     "t7": "Hemsidor och webbsystem",
-    "t8": "Snabba och tydliga hemsidor som fungerar lika bra i mobilen. Vid behov med bokning, kontaktformulär och inloggning för era kunder.",
+    "t8": "Snabba, responsiva hemsidor byggda med ren kod och anpassade för mobilen. Vid behov med bokningssystem, kontaktformulär och kundinloggning.",
     "t12": "Webbadress och företagsmejl",
-    "t13": "Vi registrerar er webbadress (domän), sköter alla inställningar och sätter upp mejl med ert företagsnamn.",
+    "t13": "Vi registrerar er domän, sköter DNS-inställningarna och sätter upp företagsmejl med ert eget namn.",
     "t14": "ertforetag.se",
     "t15": "hej@ertforetag.se",
     "t16": "Syns på Google",
-    "t17": "Vi gör hemsidan lätt att hitta på Google och i AI-tjänster som ChatGPT, och sätter upp er profil i Google Maps.",
+    "t17": "Teknisk SEO, strukturerad data och optimering för AI-svar som ChatGPT, så att ni hittas där kunderna söker. Vi sätter också upp er Google-företagsprofil och plats i Google Maps.",
     "t21": "Bokningar och påminnelser",
-    "t22": "Kunderna bokar själva på hemsidan. Bekräftelser, påminnelser och utskick går ut automatiskt och allt sparas i ert kundregister.",
+    "t22": "Onlinebokning kopplad till ert kundregister. Bekräftelser, påminnelser och utskick går ut automatiskt.",
     "t23": "Så fungerar det",
     "t24": "Drift och underhåll",
-    "t25": "Vi ansvarar för att allt är igång, säkert och uppdaterat. Ni behöver aldrig tänka på webbhotell, säkerhetskopior eller uppdateringar."
+    "t25": "Hosting, SSL-certifikat, säkerhetskopior och uppdateringar ingår. Vi ser till att allt är igång, säkert och uppdaterat."
   },
   "det_har_ingar": {
     "visa": true,
