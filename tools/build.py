@@ -90,14 +90,15 @@ NAV = ["webbtjanster", "livesandning", "priser", "om-oss"]
 NAV_LABEL = {"webbtjanster": "Hemsidor", "livesandning": "Livesändning", "priser": "Priser", "om-oss": "Om oss"}
 
 
-def cta(key, title, text, primary, secondary_href, secondary_label, label="Kontakta oss"):
+def cta(key, title, text, primary, secondary_href, secondary_label, label="Kontakta oss", phone=False):
+    tel = (f'\n            <p class="cta-phone"><a href="tel:+46702399899" data-cms="{key}_phone"><i class="ph-light ph-phone" aria-hidden="true"></i>070-239 98 99</a></p>' if phone else "")
     return f'''    <!-- CTA -->
     <section class="cta-band-wrap" aria-label="{label}">
       <div class="container">
         <div class="cta-band reveal">
           <div>
             <h2 class="cta-title" data-cms="{key}_title">{title}</h2>
-            <p data-cms="{key}_text">{text}</p>
+            <p data-cms="{key}_text">{text}</p>{tel}
           </div>
           <div class="cta-actions">
             <a href="{{{{p}}}}kontakt.html" class="btn btn-light" data-cms="{key}_primary">{primary} <i class="ph-light ph-arrow-right" aria-hidden="true"></i></a>
@@ -110,12 +111,12 @@ def cta(key, title, text, primary, secondary_href, secondary_label, label="Konta
 
 CTAS = {
     "{{CTA}}": cta("cta", "Lägg tiden på verksamheten. Vi tar hand om resten.", "Boka ett kort samtal så tar vi det därifrån. Det kostar ingenting att fråga.", "Boka ett samtal", "priser.html", "Se priser"),
-    "{{CTA_ALT}}": cta("cta_alt", "Osäkra på vilket paket som passar?", "Berätta om ert företag så hjälper vi er att välja. Det kostar ingenting att fråga.", "Boka ett samtal", "webbtjanster.html", "Se vad som ingår"),
+    "{{CTA_ALT}}": cta("cta_alt", "Osäkra på vilket paket som passar?", "Berätta om ert företag så hjälper vi er att välja. Det kostar ingenting att fråga.", "Boka ett samtal", "webbtjanster.html", "Se vad som ingår", "Kontakta oss", phone=True),
     "{{CTA_LIVE}}": cta("cta_live", "Har ni ett evenemang på gång?", "Berätta om det så återkommer vi med ett förslag och ett fast pris.", "Boka ett samtal", "webbtjanster.html", "Vi bygger även hemsidor"),
 }
 CTAS_EN = {
     "{{CTA}}": cta("cta", "Spend your time on your business. We take care of the rest.", "Book a short call and we will take it from there. It costs nothing to ask.", "Book a call", "priser.html", "See pricing", "Contact us"),
-    "{{CTA_ALT}}": cta("cta_alt", "Not sure which package suits you?", "Tell us about your business and we will help you choose. It costs nothing to ask.", "Book a call", "webbtjanster.html", "See what is included", "Contact us"),
+    "{{CTA_ALT}}": cta("cta_alt", "Not sure which package suits you?", "Tell us about your business and we will help you choose. It costs nothing to ask.", "Book a call", "webbtjanster.html", "See what is included", "Contact us", phone=True),
     "{{CTA_LIVE}}": cta("cta_live", "Have an event coming up?", "Tell us about it and we will come back with a proposal and a fixed price.", "Book a call", "webbtjanster.html", "We also build websites", "Contact us"),
 }
 
@@ -331,6 +332,7 @@ def chrome(key, lang, p, body):
             <p class="footer-head" data-cms="footer_head_contact">Kontakt</p>
             <ul>
               <li><a href="mailto:hej@nordenmedia.se" data-cms="footer_email" data-cms-attrs="href">hej@nordenmedia.se</a></li>
+              <li><a href="tel:+46702399899" data-cms="footer_phone">070-239 98 99</a></li>
               <li><a href="{p}kontakt.html" data-cms="book_call">Boka ett samtal</a></li>
             </ul>
           </div>
@@ -389,7 +391,7 @@ def html_attr(text):
 
 
 # Same in every language, so they are only edited once (in the Swedish settings)
-LANGUAGE_NEUTRAL = {"footer_email", "copyright", "copyright_2"}
+LANGUAGE_NEUTRAL = {"footer_email", "footer_phone", "cta_alt_phone", "copyright", "copyright_2"}
 
 
 def finalize(html, key, lang):

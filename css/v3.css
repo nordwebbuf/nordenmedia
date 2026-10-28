@@ -954,3 +954,7 @@ a.showcase:hover .showcase-phone { transform: translateY(-8px); }
 }
 /* A second lead paragraph sits closer to the first */
 .page-hero .lead + .lead-more { margin-top: 14px; }
+/* Phone number in the pricing call-to-action */
+.cta-phone { margin-top: 14px; opacity: 1 !important; }
+.cta-phone a { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-display); font-size: 1.25rem; font-weight: 500; color: var(--accent-block-ink); }
+.cta-phone a:hover { text-decoration: underline; text-underline-offset: 4px; }
