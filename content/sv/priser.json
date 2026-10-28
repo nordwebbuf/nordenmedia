@@ -6,14 +6,14 @@
   "sidhuvud": {
     "visa": true,
     "t1": "Priser",
-    "t2": "Ett paket",
-    "t3": "för varje behov.",
-    "t4": "Ni betalar startkostnaden först när hemsidan är klar och ni är nöjda. Därefter en månadsavgift för drift, uppdateringar och support."
+    "t2": "Tydliga priser.",
+    "t3": "Kompletta lösningar.",
+    "t4": "Varje paket ger er en professionellt byggd hemsida med fast pris och tydligt innehåll. Vi sköter drift, säkerhet och uppdateringar, och de ändringar som ingår i ert paket. Större tillägg tar vi fram ett separat förslag på."
   },
   "paket": {
     "visa": true,
     "t5": "Abisko",
-    "t6": "En snygg och enkel hemsida, på plats snabbt.",
+    "t6": "En professionell hemsida med allt som behövs för att synas och ta emot kunder.",
     "t7": "Startkostnad",
     "t8": "5 495",
     "t9": "kr",
@@ -30,7 +30,7 @@
     "t19": "Välj Abisko",
     "t20": "Populärast",
     "t21": "Sarek",
-    "t22": "För er som vill synas, få fler förfrågningar och slippa tekniken.",
+    "t22": "För företag som vill växa, med starkare synlighet, fler förfrågningar och löpande förbättringar.",
     "t23": "Startkostnad",
     "t24": "7 995",
     "t25": "kr",
@@ -49,7 +49,7 @@
     "t35": "1 timme ändringar varje månad",
     "t36": "Välj Sarek",
     "t37": "Kebne",
-    "t38": "En komplett digital partner som tar hand om allt.",
+    "t38": "Den kompletta lösningen, med kundsystem, automatisering och personlig support.",
     "t39": "Startkostnad",
     "t40": "13 995",
     "t41": "kr",
