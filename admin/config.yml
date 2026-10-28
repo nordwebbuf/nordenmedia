@@ -490,6 +490,7 @@ collections:
             fields:
               - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t5", label: "Abisko: namn", widget: string, required: false }
+              - { name: "t140", label: "Abisko: undertitel", widget: string, required: false }
               - { name: "t6", label: "Abisko: kort beskrivning", widget: string, required: false }
               - { name: "t7", label: "Abisko: rubrik över startkostnad", widget: string, required: false }
               - { name: "t8", label: "Abisko: startkostnad (belopp)", widget: string, required: false }
@@ -507,6 +508,7 @@ collections:
               - { name: "t19", label: "Abisko: knapp", widget: string, required: false }
               - { name: "t20", label: "Sarek: märke (\"Populärast\")", widget: string, required: false }
               - { name: "t21", label: "Sarek: namn", widget: string, required: false }
+              - { name: "t141", label: "Sarek: undertitel", widget: string, required: false }
               - { name: "t22", label: "Sarek: kort beskrivning", widget: string, required: false }
               - { name: "t23", label: "Sarek: rubrik över startkostnad", widget: string, required: false }
               - { name: "t24", label: "Sarek: startkostnad (belopp)", widget: string, required: false }
@@ -526,6 +528,7 @@ collections:
               - { name: "t35", label: "Sarek: punkt 6", widget: string, required: false }
               - { name: "t36", label: "Sarek: knapp", widget: string, required: false }
               - { name: "t37", label: "Kebne: namn", widget: string, required: false }
+              - { name: "t142", label: "Kebne: undertitel", widget: string, required: false }
               - { name: "t38", label: "Kebne: kort beskrivning", widget: string, required: false }
               - { name: "t39", label: "Kebne: rubrik över startkostnad", widget: string, required: false }
               - { name: "t40", label: "Kebne: startkostnad (belopp)", widget: string, required: false }
@@ -668,6 +671,7 @@ collections:
             fields:
               - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t5", label: "Rubrik", widget: string, required: false }
+              - { name: "t140", label: "Abisko: undertitel", widget: string, required: false }
               - { name: "t6_photo", label: "Person 1: foto", widget: image, required: false }
               - { name: "t7", label: "Person 1: text när foto saknas", widget: string, required: false }
               - { name: "t8", label: "Person 1: namn", widget: string, required: false }
@@ -691,6 +695,7 @@ collections:
               - { name: "t19", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t20", label: "Värdering 1: rubrik", widget: string, required: false }
               - { name: "t21", label: "Värdering 1: text", widget: string, required: false }
+              - { name: "t141", label: "Sarek: undertitel", widget: string, required: false }
               - { name: "t22", label: "Värdering 2: rubrik", widget: string, required: false }
               - { name: "t23", label: "Värdering 2: text", widget: string, required: false }
               - { name: "t24", label: "Värdering 3: rubrik", widget: string, required: false }
@@ -723,6 +728,7 @@ collections:
               - { name: "t36_src", label: "Samarbetspartner 2: logotyp", widget: image, required: false }
               - { name: "t36_alt", label: "Samarbetspartner 2: bildbeskrivning", widget: string, required: false }
               - { name: "t37", label: "Rubrik över tidigare kunder", widget: string, required: false }
+              - { name: "t142", label: "Kebne: undertitel", widget: string, required: false }
               - { name: "t38_src", label: "Kund 1: logotyp", widget: image, required: false }
               - { name: "t38_alt", label: "Kund 1: bildbeskrivning", widget: string, required: false }
               - { name: "t39_src", label: "Kund 2: logotyp", widget: image, required: false }
@@ -1318,6 +1324,7 @@ collections:
             fields:
               - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t5", label: "Abisko: namn", widget: string, required: false }
+              - { name: "t140", label: "Abisko: undertitel", widget: string, required: false }
               - { name: "t6", label: "Abisko: kort beskrivning", widget: string, required: false }
               - { name: "t7", label: "Abisko: rubrik över startkostnad", widget: string, required: false }
               - { name: "t8", label: "Abisko: startkostnad (belopp)", widget: string, required: false }
@@ -1335,6 +1342,7 @@ collections:
               - { name: "t19", label: "Abisko: knapp", widget: string, required: false }
               - { name: "t20", label: "Sarek: märke (\"Populärast\")", widget: string, required: false }
               - { name: "t21", label: "Sarek: namn", widget: string, required: false }
+              - { name: "t141", label: "Sarek: undertitel", widget: string, required: false }
               - { name: "t22", label: "Sarek: kort beskrivning", widget: string, required: false }
               - { name: "t23", label: "Sarek: rubrik över startkostnad", widget: string, required: false }
               - { name: "t24", label: "Sarek: startkostnad (belopp)", widget: string, required: false }
@@ -1351,6 +1359,7 @@ collections:
               - { name: "t35", label: "Sarek: punkt 6", widget: string, required: false }
               - { name: "t36", label: "Sarek: knapp", widget: string, required: false }
               - { name: "t37", label: "Kebne: namn", widget: string, required: false }
+              - { name: "t142", label: "Kebne: undertitel", widget: string, required: false }
               - { name: "t38", label: "Kebne: kort beskrivning", widget: string, required: false }
               - { name: "t39", label: "Kebne: rubrik över startkostnad", widget: string, required: false }
               - { name: "t40", label: "Kebne: startkostnad (belopp)", widget: string, required: false }
@@ -1494,6 +1503,7 @@ collections:
             fields:
               - { name: "visa", label: "Visa avsnittet på sidan (texterna sparas även när det är dolt)", widget: boolean, default: true, required: false }
               - { name: "t5", label: "Rubrik", widget: string, required: false }
+              - { name: "t140", label: "Abisko: undertitel", widget: string, required: false }
               - { name: "t6_photo", label: "Person 1: foto", widget: image, required: false }
               - { name: "t7", label: "Person 1: text när foto saknas", widget: string, required: false }
               - { name: "t8", label: "Person 1: namn", widget: string, required: false }
@@ -1517,6 +1527,7 @@ collections:
               - { name: "t19", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t20", label: "Värdering 1: rubrik", widget: string, required: false }
               - { name: "t21", label: "Värdering 1: text", widget: string, required: false }
+              - { name: "t141", label: "Sarek: undertitel", widget: string, required: false }
               - { name: "t22", label: "Värdering 2: rubrik", widget: string, required: false }
               - { name: "t23", label: "Värdering 2: text", widget: string, required: false }
               - { name: "t24", label: "Värdering 3: rubrik", widget: string, required: false }
@@ -1549,6 +1560,7 @@ collections:
               - { name: "t36_src", label: "Samarbetspartner 2: logotyp", widget: image, required: false }
               - { name: "t36_alt", label: "Samarbetspartner 2: bildbeskrivning", widget: string, required: false }
               - { name: "t37", label: "Rubrik över tidigare kunder", widget: string, required: false }
+              - { name: "t142", label: "Kebne: undertitel", widget: string, required: false }
               - { name: "t38_src", label: "Kund 1: logotyp", widget: image, required: false }
               - { name: "t38_alt", label: "Kund 1: bildbeskrivning", widget: string, required: false }
               - { name: "t39_src", label: "Kund 2: logotyp", widget: image, required: false }

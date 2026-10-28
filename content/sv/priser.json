@@ -6,9 +6,9 @@
   "sidhuvud": {
     "visa": true,
     "t1": "Priser",
-    "t2": "En fast startkostnad.",
-    "t3": "Sedan en fast månadsavgift.",
-    "t4": "Ni betalar startkostnaden först när hemsidan är klar och ni är nöjda. Därefter en månadsavgift för drift, uppdateringar och support."
+    "t2": "Ett paket",
+    "t3": "för varje behov.",
+    "t4": "Våra paket är uppkallade efter fjällen i Lappland, från Abisko, där resan börjar, till Kebne, den högsta toppen. Alla har fast pris, och ni betalar först när hemsidan är klar och ni är nöjda."
   },
   "paket": {
     "visa": true,
@@ -73,7 +73,10 @@
     "t52": "Allt före lanseringen",
     "t53": "Ni godkänner",
     "t54": "Först då kommer fakturan",
-    "t55": "Som UF-företag är vi inte momsregistrerade, så det tillkommer ingen moms på priserna. Startkostnaden betalas en gång och faktureras först när ni har godkänt den färdiga hemsidan. Månadsavgiften börjar när hemsidan har lanserats. Ändringar utöver det som ingår kostar 450 kr per timme."
+    "t55": "Som UF-företag är vi inte momsregistrerade, så det tillkommer ingen moms på priserna. Startkostnaden betalas en gång och faktureras först när ni har godkänt den färdiga hemsidan. Månadsavgiften börjar när hemsidan har lanserats. Ändringar utöver det som ingår kostar 450 kr per timme.",
+    "t140": "Porten till fjällen",
+    "t141": "Lapplands vilda hjärta",
+    "t142": "Sveriges högsta topp"
   },
   "jamforelse": {
     "visa": true,

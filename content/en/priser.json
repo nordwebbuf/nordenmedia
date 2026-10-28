@@ -6,9 +6,9 @@
   "page_header": {
     "visa": true,
     "t1": "Pricing",
-    "t2": "A fixed start-up cost.",
-    "t3": "Then a fixed monthly fee.",
-    "t4": "You pay the start-up cost only once the website is finished and you are happy. After that, a monthly fee for hosting, updates and support."
+    "t2": "A package",
+    "t3": "for every need.",
+    "t4": "Our packages are named after the mountains of Swedish Lapland, from Abisko, where the journey begins, to Kebne, the highest peak. All have a fixed price, and you only pay once the website is finished and you are happy."
   },
   "paket": {
     "visa": true,
@@ -71,7 +71,10 @@
     "t51": "Everything before launch",
     "t52": "You approve",
     "t53": "Only then do we invoice",
-    "t54": "As a UF student company we are not VAT registered, so no VAT is added to the prices. The start-up cost is paid once and is only invoiced after you have approved the finished website. The monthly fee starts when the website goes live. Changes beyond what is included cost SEK 450 per hour."
+    "t54": "As a UF student company we are not VAT registered, so no VAT is added to the prices. The start-up cost is paid once and is only invoiced after you have approved the finished website. The monthly fee starts when the website goes live. Changes beyond what is included cost SEK 450 per hour.",
+    "t140": "The gateway to the mountains",
+    "t141": "Lapland's wild heart",
+    "t142": "Sweden's highest peak"
   },
   "jamforelse": {
     "visa": true,

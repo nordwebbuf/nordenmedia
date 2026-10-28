@@ -954,3 +954,11 @@ a.showcase:hover .showcase-phone { transform: translateY(-8px); }
 }
 /* A second lead paragraph sits closer to the first */
 .page-hero .lead + .lead-more { margin-top: 14px; }
+
+/* ---------- Pricing: Lapland theme ---------- */
+.price-hero-media { margin: clamp(32px, 5vw, 56px) 0 0; border-radius: 18px; overflow: hidden; aspect-ratio: 21 / 8; background: var(--bg-band); }
+.price-hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 62%; }
+.plan-place { display: inline-flex; align-items: center; gap: 6px; margin-bottom: 10px; font-size: .8125rem; color: var(--accent-2); }
+.plan-place i { font-size: 1rem; }
+.plan-featured .plan-place { color: #B9CCFF; }
+@media (max-width: 640px) { .price-hero-media { aspect-ratio: 4 / 3; border-radius: 14px; } }
