@@ -257,7 +257,7 @@ T = [
     ("Godkänn för att vi ska kunna svara er.", "Please agree so that we can reply to you."),
     ("Vi svarar personligen och delar aldrig era uppgifter.", "We reply personally and never share your details."),
     ("Skicka förfrågan", "Send request"),
-    ("Något gick fel. Försök igen eller mejla oss på hej@nordenmedia.se.", "Something went wrong. Please try again or email us at hej@nordenmedia.se."),
+    ("Något gick fel. Försök igen eller mejla oss på nordenmediauf@gmail.com.", "Something went wrong. Please try again or email us at nordenmediauf@gmail.com."),
     ("Tack, vi har fått er förfrågan.", "Thank you, we have received your request."),
     ("Vi hör av oss inom kort för att boka ett samtal.", "We will be in touch shortly to book a call."),
     # footer

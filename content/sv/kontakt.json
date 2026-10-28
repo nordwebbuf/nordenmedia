@@ -1,7 +1,7 @@
 {
   "seo": {
     "seo_title": "Kontakta oss och boka ett samtal | Norden Media UF",
-    "seo_description": "Berätta om ert företag så hör vi av oss och bokar ett kort samtal. Det kostar ingenting att fråga. Mejla hej@nordenmedia.se eller fyll i formuläret."
+    "seo_description": "Berätta om ert företag så hör vi av oss och bokar ett kort samtal. Det kostar ingenting att fråga. Mejla nordenmediauf@gmail.com eller fyll i formuläret."
   },
   "kontakt": {
     "visa": true,
@@ -10,7 +10,7 @@
     "t3": "Vi tar det därifrån.",
     "t4": "Fyll i formuläret så hör vi av oss och bokar ett kort samtal. Det kostar ingenting att fråga.",
     "t11": "Hellre ringa eller mejla?",
-    "t12": "hej@nordenmedia.se",
+    "t12": "nordenmediauf@gmail.com",
     "t13": "Namn",
     "t14": "Skriv ert namn.",
     "t15": "Företag",
@@ -30,11 +30,11 @@
     "t30_2": ".",
     "t32": "Godkänn för att vi ska kunna svara er.",
     "t33": "Vi svarar personligen och delar aldrig era uppgifter.",
-    "t34": "Något gick fel. Försök igen eller mejla oss på hej@nordenmedia.se.",
+    "t34": "Något gick fel. Försök igen eller mejla oss på nordenmediauf@gmail.com.",
     "t35": "Tack, vi har fått er förfrågan.",
     "t36": "Vi hör av oss inom kort för att boka ett samtal.",
     "t37": "Ring oss",
-    "t38": "070-239 98 99",
+    "t38": "+46 70 239 98 99",
     "t39": "Mejla oss"
   }
 }

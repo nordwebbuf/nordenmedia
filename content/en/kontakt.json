@@ -1,7 +1,7 @@
 {
   "seo": {
     "seo_title": "Contact us and book a call | Norden Media UF",
-    "seo_description": "Tell us about your business and we will get in touch to book a short call. It costs nothing to ask. Email hej@nordenmedia.se or fill in the form."
+    "seo_description": "Tell us about your business and we will get in touch to book a short call. It costs nothing to ask. Email nordenmediauf@gmail.com or fill in the form."
   },
   "kontakt": {
     "visa": true,
@@ -10,7 +10,7 @@
     "t3": "We take it from there.",
     "t4": "Fill in the form and we will get in touch to book a short call. It costs nothing to ask.",
     "t11": "Prefer to call or email?",
-    "t12": "hej@nordenmedia.se",
+    "t12": "nordenmediauf@gmail.com",
     "t13": "Name",
     "t14": "Please enter your name.",
     "t15": "Company",
@@ -30,11 +30,11 @@
     "t30_2": ".",
     "t32": "Please agree so that we can reply to you.",
     "t33": "We reply personally and never share your details.",
-    "t34": "Something went wrong. Please try again or email us at hej@nordenmedia.se.",
+    "t34": "Something went wrong. Please try again or email us at nordenmediauf@gmail.com.",
     "t35": "Thank you, we have received your request.",
     "t36": "We will be in touch shortly to book a call.",
     "t37": "Call us",
-    "t38": "+46 70-239 98 99",
+    "t38": "+46 70 239 98 99",
     "t39": "Email us"
   }
 }

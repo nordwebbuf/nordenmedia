@@ -76,8 +76,8 @@ PAGES = {
     "kontakt": ("kontakt.html", "contact.html",
                 "Kontakta oss och boka ett samtal | Norden Media UF",
                 "Contact us and book a call | Norden Media UF",
-                "Berätta om ert företag så hör vi av oss och bokar ett kort samtal. Det kostar ingenting att fråga. Mejla hej@nordenmedia.se eller fyll i formuläret.",
-                "Tell us about your business and we will get in touch to book a short call. It costs nothing to ask. Email hej@nordenmedia.se or fill in the form."),
+                "Berätta om ert företag så hör vi av oss och bokar ett kort samtal. Det kostar ingenting att fråga. Mejla nordenmediauf@gmail.com eller fyll i formuläret.",
+                "Tell us about your business and we will get in touch to book a short call. It costs nothing to ask. Email nordenmediauf@gmail.com or fill in the form."),
     "integritetspolicy": ("integritetspolicy.html", "privacy.html",
                           "Integritetspolicy | Norden Media UF",
                           "Privacy policy | Norden Media UF",
@@ -91,7 +91,7 @@ NAV_LABEL = {"webbtjanster": "Hemsidor", "livesandning": "Livesändning", "prise
 
 
 def cta(key, title, text, primary, secondary_href, secondary_label, label="Kontakta oss", phone=False):
-    tel = (f'\n            <p class="cta-phone"><a href="tel:+46702399899" data-cms="{key}_phone"><i class="ph-light ph-phone" aria-hidden="true"></i>070-239 98 99</a></p>' if phone else "")
+    tel = (f'\n            <p class="cta-phone"><a href="tel:+46702399899" data-cms="{key}_phone"><i class="ph-light ph-phone" aria-hidden="true"></i>+46 70 239 98 99</a></p>' if phone else "")
     return f'''    <!-- CTA -->
     <section class="cta-band-wrap" aria-label="{label}">
       <div class="container">
@@ -211,7 +211,7 @@ def head(key, lang, p):
         "url": "{SITE}/",
         "logo": "{SITE}/assets/apple-touch-icon.png",
         "image": "{og_image}",
-        "email": "hej@nordenmedia.se",
+        "email": "nordenmediauf@gmail.com",
         "description": "{org_desc}",
         "priceRange": "{price}",
         "address": {{"@type": "PostalAddress", "addressLocality": "Boden", "addressRegion": "Norrbottens län", "addressCountry": "SE"}},
@@ -331,8 +331,8 @@ def chrome(key, lang, p, body):
           <div>
             <p class="footer-head" data-cms="footer_head_contact">Kontakt</p>
             <ul>
-              <li><a href="mailto:hej@nordenmedia.se" data-cms="footer_email" data-cms-attrs="href">hej@nordenmedia.se</a></li>
-              <li><a href="tel:+46702399899" data-cms="footer_phone">070-239 98 99</a></li>
+              <li><a href="mailto:nordenmediauf@gmail.com" data-cms="footer_email" data-cms-attrs="href">nordenmediauf@gmail.com</a></li>
+              <li><a href="tel:+46702399899" data-cms="footer_phone">+46 70 239 98 99</a></li>
               <li><a href="{p}kontakt.html" data-cms="book_call">Boka ett samtal</a></li>
             </ul>
           </div>
