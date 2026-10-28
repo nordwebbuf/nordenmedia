@@ -13,7 +13,7 @@
   "paket": {
     "visa": true,
     "t5": "Abisko",
-    "t6": "A foundational website of high quality, with everything you need to be found and receive customers.",
+    "t6": "A solid, high-quality website with what your business needs to be found and receive customers.",
     "t7": "Start-up cost",
     "t8": "5,495",
     "t9": "SEK",
@@ -70,7 +70,8 @@
     "t51": "Everything before launch",
     "t52": "You approve",
     "t53": "Only then do we invoice",
-    "t54": "As a UF student company we are not VAT registered, so no VAT is added to the prices. The start-up cost is paid once and is only invoiced after you have approved the finished website. The monthly fee starts when the website goes live. Changes beyond what is included cost SEK 450 per hour."
+    "t54": "As a UF student company we are not VAT registered, so no VAT is added to the prices. The start-up cost is paid once and is only invoiced after you have approved the finished website. The monthly fee starts when the website goes live. Changes beyond what is included cost SEK 450 per hour.",
+    "t20": "Best value"
   },
   "jamforelse": {
     "visa": true,

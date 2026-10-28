@@ -505,6 +505,7 @@ collections:
               - { name: "t17", label: "Abisko: punkt 5", widget: string, required: false }
               - { name: "t18", label: "Abisko: punkt 6", widget: string, required: false }
               - { name: "t19", label: "Abisko: knapp", widget: string, required: false }
+              - { name: "t20", label: "Sarek: märke (\"Mest värde\")", widget: string, required: false }
               - { name: "t21", label: "Sarek: namn", widget: string, required: false }
               - { name: "t22", label: "Sarek: kort beskrivning", widget: string, required: false }
               - { name: "t23", label: "Sarek: rubrik över startkostnad", widget: string, required: false }
@@ -689,6 +690,7 @@ collections:
               - { name: "t18", label: "Rubrik", widget: string, required: false }
               - { name: "t19", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t20", label: "Värdering 1: rubrik", widget: string, required: false }
+              - { name: "t20", label: "Sarek: märke (\"Mest värde\")", widget: string, required: false }
               - { name: "t21", label: "Värdering 1: text", widget: string, required: false }
               - { name: "t22", label: "Värdering 2: rubrik", widget: string, required: false }
               - { name: "t23", label: "Värdering 2: text", widget: string, required: false }
@@ -1332,6 +1334,7 @@ collections:
               - { name: "t17", label: "Abisko: punkt 5", widget: string, required: false }
               - { name: "t18", label: "Abisko: punkt 6", widget: string, required: false }
               - { name: "t19", label: "Abisko: knapp", widget: string, required: false }
+              - { name: "t20", label: "Sarek: märke (\"Mest värde\")", widget: string, required: false }
               - { name: "t21", label: "Sarek: namn", widget: string, required: false }
               - { name: "t22", label: "Sarek: kort beskrivning", widget: string, required: false }
               - { name: "t23", label: "Sarek: rubrik över startkostnad", widget: string, required: false }
@@ -1514,6 +1517,7 @@ collections:
               - { name: "t18", label: "Rubrik", widget: string, required: false }
               - { name: "t19", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t20", label: "Värdering 1: rubrik", widget: string, required: false }
+              - { name: "t20", label: "Sarek: märke (\"Mest värde\")", widget: string, required: false }
               - { name: "t21", label: "Värdering 1: text", widget: string, required: false }
               - { name: "t22", label: "Värdering 2: rubrik", widget: string, required: false }
               - { name: "t23", label: "Värdering 2: text", widget: string, required: false }
