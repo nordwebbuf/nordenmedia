@@ -51,7 +51,7 @@
     "t44": "Clear contrast, readable text and a structure that works with screen readers."
   },
   "automatisering": {
-    "visa": true,
+    "visa": false,
     "t45": "Less manual work.",
     "t46": "Nothing forgotten.",
     "t47": "When a customer books through the website, the system takes care of the rest. Everything is saved in the customer register and the right message goes out at the right time.",
