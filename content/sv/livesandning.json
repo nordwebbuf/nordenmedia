@@ -40,7 +40,7 @@
     "t27": "Paneldebatter och intervjuer"
   },
   "var_ska_ni_sanda": {
-    "visa": true,
+    "visa": false,
     "t28": "En sändning.",
     "t29": "Många platser.",
     "t30": "Välj var era tittare finns. Vi sänder till alla samtidigt.",
