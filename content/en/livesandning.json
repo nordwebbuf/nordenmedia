@@ -40,7 +40,7 @@
     "t27": "Panel debates and interviews"
   },
   "var_ska_ni_sanda": {
-    "visa": true,
+    "visa": false,
     "t28": "One stream.",
     "t29": "Many places.",
     "t30": "Choose where your viewers are. We stream to all of them at once.",
