@@ -51,7 +51,7 @@
     "t44": "Tydliga kontraster, läsbar text och struktur som fungerar med skärmläsare."
   },
   "automatisering": {
-    "visa": true,
+    "visa": false,
     "t45": "Mindre handpåläggning.",
     "t46": "Inget som glöms bort.",
     "t47": "När en kund bokar via hemsidan sköter systemet resten. Allt sparas i kundregistret och rätt meddelande går ut i rätt tid.",
