@@ -1516,7 +1516,6 @@ collections:
               - { name: "t18", label: "Rubrik", widget: string, required: false }
               - { name: "t19", label: "Rubrik, markerad del", widget: string, required: false }
               - { name: "t20", label: "Värdering 1: rubrik", widget: string, required: false }
-              - { name: "t20", label: "Sarek: märke (\"Mest värde\")", widget: string, required: false }
               - { name: "t21", label: "Värdering 1: text", widget: string, required: false }
               - { name: "t22", label: "Värdering 2: rubrik", widget: string, required: false }
               - { name: "t23", label: "Värdering 2: text", widget: string, required: false }
