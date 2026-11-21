@@ -1,14 +1,14 @@
 {
   "seo": {
     "seo_title": "Websites, Google visibility and email | Norden Media UF",
-    "seo_description": "Website, your own web address, business email, visibility on Google and bookings that run themselves. We build and run it all, you skip the tech."
+    "seo_description": "Website, your own web address, business email, visibility in the browser and bookings that run themselves. We build and run it all, you skip the tech."
   },
   "sidhuvud": {
     "visa": true,
     "t1": "Websites",
     "t2": "You are good at what you do.",
     "t3": "Let it show.",
-    "t4": "We build a fast, mobile-friendly website that showcases your work and makes it easy for customers to choose you. With your own domain, business email and visibility on Google, and we handle hosting, security and updates.",
+    "t4": "We build a fast, mobile-friendly website that showcases your work and makes it easy for customers to choose you. With your own domain, business email and visibility in the browser, and we handle hosting, security and updates.",
     "t5": "Book a call",
     "t6": "See pricing"
   },
@@ -20,7 +20,7 @@
     "t13": "We register your domain, manage the DNS settings and set up business email with your own name.",
     "t14": "yourbusiness.com",
     "t15": "hello@yourbusiness.com",
-    "t16": "Found on Google",
+    "t16": "Found in the browser",
     "t17": "Technical SEO, structured data and optimisation for AI answers such as ChatGPT, so you are found where customers search. We also set up your Google Business Profile and your place in Google Maps.",
     "t21": "Bookings and reminders",
     "t22": "Online booking linked to your customer register. Confirmations, reminders and mailings go out automatically.",
@@ -123,7 +123,7 @@
     "t131": "Design and development",
     "t132": "We write the copy, build the website on a test address that only you can see and connect the systems. You can follow the work all the way.",
     "t133": "Approval and launch",
-    "t134": "You review and approve the website. Then we move your web address and email and publish it, so you show up on Google from day one.",
+    "t134": "You review and approve the website. Then we move your web address and email and publish it, so you show up in the browser from day one.",
     "t135": "Ongoing operations",
     "t136": "We keep the website running, secure and up to date, and help you whenever something needs changing. With the Sarek and Kebne packages you also get a monthly report with suggested improvements."
   }

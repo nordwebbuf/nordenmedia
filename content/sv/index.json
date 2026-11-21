@@ -1,14 +1,14 @@
 {
   "seo": {
     "seo_title": "Hemsidor för företag i Boden | Norden Media UF",
-    "seo_description": "Vi bygger hemsidor som syns på Google och ger fler kunder, och sköter domän, mejl och drift. Fast pris, och ni betalar först när ni är nöjda."
+    "seo_description": "Vi bygger hemsidor som syns i webbläsaren och ger fler kunder, och sköter domän, mejl och drift. Fast pris, och ni betalar först när ni är nöjda."
   },
   "hero": {
     "visa": true,
     "t1": "Lokal mediebyrå i norr",
     "t2": "Ett starkt varumärke",
     "t3": "börjar på webben",
-    "t4": "Vi bygger hemsidor som visar vilka ni är, syns på Google och ger fler kunder. Tydligt, tryggt och till fast pris.",
+    "t4": "Vi bygger hemsidor som visar vilka ni är, syns i webbläsaren och ger fler kunder. Tydligt, tryggt och till fast pris.",
     "t5": "Boka ett samtal",
     "t6": "Se vad vi gör",
     "t7": "Vi har tidigare arbetat med",
@@ -82,7 +82,7 @@
     "t62": "Design och utveckling",
     "t63": "Vi skriver texterna, bygger hemsidan på en testadress som bara ni ser och kopplar ihop systemen. Ni kan följa arbetet hela vägen.",
     "t64": "Godkännande och lansering",
-    "t65": "Ni granskar och godkänner hemsidan. Sedan flyttar vi er adress och mejl och publicerar, så att ni syns på Google från första dagen.",
+    "t65": "Ni granskar och godkänner hemsidan. Sedan flyttar vi er adress och mejl och publicerar, så att ni syns i webbläsaren från första dagen.",
     "t66": "Drift och utveckling",
     "t67": "Vi håller hemsidan igång, säker och uppdaterad, och hjälper er när något ska ändras. I paketen Sarek och Kebne får ni varje månad en rapport med förslag på förbättringar."
   },
@@ -126,7 +126,7 @@
     "t99": "Behöver vi kunna något om teknik?",
     "t100": "Nej. Ni berättar vad ni vill, så sköter vi resten. Allt förklaras på vanlig svenska.",
     "t101": "Vi har ingen hemsida alls. Går det bra?",
-    "t102": "Absolut. Vi börjar från noll och tar hand om allt, från domän och mejl till en färdig hemsida som syns på Google.",
+    "t102": "Absolut. Vi börjar från noll och tar hand om allt, från domän och mejl till en färdig hemsida som syns i webbläsaren.",
     "t103": "Kan ni ta över vår gamla hemsida, domän och mejl?",
     "t104": "Ja. Vi flyttar domän, DNS och mejl åt er och planerar flytten så att varken mejl eller placeringar på Google går förlorade.",
     "t105": "Vad betyder optimering för",

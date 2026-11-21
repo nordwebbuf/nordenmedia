@@ -1,14 +1,14 @@
 {
   "seo": {
-    "seo_title": "Hemsidor, Google-synlighet och mejl | Norden Media UF",
-    "seo_description": "Hemsida, egen webbadress, företagsmejl, synlighet på Google och bokningar som sköter sig själva. Vi bygger och sköter allt, ni slipper tekniken."
+    "seo_title": "Hemsidor, synlighet i webbläsaren och mejl | Norden Media UF",
+    "seo_description": "Hemsida, egen webbadress, företagsmejl, synlighet i webbläsaren och bokningar som sköter sig själva. Vi bygger och sköter allt, ni slipper tekniken."
   },
   "sidhuvud": {
     "visa": true,
     "t1": "Hemsidor",
     "t2": "Ni är bra på det ni gör.",
     "t3": "Låt det synas.",
-    "t4": "Vi bygger en snabb, mobilanpassad hemsida som visar upp ert arbete och gör det lätt för kunderna att välja er. Med egen domän, företagsmejl och synlighet på Google, och vi sköter drift, säkerhet och uppdateringar.",
+    "t4": "Vi bygger en snabb, mobilanpassad hemsida som visar upp ert arbete och gör det lätt för kunderna att välja er. Med egen domän, företagsmejl och synlighet i webbläsaren, och vi sköter drift, säkerhet och uppdateringar.",
     "t5": "Boka ett samtal",
     "t6": "Se priser"
   },
@@ -20,7 +20,7 @@
     "t13": "Vi registrerar er domän, sköter DNS-inställningarna och sätter upp företagsmejl med ert eget namn.",
     "t14": "ertforetag.se",
     "t15": "hej@ertforetag.se",
-    "t16": "Syns på Google",
+    "t16": "Syns i webbläsaren",
     "t17": "Teknisk SEO, strukturerad data och optimering för AI-svar som ChatGPT, så att ni hittas där kunderna söker. Vi sätter också upp er Google-företagsprofil och plats i Google Maps.",
     "t21": "Bokningar och påminnelser",
     "t22": "Onlinebokning kopplad till ert kundregister. Bekräftelser, påminnelser och utskick går ut automatiskt.",
@@ -123,7 +123,7 @@
     "t131": "Design och utveckling",
     "t132": "Vi skriver texterna, bygger hemsidan på en testadress som bara ni ser och kopplar ihop systemen. Ni kan följa arbetet hela vägen.",
     "t133": "Godkännande och lansering",
-    "t134": "Ni granskar och godkänner hemsidan. Sedan flyttar vi er adress och mejl och publicerar, så att ni syns på Google från första dagen.",
+    "t134": "Ni granskar och godkänner hemsidan. Sedan flyttar vi er adress och mejl och publicerar, så att ni syns i webbläsaren från första dagen.",
     "t135": "Drift och utveckling",
     "t136": "Vi håller hemsidan igång, säker och uppdaterad, och hjälper er när något ska ändras. I paketen Sarek och Kebne får ni varje månad en rapport med förslag på förbättringar."
   }

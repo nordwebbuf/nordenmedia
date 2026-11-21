@@ -51,13 +51,13 @@ PAGES = {
     "index": ("index.html", "index.html",
               "Hemsidor för företag i Boden | Norden Media UF",
               "Websites for businesses in Boden | Norden Media UF",
-              "Vi bygger hemsidor som syns på Google och ger fler kunder, och sköter domän, mejl och drift. Fast pris, och ni betalar först när ni är nöjda.",
-              "We build websites that get found on Google and win more customers, and handle domain, email and hosting. Fixed price, and you only pay when you are happy."),
+              "Vi bygger hemsidor som syns i webbläsaren och ger fler kunder, och sköter domän, mejl och drift. Fast pris, och ni betalar först när ni är nöjda.",
+              "We build websites that get found in the browser and win more customers, and handle domain, email and hosting. Fixed price, and you only pay when you are happy."),
     "webbtjanster": ("webbtjanster.html", "web-services.html",
-                     "Hemsidor, Google-synlighet och mejl | Norden Media UF",
+                     "Hemsidor, synlighet i webbläsaren och mejl | Norden Media UF",
                      "Websites, Google visibility and email | Norden Media UF",
-                     "Hemsida, egen webbadress, företagsmejl, synlighet på Google och bokningar som sköter sig själva. Vi bygger och sköter allt, ni slipper tekniken.",
-                     "Website, your own web address, business email, visibility on Google and bookings that run themselves. We build and run it all, you skip the tech."),
+                     "Hemsida, egen webbadress, företagsmejl, synlighet i webbläsaren och bokningar som sköter sig själva. Vi bygger och sköter allt, ni slipper tekniken.",
+                     "Website, your own web address, business email, visibility in the browser and bookings that run themselves. We build and run it all, you skip the tech."),
     "livesandning": ("livesandning.html", "live-streaming.html",
                      "Livesändning av evenemang och möten | Norden Media UF",
                      "Live streaming of events and meetings | Norden Media UF",
@@ -156,9 +156,9 @@ def head(key, lang, p):
           {{"@type": "ListItem", "position": 2, "name": "{labels[key]}", "item": "{url(lang)}"}}
         ]
       }}'''
-    org_desc = ("Hemsidor, företagsmejl, synlighet på Google, bokningssystem, drift och livesändningar för företag och organisationer."
+    org_desc = ("Hemsidor, företagsmejl, synlighet i webbläsaren, bokningssystem, drift och livesändningar för företag och organisationer."
                 if lang == "sv" else
-                "Websites, business email, visibility on Google, booking systems, hosting and live streaming for businesses and organisations.")
+                "Websites, business email, visibility in the browser, booking systems, hosting and live streaming for businesses and organisations.")
     price = "Från 195 kr/mån" if lang == "sv" else "From SEK 195/month"
     return f'''<!doctype html>
 <html lang="{lang}">
